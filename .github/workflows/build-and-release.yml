@@ -18,7 +18,7 @@ jobs:
           - os: windows-latest
             platform: windows
             cpu: x64
-          - os: macos-latest
+          - os: macos-13
             platform: macos
             cpu: x64
           - os: ubuntu-latest
@@ -38,6 +38,9 @@ jobs:
 
       - name: Set up CMake and Ninja
         uses: lukka/get-cmake@latest
+
+      - name: Install NASM
+        uses: ilammy/setup-nasm@v1
 
       - name: Install dependencies (Linux)
         if: matrix.platform == 'linux'
@@ -87,7 +90,7 @@ jobs:
             -DSKIA_LIBRARY_DIR=$(pwd)/skia/out/Release-${{ matrix.cpu }} \
             -DSKIA_LIBRARY=$(pwd)/skia/out/Release-${{ matrix.cpu }}/$SKIA_LIB_FILE \
             $COMPILER_FLAGS \
-            ${{ matrix.platform == 'macos' && '-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0' || '' }}
+            ${{ matrix.platform == 'macos' && '-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_ARCHITECTURES=x86_64' || '' }}
 
       - name: Build
         run: cmake --build build --target aseprite
@@ -99,7 +102,10 @@ jobs:
           mkdir -p release
           cp build/bin/aseprite.exe release/
           cp -r data release/
-          # Copy DLLs if any were found in build/bin
+          # Copy OpenSSL DLLs (critical for network/sync)
+          cp /c/Program\ Files/OpenSSL/bin/libcrypto-3-x64.dll release/ || true
+          cp /c/Program\ Files/OpenSSL/bin/libssl-3-x64.dll release/ || true
+          # Copy any other DLLs found in build/bin
           find build/bin -name "*.dll" -exec cp {} release/ \;
           7z a aseprite-windows.zip ./release/*
 
