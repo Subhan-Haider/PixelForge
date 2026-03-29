@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2019-2024  Igara Studio S.A. -->
 <!-- Copyright (C) 2001-2018  David Capello -->
 <gui>
@@ -133,12 +133,12 @@
         <label text="@.data_filename_format" for="data_filename_format" />
         <entry id="data_filename_format" maxsize="1024" maxwidth="256" cell_align="horizontal"
                tooltip="@.data_filename_format_tooltip" />
-        <link text="(?)" url="https://www.aseprite.org/docs/cli/#filename-format" />
+        <link text="(?)" url="https://www.pixelforge.org/docs/cli/#filename-format" />
 
         <label text="@.data_tagname_format" for="data_tagname_format" />
         <entry id="data_tagname_format" maxsize="1024" maxwidth="256" cell_align="horizontal"
                tooltip="@.data_tagname_format_tooltip" />
-        <link text="(?)" url="https://www.aseprite.org/docs/cli/#tagname-format" />
+        <link text="(?)" url="https://www.pixelforge.org/docs/cli/#tagname-format" />
       </grid>
     </grid>
 

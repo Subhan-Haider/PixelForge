@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2019  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.

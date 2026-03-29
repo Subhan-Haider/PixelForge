@@ -6,7 +6,7 @@
 dofile('./test_utils.lua')
 
 do
-  local sprite = Sprite{ fromFile="sprites/cut_paste.aseprite" }
+  local sprite = Sprite{ fromFile="sprites/cut_paste.pixelforge" }
 
   app.layer = sprite.layers[1]
   app.useTool {

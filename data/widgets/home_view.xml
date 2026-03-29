@@ -1,11 +1,11 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2019-2021  Igara Studio S.A. -->
 <!-- Copyright (C) 2001-2017  David Capello -->
 <gui>
   <vbox noborders="true" id="home_view" border="4" childspacing="2" expansive="true">
 
     <hbox noborders="true" id="header_placeholder">
-      <link id="aseprite_face" style="aseprite_face" />
+      <link id="pixelforge_face" style="pixelforge_face" />
       <vbox border="4" childspacing="4">
         <link id="new_file" text="@.new_file" style="workspace_link" />
         <link id="open_file" text="@.open_file" style="workspace_link" />

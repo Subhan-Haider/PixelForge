@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2022-2024  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_COMMANDS_CMD_EXPORT_SPRITE_SHEET_H_INCLUDED
 #define APP_COMMANDS_CMD_EXPORT_SPRITE_SHEET_H_INCLUDED
@@ -49,7 +49,7 @@ struct ExportSpriteSheetParams : public NewParams {
   // TODO The layerIndex parameter is for internal use only, layers
   //      are counted in the same order as they are displayed in the
   //      Timeline or in the Export Sprite Sheet combobox. But this
-  //      index is different to the one specified in the .aseprite
+  //      index is different to the one specified in the .pixelforge
   //      file spec (where layers are counted from bottom to top).
   Param<int> layerIndex{ this, -1, "_layerIndex" };
   Param<std::string> tag{ this, std::string(), "tag" };

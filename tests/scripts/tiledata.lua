@@ -92,7 +92,7 @@ do
   assert(tile1.properties("ext").z == 4)
 
   -- Test crash setting the same properties
-  -- https://github.com/aseprite/aseprite/issues/5519
+  -- https://github.com/pixelforge/pixelforge/issues/5519
   tile1.properties = tile1.properties
 
   -- Copy properties

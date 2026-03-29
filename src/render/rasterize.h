@@ -1,4 +1,4 @@
-// Aseprite Render Library
+// PixelForge Render Library
 // Copyright (C) 2019  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.

@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FILE_FILE_OP_CONFIG_H_INCLUDED
 #define APP_FILE_FILE_OP_CONFIG_H_INCLUDED
@@ -42,7 +42,7 @@ struct FileOpConfig {
   doc::FitCriteria fitCriteria = doc::FitCriteria::DEFAULT;
 
   // Cache compressed tilesets. When we load a tileset from a
-  // .aseprite file, the compressed data will be stored on memory to
+  // .pixelforge file, the compressed data will be stored on memory to
   // make the save operation faster (as we can re-use the already
   // compressed data that was loaded as-is).
   bool cacheCompressedTilesets = true;

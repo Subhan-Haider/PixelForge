@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -170,7 +170,7 @@ std::string SaveFileBaseCommand::saveAsDialog(Context* context,
     // proper default export filename is calculated). This scenario is
     // described here:
     //
-    //   https://github.com/aseprite/aseprite/issues/1964
+    //   https://github.com/pixelforge/pixelforge/issues/1964
     //
     auto& docPref = Preferences::instance().document(document);
     docPref.saveCopy.clearSection();

@@ -1,13 +1,13 @@
-/* Aseprite
+/* PixelForge
    Copyright (C) 2020-2024  Igara Studio S.A.
 
    This program is distributed under the terms of
-   the End-User License Agreement for Aseprite.  */
+   the End-User License Agreement for PixelForge.  */
 
 #include "ver/info.h"
 #include "generated_version.h" /* It defines the VERSION macro */
 
-#define PACKAGE   "Aseprite"
+#define PACKAGE   "PixelForge"
 #define COPYRIGHT "Copyright (C) 2001-2025 Igara Studio S.A."
 
 #if defined(_WIN32) || defined(__APPLE__)
@@ -19,11 +19,11 @@
 #ifdef CUSTOM_WEBSITE_URL
   #define WEBSITE CUSTOM_WEBSITE_URL /* To test web server */
 #else
-  #define WEBSITE HTTP "://www.aseprite.org/"
+  #define WEBSITE HTTP "://www.pixelforge.org/"
 #endif
 #define WEBSITE_DOWNLOAD     WEBSITE "download/"
 #define WEBSITE_CONTRIBUTORS WEBSITE "contributors/"
-#define WEBSITE_NEWS_RSS     HTTP "://blog.aseprite.org/rss"
+#define WEBSITE_NEWS_RSS     HTTP "://blog.pixelforge.org/rss"
 #define WEBSITE_UPDATE       WEBSITE "update/?xml=1"
 
 const char* get_app_name()

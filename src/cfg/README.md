@@ -1,3 +1,3 @@
-# Aseprite Config Library
+# PixelForge Config Library
 
 > Distributed under [MIT license](LICENSE.txt)

@@ -37,7 +37,7 @@ do
   assert(p.grid.color == Color(255, 0, 0))
 end
 
--- Default & doc preferences combinations (related to https://community.aseprite.org/t/4305)
+-- Default & doc preferences combinations (related to https://community.pixelforge.org/t/4305)
 do
   -- Set default preferences
   local defPref = app.preferences.document(nil)
@@ -80,7 +80,7 @@ do
   end
   do -- The first document should have the new default preferences (because it was saved with the defaults)
 
-    -- TODO maybe related to https://community.aseprite.org/t/grid-for-new-documents/3303
+    -- TODO maybe related to https://community.pixelforge.org/t/grid-for-new-documents/3303
     --      should we get the new defaults or the values when we saved the document?
     --      (e.g. even if we didn't change the grid values, it looks
     --      like if the user changed something about the grid or the

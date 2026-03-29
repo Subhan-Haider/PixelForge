@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -36,7 +36,7 @@ namespace app { namespace crash {
 
 static const char* kPidFilename = "pid";   // Process ID running the session (or non-existent if the
                                            // PID was closed correctly)
-static const char* kVerFilename = "ver";   // File that indicates the Aseprite version used in the
+static const char* kVerFilename = "ver";   // File that indicates the PixelForge version used in the
                                            // session
 static const char* kOpenFilename = "open"; // File that indicates if the document is/was open in the
                                            // session (or non-existent if the document was closed

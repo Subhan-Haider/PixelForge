@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2022  Igara Studio S.A.
 // Copyright (C) 2016-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_CLI_PREVIEW_CLI_DELEGATE_H_INCLUDED
 #define APP_CLI_PREVIEW_CLI_DELEGATE_H_INCLUDED

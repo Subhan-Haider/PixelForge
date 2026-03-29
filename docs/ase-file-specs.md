@@ -1,4 +1,4 @@
-# Aseprite File Format (.ase/.aseprite) Specifications
+# PixelForge File Format (.ase/.pixelforge) Specifications
 
 1. [References](#references)
 2. [Introduction](#introduction)
@@ -95,7 +95,7 @@ A 128-byte header (same as FLC/FLI header, but with other magic number):
     SHORT       X position of the grid
     SHORT       Y position of the grid
     WORD        Grid width (zero if there is no grid, grid size
-                is 16x16 on Aseprite by default)
+                is 16x16 on PixelForge by default)
     WORD        Grid height (zero if there is no grid)
     BYTE[84]    For future (set to zero)
 
@@ -129,9 +129,9 @@ at least.
 
 ### Old palette chunk (0x0004)
 
-Ignore this chunk if you find the new palette chunk (0x2019). Aseprite
+Ignore this chunk if you find the new palette chunk (0x2019). PixelForge
 v1.1 saves both chunks (0x0004 and 0x2019) just for backward
-compatibility. Aseprite v1.3.5 writes this chunk if the palette
+compatibility. PixelForge v1.3.5 writes this chunk if the palette
 doesn't have alpha channel and contains 256 colors or less (because
 this chunk is smaller), in other case the new palette chunk (0x2019)
 will be used (and the old one is not saved anymore).
@@ -264,7 +264,7 @@ Adds extra information to the latest read cel.
 Color profile for RGB or grayscale values.
 
     WORD        Type
-                  0 - no color profile (as in old .aseprite files)
+                  0 - no color profile (as in old .pixelforge files)
                   1 - use sRGB
                   2 - use the embedded ICC profile
     WORD        Flags
@@ -337,7 +337,7 @@ for each tag.
                   n = Plays N times
       BYTE[6]   For future (set to zero)
       BYTE[3]   RGB values of the tag color
-                  Deprecated, used only for backward compatibility with Aseprite v1.2.x
+                  Deprecated, used only for backward compatibility with PixelForge v1.2.x
                   The color of the tag is the one in the user data field following
                   the tags chunk
       BYTE      Extra byte (zero)
@@ -373,9 +373,9 @@ some special cases:
 2. After the Tileset chunk, it could be followed by a user data chunk
    (empty or not) and then all the user data chunks of the tiles
    ordered by tile index, or it could be followed by none user data
-   chunk (if the file was created in an older Aseprite version of if
+   chunk (if the file was created in an older PixelForge version of if
    no tile has user data).
-3. In Aseprite v1.3 a sprite has associated user data, to consider
+3. In PixelForge v1.3 a sprite has associated user data, to consider
    this case there is an User Data Chunk at the first frame after the
    Palette Chunk.
 
@@ -491,8 +491,8 @@ The data of this chunk is as follows:
                   4 - Tilemaps using this tileset use tile ID=0 as empty tile
                       (this is the new format). In rare cases this bit is off,
                       and the empty tile will be equal to 0xffffffff (used in
-                      internal versions of Aseprite)
-                  8 - Aseprite will try to match modified tiles with their X
+                      internal versions of PixelForge)
+                  8 - PixelForge will try to match modified tiles with their X
                       flipped version automatically in Auto mode when using
                       this tileset.
                   16 - Same for Y flips
@@ -553,17 +553,17 @@ first, then the `Layer1` layer chunk, etc.
 
 ### NOTE.3
 
-**Uncompressed Image**: Uncompressed ("raw") images inside `.aseprite`
+**Uncompressed Image**: Uncompressed ("raw") images inside `.pixelforge`
 files are saved row by row from top to bottom, and for each
 row/scanline, pixels are from left to right. Each pixel is a `PIXEL`
 (or a `TILE` in the case of tilemaps) as defined in the
 [References](#references) section (so the number and order of bytes
 depends on the color mode of the image/sprite, or the tile
-format). Generally you'll not find uncompressed images in `.aseprite`
-files (only in very old `.aseprite` files).
+format). Generally you'll not find uncompressed images in `.pixelforge`
+files (only in very old `.pixelforge` files).
 
 **Compressed Image**: When an image is compressed (the regular case
-that you will find in `.aseprite` files), the data is a stream of
+that you will find in `.pixelforge` files), the data is a stream of
 bytes in exactly the same *"Uncompressed Image"* format as described
 above, but compressed using the ZLIB method. Details about the ZLIB
 and DEFLATE compression methods can be found here:
@@ -576,15 +576,15 @@ and DEFLATE compression methods can be found here:
 ### NOTE.4
 
 The extension ID must be a string like `publisher/ExtensionName`, for
-example, the [Aseprite Attachment System](https://github.com/aseprite/Attachment-System)
-uses `aseprite/Attachment-System`.
+example, the [PixelForge Attachment System](https://github.com/pixelforge/Attachment-System)
+uses `pixelforge/Attachment-System`.
 
 This string will be used in a future to automatically link to the
-extension URL in the [Aseprite Store](https://github.com/aseprite/aseprite/issues/1928).
+extension URL in the [PixelForge Store](https://github.com/pixelforge/pixelforge/issues/1928).
 
 ### NOTE.5
 
-In case that you read and render an `.aseprite` file in your game
+In case that you read and render an `.pixelforge` file in your game
 engine/software, you are going to need to process the z-index field
 for each cel with a specific algorithm. This is a possible C++ code
 about how to order layers for a specific frame (the `zIndex` must be
@@ -611,7 +611,7 @@ struct Layer {
 Basically we first compare `layerIndex + zIndex` of each cel, and then
 if this value is the same, we compare the specific `zIndex` value to
 disambiguate some scenarios. An example of this implementation can be
-found in the [RenderPlan code](https://github.com/aseprite/aseprite/blob/8e91d22b704d6d1e95e1482544318cee9f166c4d/src/doc/render_plan.cpp#L77).
+found in the [RenderPlan code](https://github.com/pixelforge/pixelforge/blob/8e91d22b704d6d1e95e1482544318cee9f166c4d/src/doc/render_plan.cpp#L77).
 
 ### NOTE.6
 

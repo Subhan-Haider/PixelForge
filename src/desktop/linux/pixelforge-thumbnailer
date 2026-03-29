@@ -1,0 +1,19 @@
+#!/usr/bin/sh
+
+# PixelForge Desktop Integration Module
+# Copyright (C) 2016  Gabriel Rauter
+#
+# Licensed under the the MIT License (https://opensource.org/licenses/MIT).
+
+if [ $# -ge 2 -a $# -lt 4 ]; then
+  mkdir -p /tmp/PixelForge
+  filename=${1//\//.}$RANDOM
+  if [ $# -eq 2 ]; then
+    pixelforge -b --frame-range "0,0" $1 --sheet /tmp/PixelForge/$filename.png
+  elif [ $# -eq 3 ]; then
+    pixelforge -b --frame-range "0,0" $1 --shrink-to "$3,$3" --sheet /tmp/PixelForge/$filename.png
+  fi
+  mkdir -p $(dirname "$2"); mv /tmp/PixelForge/$filename.png $2;
+else
+  echo "Parameters for pixelforge thumbnailer are: inputfile outputfile [size]"
+fi

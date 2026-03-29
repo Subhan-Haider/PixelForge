@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2021  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_RESOURCE_FINDER_H_INCLUDED
 #define APP_RESOURCE_FINDER_H_INCLUDED
@@ -49,7 +49,7 @@ public:
 
   // Tries to add the given filename in these locations:
   // For Windows:
-  // - If ASEPRITE_USER_FOLDER environment variable is defined, it
+  // - If PIXELFORGE_USER_FOLDER environment variable is defined, it
   //   should point the folder where the "user dir" is (it's useful
   //   for testing purposes to test with an empty preferences
   //   folder)
@@ -58,7 +58,7 @@ public:
   // - If the app is installed, the filename will be inside
   //   %AppData% location
   // For Unix-like platforms:
-  // - The filename will be in $HOME/.config/aseprite/
+  // - The filename will be in $HOME/.config/pixelforge/
   void includeUserDir(const char* filename);
 
   void includeDesktopDir(const char* filename);

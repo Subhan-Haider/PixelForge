@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2020 by Igara Studio S.A. -->
 <gui>
   <window id="tileset_selector_window" text="@.title">

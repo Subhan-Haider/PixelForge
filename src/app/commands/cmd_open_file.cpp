@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -189,8 +189,8 @@ void OpenFileCommand::onExecute(Context* context)
           if (fop->hasEmbeddedGridBounds() && !doc->sprite()->gridBounds().isEmpty()) {
             // If the sprite contains the grid bounds inside, we put
             // those grid bounds into the settings (e.g. useful to
-            // interact with old versions of Aseprite saving the grid
-            // bounds in the aseprite.ini file)
+            // interact with old versions of PixelForge saving the grid
+            // bounds in the pixelforge.ini file)
             docPref.grid.bounds(doc->sprite()->gridBounds());
           }
           else {

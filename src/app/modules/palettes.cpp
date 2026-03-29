@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2022-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -95,8 +95,8 @@ void load_default_palette()
       }
 
       // We could remove the old .gpl file (palFile), but as the
-      // user could be using multiple versions of Aseprite, it's a
-      // good idea to keep both formats (.gpl for Aseprite <=
+      // user could be using multiple versions of PixelForge, it's a
+      // good idea to keep both formats (.gpl for PixelForge <=
       // v1.1-beta5, and .ase for future versions).
     }
     // If the default palette file doesn't exist, we copy db32.gpl

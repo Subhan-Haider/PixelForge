@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -364,10 +364,10 @@ public:
     nativeCursor()->Click.connect([this] { onNativeCursorChange(); });
 
     // Dialogs
-    showAsepriteFileDialog()->Click.connect(
-      [this] { nativeFileDialog()->setSelected(!showAsepriteFileDialog()->isSelected()); });
+    showPixelForgeFileDialog()->Click.connect(
+      [this] { nativeFileDialog()->setSelected(!showPixelForgeFileDialog()->isSelected()); });
     nativeFileDialog()->Click.connect(
-      [this] { showAsepriteFileDialog()->setSelected(!nativeFileDialog()->isSelected()); });
+      [this] { showPixelForgeFileDialog()->setSelected(!nativeFileDialog()->isSelected()); });
 
     // Grid
     gridW()->Leave.connect([this] {
@@ -416,7 +416,7 @@ public:
     multipleWindows()->Click.connect(
       [this]() { uiWindows()->setSelectedItem(multipleWindows()->isSelected() ? 1 : 0); });
 
-#ifdef ENABLE_DEVMODE // TODO enable this on Release when Aseprite supports
+#ifdef ENABLE_DEVMODE // TODO enable this on Release when PixelForge supports
                       //      GPU-acceleration properly
     if (!m_system->hasCapability(os::Capabilities::GpuAccelerationSwitch))
 #endif
@@ -516,7 +516,7 @@ public:
     uninstallExtension()->Click.connect([this] { onUninstallExtension(); });
     openExtensionFolder()->Click.connect([this] { onOpenExtensionFolder(); });
 
-    // Aseprite Format preferences
+    // PixelForge Format preferences
     celFormat()->Change.connect([this] { onCelFormatChange(); });
 
 #if LAF_WINDOWS
@@ -530,7 +530,7 @@ public:
     if (dll_name.empty()) {
       winDisplayThumbnail()->setEnabled(false);
       winDisplayThumbnail()->setText(
-        Strings::options_thumbnailer_dll_not_found(win::kAsepriteThumbnailerDllName));
+        Strings::options_thumbnailer_dll_not_found(win::kPixelForgeThumbnailerDllName));
       winDisplayLittleIcon()->setVisible(false);
     }
     else {
@@ -545,7 +545,7 @@ public:
       winDisplayLittleIcon()->Click.connect([this] { checkIfExplorerProcNeedsRestart(); });
     }
     // File Explorer file type associations
-    fillExtensionsCombobox(winFileTypeToAssociate(), "aseprite");
+    fillExtensionsCombobox(winFileTypeToAssociate(), "pixelforge");
     winAssociateFileType()->Click.connect([this] { onAssociateFileType(); });
 #else // For macOS and Linux
     {
@@ -745,9 +745,9 @@ public:
 
     onNativeCursorChange();
 
-    // "Show Aseprite file dialog" option is the inverse of the old
+    // "Show PixelForge file dialog" option is the inverse of the old
     // experimental "use native file dialog" option
-    showAsepriteFileDialog()->setSelected(!m_pref.experimental.useNativeFileDialog());
+    showPixelForgeFileDialog()->setSelected(!m_pref.experimental.useNativeFileDialog());
 
 #if LAF_WINDOWS // Show Tablet section on Windows
     {
@@ -806,8 +806,8 @@ public:
     onChangeBgScope();
     onChangeGridScope();
 
-    // Aseprite format preferences
-    celFormat()->setSelectedItemIndex(int(m_pref.asepriteFormat.celFormat()));
+    // PixelForge format preferences
+    celFormat()->setSelectedItemIndex(int(m_pref.pixelforgeFormat.celFormat()));
     onCelFormatChange();
   }
 
@@ -991,8 +991,8 @@ public:
     m_pref.undo.gotoModified(undoGotoModified()->isSelected());
     m_pref.undo.allowNonlinearHistory(undoAllowNonlinearHistory()->isSelected());
 
-    // Aseprite format preferences
-    m_pref.asepriteFormat.celFormat(gen::CelContentFormat(celFormat()->getSelectedItemIndex()));
+    // PixelForge format preferences
+    m_pref.pixelforgeFormat.celFormat(gen::CelContentFormat(celFormat()->getSelectedItemIndex()));
 
     // Experimental features
     m_pref.experimental.useSelectionToolLoop(useSelectionToolLoop()->isSelected());
@@ -1037,7 +1037,7 @@ public:
     }
     // File Explorer Thumbnails
     {
-      if (win::set_thumbnail_options("aseprite", windowsFileExplorerThumbnailsOptionsFromUI()))
+      if (win::set_thumbnail_options("pixelforge", windowsFileExplorerThumbnailsOptionsFromUI()))
         m_restartExplorerProc = true;
     }
 #endif
@@ -1148,8 +1148,8 @@ public:
     // Get the extension information from the compressed
     // package.json file.
     const ExtensionInfo info = App::instance()->extensions().getCompressedExtensionInfo(filename);
-    // Check if the filename corresponds to aseprite-default theme
-    if (base::string_to_lower(info.name) == Extension::kAsepriteDefaultThemeExtensionName) {
+    // Check if the filename corresponds to pixelforge-default theme
+    if (base::string_to_lower(info.name) == Extension::kPixelForgeDefaultThemeExtensionName) {
       ui::Alert::show(Strings::alerts_cannot_install_default_extension());
       return false;
     }
@@ -2004,7 +2004,7 @@ private:
 
   void onAddExtension()
   {
-    base::paths exts = { "aseprite-extension", "zip" };
+    base::paths exts = { "pixelforge-extension", "zip" };
     base::paths filename;
     if (!app::show_file_selector(Strings::options_add_extension_title(),
                                  "",
@@ -2445,7 +2445,7 @@ private:
 
   win::ThumbnailsOption windowsFileExplorerThumbnailsOptionsFromRegistry() const
   {
-    return win::get_thumbnail_options("aseprite");
+    return win::get_thumbnail_options("pixelforge");
   }
 
   win::ThumbnailsOption windowsFileExplorerThumbnailsOptionsFromUI() const
@@ -2459,12 +2459,12 @@ private:
   void onAssociateFileType()
   {
     const std::string& ext = getExtension(winFileTypeToAssociate());
-    // .ase and .aseprite files will be associated with "AsepriteFile"
-    if (ext == "ase" || ext == "aseprite") {
-      win::associate_file_type_with_asepritefile_class(ext);
+    // .ase and .pixelforge files will be associated with "PixelForgeFile"
+    if (ext == "ase" || ext == "pixelforge") {
+      win::associate_file_type_with_pixelforgefile_class(ext);
     }
     else {
-      win::add_aseprite_to_open_with_file_type(ext);
+      win::add_pixelforge_to_open_with_file_type(ext);
     }
   }
 #endif // LAF_WINDOWS

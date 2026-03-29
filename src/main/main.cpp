@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 // Copyright (C) 2001-2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -84,10 +84,10 @@ public:
 
 } // namespace
 
-// Aseprite entry point. (Called from "os" library.)
+// PixelForge entry point. (Called from "os" library.)
 int app_main(int argc, char* argv[])
 {
-  // Initialize the locale. Aseprite isn't ready to handle numeric
+  // Initialize the locale. PixelForge isn't ready to handle numeric
   // fields with other locales (e.g. we expect strings like "10.32" be
   // used in std::strtod(), not something like "10,32").
   std::setlocale(LC_ALL, "en-US");

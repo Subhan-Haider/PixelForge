@@ -1,4 +1,4 @@
-# Aseprite
+# PixelForge
 # Copyright (C) 2021-2025  Igara Studio S.A.
 # Copyright (C) 2001-2018  David Capello
 

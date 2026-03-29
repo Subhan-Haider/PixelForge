@@ -7,7 +7,7 @@ mkdir $d
 cat >$d/gen.lua <<EOF
 local a = Sprite(32, 32)
 app.useTool{ points={{0,0},{31,31}}, tool='filled_ellipse', color=Color(255,255,255) }
-a:saveAs('$d/test.aseprite')
+a:saveAs('$d/test.pixelforge')
 a:saveAs('$d/test.gif')
 a:saveAs('$d/test.ico')
 a:saveAs('$d/test.jpg')
@@ -16,10 +16,10 @@ a:saveAs('$d/test.svg')
 a:saveAs('$d/test.tga')
 a:saveAs('$d/test.webp')
 EOF
-$ASEPRITE -b -script "$d/gen.lua" || exit 1
+$PIXELFORGE -b -script "$d/gen.lua" || exit 1
 
 # Load image and save in all formats using CLI
-$ASEPRITE -b "$d/test.aseprite" \
+$PIXELFORGE -b "$d/test.pixelforge" \
           -save-as "$d/test2.gif" \
           -save-as "$d/test2.ico" \
           -save-as "$d/test2.jpg" \
@@ -32,7 +32,7 @@ $ASEPRITE -b "$d/test.aseprite" \
 # Compare that all images are the same/equivalent
 # Note: app.open() and Sprite{fromFile:} are the same
 cat >$d/compare.lua <<EOF
-local a = Sprite{ fromFile="$d/test.aseprite" }
+local a = Sprite{ fromFile="$d/test.pixelforge" }
 local b = {
   app.open("$d/test.gif"), app.open("$d/test2.gif"),
   app.open("$d/test.ico"), app.open("$d/test2.ico"),
@@ -58,4 +58,4 @@ for i,c in ipairs(b) do
   assert(a.cels[1].image:isEqual(c.cels[1].image))
 end
 EOF
-$ASEPRITE -b -script "$d/compare.lua" || exit 1
+$PIXELFORGE -b -script "$d/compare.lua" || exit 1

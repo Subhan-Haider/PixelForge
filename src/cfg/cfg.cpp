@@ -1,4 +1,4 @@
-// Aseprite Config Library
+// PixelForge Config Library
 // Copyright (C) 2019-2023  Igara Studio S.A.
 // Copyright (C) 2014-2017  David Capello
 //

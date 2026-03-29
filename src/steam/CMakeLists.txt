@@ -1,4 +1,4 @@
-# Aseprite
+# PixelForge
 # Copyright (C) 2016  David Capello
 
 add_library(steam-lib steam.cpp)

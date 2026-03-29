@@ -2,21 +2,21 @@
 
 Some general rules to write code: Try to follow the same style/format
 of the file that you are editing (naming, indentation, etc.) or the
-style of the module. Some [submodules](https://github.com/aseprite/aseprite/blob/main/.gitmodules),
+style of the module. Some [submodules](https://github.com/pixelforge/pixelforge/blob/main/.gitmodules),
 created by us, or by third-parties, have their own style.
 
 ## clang-format
 
-There is a [.clang-format](https://github.com/aseprite/aseprite/blob/main/.clang-format)
-file available for Aseprite and laf, and we are using it with
+There is a [.clang-format](https://github.com/pixelforge/pixelforge/blob/main/.clang-format)
+file available for PixelForge and laf, and we are using it with
 Clang 19. You have to configure a [pre-commit](../CONTRIBUTING.md#pre-commit-hooks)
 hook which will help you to do the formatting automatically before committing.
 
-There is a [.clang-tidy](https://github.com/aseprite/aseprite/blob/main/.clang-tidy)
-file used [in the GitHub actions](https://github.com/aseprite/aseprite/blob/main/.github/workflows/clang_tidy.yml)
+There is a [.clang-tidy](https://github.com/pixelforge/pixelforge/blob/main/.clang-tidy)
+file used [in the GitHub actions](https://github.com/pixelforge/pixelforge/blob/main/.github/workflows/clang_tidy.yml)
 executed on each PR. These rules are adopted progressively on patches
 because are only executed in the diff, and if some rule is violated a
-comment by [aseprite-bot](https://github.com/aseprite-bot) is
+comment by [pixelforge-bot](https://github.com/pixelforge-bot) is
 made. (Sometimes the bot will be wrong, so be careful.)
 
 ## Column limit
@@ -158,7 +158,7 @@ We use the const-west notation:
 
 There is a problem with `clang-tidy` that will make comments using
 East const notation:
-[#4361](https://github.com/aseprite/aseprite/issues/4361), but
+[#4361](https://github.com/pixelforge/pixelforge/issues/4361), but
 clang-format should fix the `const` position anyway.
 
 ## C++17

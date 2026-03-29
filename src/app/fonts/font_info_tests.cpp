@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (c) 2024-2025  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #include "tests/app_test.h"
 
@@ -22,15 +22,15 @@ std::ostream& operator<<(std::ostream& os, const FontInfo& info)
 
 TEST(FontInfo, ByName)
 {
-  FontInfo a(FontInfo::Type::Name, "Aseprite");
-  FontInfo b(FontInfo::Type::Name, "Aseprite", 24);
+  FontInfo a(FontInfo::Type::Name, "PixelForge");
+  FontInfo b(FontInfo::Type::Name, "PixelForge", 24);
   FontInfo c(FontInfo::Type::Name, "Arial Unicode");
-  EXPECT_EQ("Aseprite", base::convert_to<std::string>(a));
-  EXPECT_EQ("Aseprite,size=24", base::convert_to<std::string>(b));
+  EXPECT_EQ("PixelForge", base::convert_to<std::string>(a));
+  EXPECT_EQ("PixelForge,size=24", base::convert_to<std::string>(b));
   EXPECT_EQ("Arial Unicode", base::convert_to<std::string>(c));
 
-  EXPECT_EQ(a, base::convert_to<FontInfo>("Aseprite"s));
-  EXPECT_EQ(b, base::convert_to<FontInfo>("Aseprite,size=24"s));
+  EXPECT_EQ(a, base::convert_to<FontInfo>("PixelForge"s));
+  EXPECT_EQ(b, base::convert_to<FontInfo>("PixelForge,size=24"s));
   EXPECT_EQ(c, base::convert_to<FontInfo>("Arial Unicode"s));
 }
 

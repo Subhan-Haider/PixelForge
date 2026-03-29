@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2023  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 // Uncomment if you want to test the backup process each 5 seconds.
 // #define TEST_BACKUPS_WITH_A_SHORT_PERIOD

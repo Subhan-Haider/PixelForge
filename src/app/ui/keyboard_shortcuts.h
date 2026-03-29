@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_UI_KEYBOARD_SHORTCUTS_H_INCLUDED
 #define APP_UI_KEYBOARD_SHORTCUTS_H_INCLUDED

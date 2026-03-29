@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2020  Igara Studio S.A.
 // Copyright (c) 2001-2018 David Capello
 //
@@ -64,7 +64,7 @@ std::unique_ptr<Palette> load_gpl_file(const char* filename)
     if (!std::isdigit(line[0])) {
       std::vector<std::string> parts;
       base::split_string(line, parts, ":");
-      // Aseprite extension for palettes with alpha channel.
+      // PixelForge extension for palettes with alpha channel.
       if (parts.size() == 2 && parts[0] == "Channels") {
         base::trim_string(parts[1], parts[1]);
         if (parts[1] == "RGBA")

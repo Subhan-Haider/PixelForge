@@ -147,14 +147,14 @@ do
 end
 
 -- Test crash setting nil user data
--- https://github.com/aseprite/aseprite/issues/4187
+-- https://github.com/pixelforge/pixelforge/issues/4187
 do
   local spr = Sprite(1, 1)
   spr.data = nil
 end
 
 -- Test crash setting the same properties
--- https://github.com/aseprite/aseprite/issues/5519
+-- https://github.com/pixelforge/pixelforge/issues/5519
 do
   local spr = Sprite(1, 1)
   local cel = app.cel

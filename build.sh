@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# This is a script to help users and developers to build Aseprite.
+# This is a script to help users and developers to build PixelForge.
 # Usage:
 #
 #   ./build.sh
@@ -18,13 +18,13 @@
 #   --norun   Doesn't auto-run when using --auto
 #
 
-echo "======================= BUILD ASEPRITE HELPER ========================"
+echo "======================= BUILD PIXELFORGE HELPER ========================"
 
-# Check that we are running the script from the Aseprite clone directory.
+# Check that we are running the script from the PixelForge clone directory.
 pwd=$(pwd)
 if [[ ! -f "$pwd/EULA.txt" || ! -f "$pwd/.gitmodules" ]] ; then
     echo ""
-    echo "Run build script from the Aseprite directory"
+    echo "Run build script from the PixelForge directory"
     exit 1
 fi
 
@@ -144,8 +144,8 @@ if [ ! -f "$pwd/.build/userkind" ] ; then
         echo ""
         echo "Select what kind of user you are (press U or D key and then Enter):"
         echo ""
-        echo "  [U]ser: give a try to Aseprite"
-        echo "  [D]eveloper: develop/modify Aseprite"
+        echo "  [U]ser: give a try to PixelForge"
+        echo "  [D]eveloper: develop/modify PixelForge"
         echo ""
         read -p "[U/D]? "
         REPLY=$(echo $REPLY | tr '[:upper:]' '[:lower:]')
@@ -171,27 +171,27 @@ fi
 if [ ! -f "$pwd/.build/builds_dir" ] ; then
     if [ "$userkind" == "developer" ] ; then
         # The "builds" folder is a place where all possible combination/builds
-        # will be stored. If the ASEPRITE_BUILD environment variable is
+        # will be stored. If the PIXELFORGE_BUILD environment variable is
         # defined, that's the directory, in other case for a regular "user"
-        # the folder will be this same directory where Aseprite was cloned.
-        if [[ "$ASEPRITE_BUILD" != "" ]] ; then
+        # the folder will be this same directory where PixelForge was cloned.
+        if [[ "$PIXELFORGE_BUILD" != "" ]] ; then
             if [ $is_win ] ; then
-                builds_dir=$(cygpath "$ASEPRITE_BUILD")
+                builds_dir=$(cygpath "$PIXELFORGE_BUILD")
             else
-                builds_dir="$ASEPRITE_BUILD"
+                builds_dir="$PIXELFORGE_BUILD"
             fi
 
             if [ -d "$builds_dir" ] ; then
                 echo ""
-                echo "Using ASEPRITE_BUILD environment variable for builds directory."
+                echo "Using PIXELFORGE_BUILD environment variable for builds directory."
             else
                 if ! mkdir "$builds_dir" ; then
                     echo ""
-                    echo "The ASEPRITE_BUILD is defined but we weren't able to create the directory:"
+                    echo "The PIXELFORGE_BUILD is defined but we weren't able to create the directory:"
                     echo ""
-                    echo "  ASEPRITE_BUILD=$builds_dir"
+                    echo "  PIXELFORGE_BUILD=$builds_dir"
                     echo ""
-                    echo "To solve this issue delete the ASEPRITE_BUILD variable or point it to a valid path."
+                    echo "To solve this issue delete the PIXELFORGE_BUILD variable or point it to a valid path."
                     exit 1
                 fi
             fi
@@ -216,7 +216,7 @@ if [ ! -f "$pwd/.build/builds_dir" ] ; then
         builds_dir="$pwd"
 
         echo ""
-        echo "We'll build Aseprite in $builds_dir/build directory"
+        echo "We'll build PixelForge in $builds_dir/build directory"
     fi
     echo "$builds_dir" > "$pwd/.build/builds_dir"
 fi
@@ -227,7 +227,7 @@ builds_dir="$(cat $pwd/.build/builds_dir)"
 builds_list="$(mktemp)"
 n=1
 for file in $(ls $builds_dir/*/CMakeCache.txt 2>/dev/null | sort) ; do
-    if cat "$file" | grep -q "CMAKE_PROJECT_NAME:STATIC=aseprite" ; then
+    if cat "$file" | grep -q "CMAKE_PROJECT_NAME:STATIC=pixelforge" ; then
         if [ $n -eq 1 ] ; then
             echo "-- AVAILABLE BUILDS --"
         fi
@@ -244,7 +244,7 @@ build_type=RelWithDebInfo
 if [[ $n -eq 1 ]] ; then
     echo "-- FIRST BUILD --"
     if [ "$userkind" == "developer" ] ; then
-        active_build_dir="$builds_dir/aseprite-release"
+        active_build_dir="$builds_dir/pixelforge-release"
     else
         active_build_dir="$builds_dir/build"
     fi
@@ -260,10 +260,10 @@ else
         REPLY=$(echo $REPLY | tr '[:upper:]' '[:lower:]')
         if [[ "${REPLY}" == "debug" ]] ; then
             build_type=Debug
-            new_build_name=aseprite-debug
+            new_build_name=pixelforge-debug
         else
             build_type=RelWithDebInfo
-            new_build_name=aseprite-release
+            new_build_name=pixelforge-release
         fi
 
         read -p "Select a name [$new_build_name]? "
@@ -321,7 +321,7 @@ if [ "$active_build_dir" == "" ] ; then
 fi
 
 if [ -f "$active_build_dir/CMakeCache.txt" ] ; then
-    source_dir=$(cat $active_build_dir/CMakeCache.txt | grep aseprite_SOURCE_DIR | cut -d "=" -f2)
+    source_dir=$(cat $active_build_dir/CMakeCache.txt | grep pixelforge_SOURCE_DIR | cut -d "=" -f2)
 else
     source_dir="$pwd"
 fi
@@ -401,7 +401,7 @@ if [ ! -d "$skia_dir" ] ; then
 fi
 
 # Only on Windows we need the Debug version of Skia to compile the
-# Debug version of Aseprite.
+# Debug version of PixelForge.
 if [[ $is_win && "$build_type" == "Debug" ]] ; then
     skia_library_dir="$skia_dir/out/Debug-x64"
 else
@@ -444,7 +444,7 @@ if [ ! -d "$skia_library_dir" ] ; then
     else
         echo "Please follow these instructions to compile Skia manually:"
         echo ""
-        echo "  https://github.com/aseprite/skia?tab=readme-ov-file#skia-for-aseprite-and-laf"
+        echo "  https://github.com/pixelforge/skia?tab=readme-ov-file#skia-for-pixelforge-and-laf"
         echo ""
         exit 1
     fi
@@ -474,7 +474,7 @@ if [ ! -f "$active_build_dir/ninja.build" ] ; then
         osx_deployment_target=
     fi
 
-    echo "Configuring Aseprite..."
+    echo "Configuring PixelForge..."
     if ! cmake -B "$active_build_dir" -S "$source_dir" -G Ninja \
          -DCMAKE_BUILD_TYPE=$build_type \
          $osx_deployment_target \
@@ -487,19 +487,19 @@ if [ ! -f "$active_build_dir/ninja.build" ] ; then
     fi
 fi
 echo "============================== BUILDING =============================="
-if ! cmake --build "$active_build_dir" -- aseprite | tee -a "$pwd/.build/log" ; then
-    echo "Error building Aseprite."
+if ! cmake --build "$active_build_dir" -- pixelforge | tee -a "$pwd/.build/log" ; then
+    echo "Error building PixelForge."
     exit 1
 fi
 
 echo "================================ DONE ================================"
 if [ $is_win ] ; then exe=.exe ; else exe= ; fi
-echo "Run Aseprite with the following command:"
+echo "Run PixelForge with the following command:"
 echo ""
-echo "  $active_build_dir/bin/aseprite$exe"
+echo "  $active_build_dir/bin/pixelforge$exe"
 echo ""
 
-# Run Aseprite in --auto mode
+# Run PixelForge in --auto mode
 if [[ $auto && ! $norun ]] ; then
-    $active_build_dir/bin/aseprite$exe
+    $active_build_dir/bin/pixelforge$exe
 fi

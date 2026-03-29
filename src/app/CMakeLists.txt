@@ -1,4 +1,4 @@
-# Aseprite
+# PixelForge
 # Copyright (C) 2018-2025  Igara Studio S.A.
 # Copyright (C) 2001-2018  David Capello
 
@@ -42,8 +42,8 @@ add_custom_command(
   DEPENDS ${GEN_DEP})
 list(APPEND generated_files ${output_fn})
 
-# Generate theme.xml.h from data/extensions/aseprite-theme/theme.xml
-set(theme_xml ${SOURCE_DATA_DIR}/extensions/aseprite-theme/theme.xml)
+# Generate theme.xml.h from data/extensions/pixelforge-theme/theme.xml
+set(theme_xml ${SOURCE_DATA_DIR}/extensions/pixelforge-theme/theme.xml)
 set(output_fn ${CMAKE_CURRENT_BINARY_DIR}/theme.xml.h)
 add_custom_command(
   OUTPUT ${output_fn}
@@ -759,7 +759,7 @@ if(ENABLE_DRM)
     -DENABLE_SAVE)
   target_sources(app-lib PRIVATE
     ui/enter_license.cpp
-    ui/aseprite_update.cpp)
+    ui/pixelforge_update.cpp)
 endif()
 
 target_link_libraries(app-lib
@@ -840,7 +840,7 @@ else()
   target_sources(app-lib PRIVATE send_crash.cpp)
 endif()
 
-# When we use the laf-dlgs-proc, aseprite depends on it to show the
+# When we use the laf-dlgs-proc, pixelforge depends on it to show the
 # native file dialog.
 if(LAF_WITH_DLGS_PROC)
   add_dependencies(app-lib laf-dlgs-proc)

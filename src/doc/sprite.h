@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
@@ -269,7 +269,7 @@ private:
   // Custom tile management plugin. This can be an ID that specifies
   // a custom plugin that will be used to handle tilesets and
   // tilemaps for this specific sprite. This property is saved
-  // inside .aseprite files (ASE_EXTERNAL_FILE_TILE_MANAGEMENT), and
+  // inside .pixelforge files (ASE_EXTERNAL_FILE_TILE_MANAGEMENT), and
   // it's used by the UI to disable the standard tileset/tilemap UX
   // (e.g. drag & drop tiles, or TilesetMode::Auto mode, etc.),
   // giving the possibility to handle tiles exclusively to a plugin.

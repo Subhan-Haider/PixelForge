@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2023-2024  Igara Studio S.A.
 // Copyright (C) 2016-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -164,7 +164,7 @@ void Strings::loadLanguage(const std::string& langId)
 
 void Strings::loadStringsFromDataDir(const std::string& langId)
 {
-  // Load the English language file from the Aseprite data directory (so we have the most update
+  // Load the English language file from the PixelForge data directory (so we have the most update
   // list of strings)
   LOG("I18N: Loading %s.ini file\n", langId.c_str());
   ResourceFinder rf;

@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -256,7 +256,7 @@ int App::initialize(const AppOptions& options)
 #if LAF_SKIA
   m_isGui = startGui;
 #else
-  // True if we should show a warning when running the main Aseprite
+  // True if we should show a warning when running the main PixelForge
   // executable (no test/benchmark) without args and the GUI is not
   // available.
   m_showCliOnlyWarning = (startGui && base::utf8_icmp(base::get_file_title(options.exeName()),
@@ -535,7 +535,7 @@ void App::run(const bool runGuiManager)
 #endif
 
 #if defined(_DEBUG) || defined(ENABLE_DEVMODE)
-    // On OS X, when we compile Aseprite on devmode, we're using it
+    // On OS X, when we compile PixelForge on devmode, we're using it
     // outside an app bundle, so we must active the app explicitly.
     os::System::instance()->activateApp();
 #endif
@@ -601,13 +601,13 @@ void App::run(const bool runGuiManager)
   }
 #if !LAF_SKIA
   else if (m_showCliOnlyWarning) {
-    std::printf("You have a CLI-only Aseprite version\n"
+    std::printf("You have a CLI-only PixelForge version\n"
                 "To enable GUI support build with LAF_BACKEND=skia\n");
   }
 #endif
 }
 
-// Finishes the Aseprite application.
+// Finishes the PixelForge application.
 App::~App()
 {
   try {
@@ -685,7 +685,7 @@ bool App::isPortable()
   static std::optional<bool> is_portable;
   if (!is_portable) {
     is_portable = base::is_file(
-      base::join_path(base::get_file_path(base::get_app_path()), "aseprite.ini"));
+      base::join_path(base::get_file_path(base::get_app_path()), "pixelforge.ini"));
   }
   return *is_portable;
 }

@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2018-2025  Igara Studio S.A. -->
 <gui i18nwarnings="false">
   <window id="zoo" text="Widget Zoo">
@@ -115,7 +115,7 @@
           <vbox expansive="true">
             <separator text="Labels" horizontal="true" />
             <label text="Normal Label" />
-            <link text="Link Label" url="https://www.aseprite.org/" />
+            <link text="Link Label" url="https://www.pixelforge.org/" />
           </vbox>
 
           <!-- Images -->

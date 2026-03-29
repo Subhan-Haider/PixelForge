@@ -1,4 +1,4 @@
-# Aseprite Config Library
+# PixelForge Config Library
 # Copyright (c) 2014-2016 David Capello
 
 add_library(cfg-lib cfg.cpp)

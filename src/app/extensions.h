@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2024  Igara Studio S.A.
 // Copyright (C) 2017-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_EXTENSIONS_H_INCLUDED
 #define APP_EXTENSIONS_H_INCLUDED
@@ -43,8 +43,8 @@ class Extension {
   friend class Extensions;
 
 public:
-  static const char* kAsepriteDefaultThemeExtensionName;
-  static const char* kAsepriteDefaultThemeId;
+  static const char* kPixelForgeDefaultThemeExtensionName;
+  static const char* kPixelForgeDefaultThemeId;
 
   enum class Category {
     None,

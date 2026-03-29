@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -69,7 +69,7 @@ protected:
   {
     // Convert the shortcut to a string, and parse it
     // again. Just to obtain the exact shortcut we'll read
-    // when we import the gui.xml file or an .aseprite-keys file.
+    // when we import the gui.xml file or an .pixelforge-keys file.
     m_shortcut = Shortcut(shortcut.toString());
 
     updateText();

@@ -1,0 +1,1590 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/pixelforge.exe"
+		},
+		{
+			"path" : "bin/pixelforge.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"add_dependencies",
+			"find_package",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt",
+			"src/app/CMakeLists.txt",
+			"third_party/IXWebSocket/CMakeLists.txt",
+			"src/doc/CMakeLists.txt",
+			"laf/gfx/CMakeLists.txt",
+			"laf/os/CMakeLists.txt",
+			"laf/text/CMakeLists.txt",
+			"src/ui/CMakeLists.txt",
+			"third_party/libwebp/CMakeLists.txt",
+			"laf/base/CMakeLists.txt",
+			"src/net/CMakeLists.txt",
+			"third_party/curl/lib/CMakeLists.txt",
+			"cmake/FindJpegTurbo.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 235,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 227,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 177,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 181,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 248,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 765,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 89,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 38,
+				"parent" : 12
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 159,
+				"parent" : 14
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 20,
+				"parent" : 16
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 64,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 799,
+				"parent" : 4
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 285,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 804,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 809,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 817,
+				"parent" : 4
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 113,
+				"parent" : 26
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 9,
+				"parent" : 28
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 96,
+				"parent" : 30
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 4,
+				"file" : 13,
+				"line" : 325,
+				"parent" : 32
+			},
+			{
+				"file" : 12,
+				"parent" : 33
+			},
+			{
+				"command" : 3,
+				"file" : 12,
+				"line" : 59,
+				"parent" : 34
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 228,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 332,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 217,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 261,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 238,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 260,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 271,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 281,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 293,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 322,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 345,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 349,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "app-lib::@ff93792cf40911dae1b8"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -MTd"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4244"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4267"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4355"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4710"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_SCL_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "CLIP_ENABLE_IMAGE=1"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 38,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_DATA_RECOVERY"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_NEWS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_SAVE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_SCRIPTING"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_UPDATER"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_WEBP"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_WEBSOCKET"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "FT_CONFIG_OPTION_SYSTEM_ZLIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "IXWEBSOCKET_USE_ZLIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_FREETYPE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_PIXMAN"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WINDOWS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WITH_CLIP"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WITH_REGION"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LUA_FLOORN2I=F2Ifloor"
+				},
+				{
+					"backtrace" : 40,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TINYXML2_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "WINVER=0x0A00"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/.."
+				},
+				{
+					"backtrace" : 50,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libwebp/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/harfbuzz/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/src/app"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/lua"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/IXWebSocket"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/doc/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake/../pixman/pixman"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/fixmath/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cityhash/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/dio/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/fmt/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/json11"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyexpr"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/qoi"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_SCL_SECURE_NO_WARNINGS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "CLIP_ENABLE_IMAGE=1"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 38,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_DATA_RECOVERY"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_NEWS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_SAVE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_SCRIPTING"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_UPDATER"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_WEBP"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "ENABLE_WEBSOCKET"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "FT_CONFIG_OPTION_SYSTEM_ZLIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "IXWEBSOCKET_USE_ZLIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_FREETYPE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_PIXMAN"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WINDOWS"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WITH_CLIP"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WITH_REGION"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LUA_FLOORN2I=F2Ifloor"
+				},
+				{
+					"backtrace" : 40,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TINYXML2_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "WINVER=0x0A00"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/.."
+				},
+				{
+					"backtrace" : 50,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libwebp/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/harfbuzz/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/src/app"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/lua"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/IXWebSocket"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/doc/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake/../pixman/pixman"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/fixmath/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cityhash/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/dio/.."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/fmt/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/json11"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyexpr"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/qoi"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/include"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "libjpeg-turbo-project::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "libcurl::@6b6918482087d6a4c893"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "pixman::@59f7bf2a05ee5b992ee8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cityhash::@bd438de7ab8f2037598b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-ft::@9cdced6a8055c596666c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "copy_data::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "obs::@79dc77650f17b54aa90f"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "app-lib::@ff93792cf40911dae1b8"
+		}
+	],
+	"id" : "pixelforge::@145eef247bfb46b6828c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -MTd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-LINK wsetargv.obj -ENTRY:\"wmainCRTStartup\"",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "lib\\app-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "lib\\lauxlib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "lib\\lualib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "lib\\lua.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib\\ixwebsocket.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "wsock32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\cfg-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\view-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\dio-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\filters-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\flic-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\tga-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\render-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\doc-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\fixmath-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "lib\\cityhash.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\laf-dlgs.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\ui-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\laf-text.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\laf-os.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\clip.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\laf-gfx.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "lib\\pixman.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "kernel32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "user32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "gdi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "comdlg32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "psapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "wininet.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "comctl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "dwmapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "msimg32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib\\laf-ft.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "lib\\obs.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\updater-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\ver-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\undo.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\cmark.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\TinyEXIFd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\tinyxml2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\giflib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "libjpeg-turbo\\lib\\jpeg-static.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\json11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\archive.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\fmtd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\tinyexpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "lib\\webpdemux.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "lib\\webpmux.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "lib\\webp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "ole32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "windowscodecs.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "lib\\freetyped.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "lib\\harfbuzz.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "lib\\freetyped.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "lib\\harfbuzz.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\libpng16_staticd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\zlibstaticd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "lib\\net-lib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib\\laf-base.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "shlwapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "dbghelp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "version.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "lib\\libcurl-d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "wldap32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "winmm.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "crypt32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "app-lib::@ff93792cf40911dae1b8"
+		}
+	],
+	"name" : "pixelforge",
+	"nameOnDisk" : "pixelforge.exe",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 36,
+			"id" : "copy_data::@145eef247bfb46b6828c"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/main/win/resources_win32.rc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/main/win/settings.manifest",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

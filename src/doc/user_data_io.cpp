@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2023-2025 Igara Studio S.A.
 // Copyright (c) 2001-2015 David Capello
 //
@@ -236,7 +236,7 @@ UserData read_user_data(std::istream& is, const SerialFormat serial)
   // 0xffffffff in 32-bit).
   if (!is.eof()) {
     userData.setColor(read32(is));
-    // When recovering a session from an old Aseprite version, we need
+    // When recovering a session from an old PixelForge version, we need
     // to skip reading the parts that it doesn't contains. Otherwise
     // it is very likely to fail.
     if (serial >= SerialFormat::Ver2) {

@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2017-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -52,8 +52,8 @@
 
 namespace app {
 
-const char* Extension::kAsepriteDefaultThemeExtensionName = "aseprite-theme";
-const char* Extension::kAsepriteDefaultThemeId = "default";
+const char* Extension::kPixelForgeDefaultThemeExtensionName = "pixelforge-theme";
+const char* Extension::kPixelForgeDefaultThemeId = "default";
 
 namespace {
 
@@ -294,7 +294,7 @@ void Extension::addLanguage(const std::string& id,
 
 void Extension::addTheme(const std::string& id, const std::string& path, const std::string& variant)
 {
-  if (id == kAsepriteDefaultThemeId && !isDefaultTheme())
+  if (id == kPixelForgeDefaultThemeId && !isDefaultTheme())
     return;
   m_themes[id] = ThemeInfo(path, variant);
   updateCategory(Category::Themes);
@@ -534,7 +534,7 @@ bool Extension::isCurrentTheme() const
 
 bool Extension::isDefaultTheme() const
 {
-  return (name() == kAsepriteDefaultThemeExtensionName);
+  return (name() == kPixelForgeDefaultThemeExtensionName);
 }
 
 void Extension::updateCategory(const Category newCategory)
@@ -1018,12 +1018,12 @@ ExtensionInfo Extensions::getCompressedExtensionInfo(const std::string& zipFn)
     if (err.empty()) {
       if (json["contributes"].is_object()) {
         auto themes = json["contributes"]["themes"];
-        if (json["name"].string_value() == Extension::kAsepriteDefaultThemeExtensionName)
+        if (json["name"].string_value() == Extension::kPixelForgeDefaultThemeExtensionName)
           info.defaultTheme = true;
         else {
           if (themes.is_array()) {
             for (int i = 0; i < themes.array_items().size(); i++) {
-              if (themes[i]["id"].string_value() == Extension::kAsepriteDefaultThemeId) {
+              if (themes[i]["id"].string_value() == Extension::kPixelForgeDefaultThemeId) {
                 info.defaultTheme = true;
                 break;
               }

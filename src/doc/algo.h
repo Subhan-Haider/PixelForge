@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (c) 2001-2018 David Capello
 //
@@ -24,7 +24,7 @@ typedef void (*AlgoLineWithAlgoPixel)(int x1, int y1, int x2, int y2, void* data
 // pixel block of lines where we'll have a number of lines/rows that
 // looks the same.
 //
-// Related to: https://github.com/aseprite/aseprite/issues/1395
+// Related to: https://github.com/pixelforge/pixelforge/issues/1395
 void algo_line_perfect(int x1, int y1, int x2, int y2, void* data, AlgoPixel proc);
 void algo_line_perfect_with_fix_for_line_brush(int x1,
                                                int y1,
@@ -38,8 +38,8 @@ void algo_line_perfect_with_fix_for_line_brush(int x1,
 // angle and the line will look continous).
 //
 // Related to:
-// https://community.aseprite.org/t/1045
-// https://github.com/aseprite/aseprite/issues/1894
+// https://community.pixelforge.org/t/1045
+// https://github.com/pixelforge/pixelforge/issues/1894
 void algo_line_continuous(int x1, int y1, int x2, int y2, void* data, AlgoPixel proc);
 void algo_line_continuous_with_fix_for_line_brush(int x1,
                                                   int y1,

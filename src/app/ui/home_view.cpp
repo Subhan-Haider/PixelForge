@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -44,7 +44,7 @@
 #endif
 
 #ifdef ENABLE_DRM
-  #include "aseprite_update.h"
+  #include "pixelforge_update.h"
   #include "drm/drm.h"
 #endif
 
@@ -305,7 +305,7 @@ void HomeView::onNewUpdate(const std::string& url, const std::string& version)
   {
     checkUpdate()->setUrl("");
     checkUpdate()->Click.connect([version] {
-      app::AsepriteUpdate dlg(version);
+      app::PixelForgeUpdate dlg(version);
       dlg.openWindowInForeground();
     });
   }

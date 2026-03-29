@@ -2,8 +2,8 @@
 # Copyright (C) 2018 Igara Studio S.A.
 # Copyright (C) 2018 David Capello
 
-if [[ "$ASEPRITE" == "" ]]; then
-    echo ASEPRITE env var must be pointing to the Aseprite executable
+if [[ "$PIXELFORGE" == "" ]]; then
+    echo PIXELFORGE env var must be pointing to the PixelForge executable
     exit 1
 fi
 
@@ -24,8 +24,8 @@ function expect() {
 
 # General information
 echo ----------------------------------------------------------------------
-echo $ASEPRITE --version
-$ASEPRITE --version
+echo $PIXELFORGE --version
+$PIXELFORGE --version
 
 filter="$*"
 if [[ "$filter" != "" ]]; then
@@ -40,14 +40,14 @@ else
     PWDARG=
 fi
 echo Temp dir: $t
-export ASEPRITE_USER_FOLDER=$t
+export PIXELFORGE_USER_FOLDER=$t
 
 if [[ "$filter" == "" ]] || [[ "console" =~ $filter ]]; then
     echo ----------------------------------------------------------------------
     echo "Testing console..."
     echo "uname=$(uname)"
 
-    $ASEPRITE -b --script scripts/console_assert.lua >$t/tmp 2>&1
+    $PIXELFORGE -b --script scripts/console_assert.lua >$t/tmp 2>&1
     ! grep -q "this should be in the output" $t/tmp && fail "print() text not found in output"
     ! grep -q "assertion failed" $t/tmp && fail "assert() text not found in output"
     grep -q "this should not be in the output" $t/tmp && fail "text that shouldn't be in the output is"
@@ -55,7 +55,7 @@ if [[ "$filter" == "" ]] || [[ "console" =~ $filter ]]; then
     if [[ "$(uname)" =~ "MINGW" ]] || [[ "$(uname)" =~ "MSYS" ]] ; then
         echo Ignore console tests on Windows
     else
-        $ASEPRITE -b --script scripts/console_print.lua >$t/tmp 2>&1
+        $PIXELFORGE -b --script scripts/console_print.lua >$t/tmp 2>&1
         echo -e "hello world\n1\t2\t3" >$t/tmp_expected
         ! diff -u $t/tmp $t/tmp_expected && fail
     fi
@@ -74,7 +74,7 @@ for script in scripts/*.lua ; do
         first=1
     fi
     echo "Running $script"
-    if ! $ASEPRITE -b --script $script >$t/tmp 2>&1 ; then
+    if ! $PIXELFORGE -b --script $script >$t/tmp 2>&1 ; then
         echo FAILED && cat $t/tmp
         result=1
     fi

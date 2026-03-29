@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_UI_MAP_ALGORITHM_SELECTOR_H_INCLUDED
 #define APP_UI_MAP_ALGORITHM_SELECTOR_H_INCLUDED

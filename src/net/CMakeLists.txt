@@ -1,4 +1,4 @@
-# Aseprite Network Library
+# PixelForge Network Library
 # Copyright (C) 2001-2016 David Capello
 
 add_library(net-lib

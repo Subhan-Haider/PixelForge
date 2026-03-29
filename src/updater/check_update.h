@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2001-2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef UPDATER_CHECK_UPDATE_H_INCLUDED
 #define UPDATER_CHECK_UPDATE_H_INCLUDED

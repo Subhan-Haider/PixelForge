@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2018-2025  Igara Studio S.A. -->
 <!-- Copyright (C) 2001-2018  David Capello -->
 <gui>
@@ -1078,9 +1078,8 @@
           <param name="filename" value="README.md" />
         </item>
         <separator />
-        <item command="Launch" text="@.help_quick_reference">
-          <param name="type" value="url" />
-          <param name="path" value="/quickref/" />
+        <item command="OpenBrowser" text="@.help_quick_reference" group="help_readme">
+          <param name="filename" value="QuickReference.md" />
         </item>
         <item command="Launch" text="@.help_documentation">
           <param name="type" value="url" />
@@ -1097,7 +1096,7 @@
         </item>
         <item command="Launch" text="@.help_twitter" group="help_news">
           <param name="type" value="url" />
-          <param name="path" value="http://twitter.com/aseprite" />
+          <param name="path" value="http://twitter.com/pixelforge" />
         </item>
         <separator id="enter_license_separator" />
         <item command="EnterLicense" id="enter_license" text="@.help_enter_license" group="help_enter_license" />

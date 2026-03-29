@@ -245,7 +245,7 @@ do
 
   -- Test that painting in the background layer with transparent color
   -- with alpha compositing and all opacity=255, will use the transparent
-  -- index anyway. Reported here: https://github.com/aseprite/aseprite/issues/3047
+  -- index anyway. Reported here: https://github.com/pixelforge/pixelforge/issues/3047
   app.useTool{ tool="pencil", color=0,
                points={ Point(0, 0) },
                ink=Ink.ALPHA_COMPOSITING,

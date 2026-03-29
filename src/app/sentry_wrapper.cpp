@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2021-2024  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -30,7 +30,7 @@ void Sentry::init()
   sentry_options_set_dsn(options, SENTRY_DSN);
   sentry_options_set_environment(options, SENTRY_ENV);
 
-  std::string release = "aseprite@";
+  std::string release = "pixelforge@";
   release += get_app_version();
 
   // Remove CPU architecture from the Sentry release version (as the
@@ -155,9 +155,9 @@ void Sentry::addBreadcrumb(const std::string& message,
 
 void Sentry::setupDirs(sentry_options_t* options)
 {
-  // The expected handler executable name is aseprite_crashpad_handler (.exe)
+  // The expected handler executable name is pixelforge_crashpad_handler (.exe)
   const std::string handler = base::join_path(base::get_file_path(base::get_app_path()),
-                                              "aseprite_crashpad_handler"
+                                              "pixelforge_crashpad_handler"
 #if LAF_WINDOWS
                                               ".exe"
 #endif

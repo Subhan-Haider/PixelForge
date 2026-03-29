@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef FILTERS_OUTLINE_FILTER_H_INCLUDED
 #define FILTERS_OUTLINE_FILTER_H_INCLUDED

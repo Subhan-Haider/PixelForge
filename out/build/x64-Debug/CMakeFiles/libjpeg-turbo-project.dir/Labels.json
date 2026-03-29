@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project-complete.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-build.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-configure.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-download.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-install.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-patch.rule"
+		},
+		{
+			"file" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libjpeg-turbo-project"
+		],
+		"name" : "libjpeg-turbo-project"
+	}
+}

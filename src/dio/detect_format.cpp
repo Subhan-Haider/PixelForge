@@ -1,4 +1,4 @@
-// Aseprite Document IO Library
+// PixelForge Document IO Library
 // Copyright (c) 2021-2023 Igara Studio S.A.
 // Copyright (c) 2016-2018 David Capello
 //
@@ -104,7 +104,7 @@ FileFormat detect_format_by_file_extension(const std::string& filename)
   // By extension
   const std::string ext = base::string_to_lower(base::get_file_extension(filename));
 
-  if (ext == "ase" || ext == "aseprite")
+  if (ext == "ase" || ext == "pixelforge")
     return FileFormat::ASE_ANIMATION;
 
   if (ext == "act")

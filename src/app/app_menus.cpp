@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -103,7 +103,7 @@ bool can_call_global_shortcut(const AppMenuItem::Native* native)
     // (e.g. Alt+S opens the Sprite menu, then 'S' key should execute
     // "Sprite Size" command in that menu, instead of Stroke command
     // which is in 'Edit > Stroke'). This is necessary in macOS, when
-    // the native menu + Aseprite pixel-art menus are enabled.
+    // the native menu + PixelForge pixel-art menus are enabled.
     (dynamic_cast<MenuBoxWindow*>(manager->getTopWindow()) == nullptr) &&
     // The focused widget cannot be an entry, because entry fields
     // prefer text input, so we cannot call shortcuts without
@@ -454,7 +454,7 @@ void AppMenus::reload()
   // Load user-defined keys
   {
     ResourceFinder rf;
-    rf.includeUserDir("user.aseprite-keys");
+    rf.includeUserDir("user.pixelforge-keys");
     std::string fn = rf.getFirstOrCreateDefault();
     if (base::is_file(fn))
       KeyboardShortcuts::instance()->importFile(fn, KeySource::UserDefined);

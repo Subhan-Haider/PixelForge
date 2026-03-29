@@ -1,4 +1,4 @@
-# Aseprite Code Generator
+# PixelForge Code Generator
 # Copyright (C) 2014-2017  David Capello
 
 add_executable(gen

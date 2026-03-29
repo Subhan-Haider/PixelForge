@@ -1,4 +1,4 @@
-# Aseprite TGA Library
+# PixelForge TGA Library
 # Copyright (C) 2020-2021  Igara Studio S.A.
 
 project(tga)

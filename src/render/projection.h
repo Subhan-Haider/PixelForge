@@ -1,4 +1,4 @@
-// Aseprite Render Library
+// PixelForge Render Library
 // Copyright (c) 2020-2025 Igara Studio S.A.
 // Copyright (c) 2016 David Capello
 //

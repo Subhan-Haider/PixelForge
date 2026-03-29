@@ -1,0 +1,7015 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/app-lib.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"find_package",
+			"add_definitions",
+			"target_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/app/CMakeLists.txt",
+			"cmake/FindJpegTurbo.cmake",
+			"CMakeLists.txt",
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 765,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 325,
+				"parent" : 3
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 59,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 181,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 804,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 809,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 817,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 332,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 37,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 217,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 749,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 119,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 172,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 154,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 182,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 261,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 238,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 260,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 271,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 281,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 293,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 322,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 345,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 349,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 30,
+				"parent" : 14
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 46,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 800,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 805,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 810,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 814,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 155,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 183,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 257,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 743,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 750,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 840,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libjpeg-turbo::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "qoi::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "harfbuzz::@aa03104ee3e644f23ad5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -MTd"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4244"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4267"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4355"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4710"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-D_SCL_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CLIP_ENABLE_IMAGE=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "ENABLE_DATA_RECOVERY"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "ENABLE_NEWS"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "ENABLE_SAVE"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "ENABLE_SCRIPTING"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "ENABLE_UPDATER"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "ENABLE_WEBP"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ENABLE_WEBSOCKET"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FT_CONFIG_OPTION_SYSTEM_ZLIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "IXWEBSOCKET_USE_ZLIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_FREETYPE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_PIXMAN"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_WINDOWS"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_WITH_CLIP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_WITH_REGION"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIBARCHIVE_STATIC"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "LUA_FLOORN2I=F2Ifloor"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "TINYXML2_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "WINVER=0x0A00"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/.."
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libwebp/src"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/harfbuzz/src"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/src/app"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/lua"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/IXWebSocket"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/laf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/laf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/doc/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake/../pixman/pixman"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/fixmath/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cityhash/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/dio/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/fmt/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/freetype2/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/cmark/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib/lib"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/json11"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libarchive/libarchive"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyexpr"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/qoi"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				62,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563,
+				564,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				591,
+				592,
+				593,
+				594,
+				595,
+				596,
+				597,
+				598,
+				599,
+				600,
+				601,
+				602,
+				603,
+				604,
+				605,
+				606,
+				607,
+				608,
+				609,
+				610,
+				611,
+				612,
+				613,
+				614,
+				615,
+				616,
+				617,
+				618,
+				619,
+				620,
+				621,
+				622,
+				623,
+				624,
+				625,
+				626,
+				627,
+				628,
+				629,
+				630,
+				631,
+				632,
+				633,
+				634,
+				635,
+				636,
+				637
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "libjpeg-turbo-project::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libcurl::@6b6918482087d6a4c893"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "pixman::@59f7bf2a05ee5b992ee8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cityhash::@bd438de7ab8f2037598b"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-ft::@9cdced6a8055c596666c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "obs::@79dc77650f17b54aa90f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"id" : "gen::@18a9f938be5a084dbe7c"
+		}
+	],
+	"id" : "app-lib::@ff93792cf40911dae1b8",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libjpeg-turbo::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "qoi::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "harfbuzz::@aa03104ee3e644f23ad5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libjpeg-turbo::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "qoi::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "harfbuzz::@aa03104ee3e644f23ad5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "lua::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lauxlib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "lualib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "ixwebsocket::@2f590a170ecad695d915"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cfg-lib::@966c34c89527338623a0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@2cdb2ba00d637d476427"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "view-lib::@e4ce8d5fc47ecc8ea676"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dio-lib::@a6a6409a9372d7156f79"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "filters-lib::@181d3b57cec35b312bf9"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "flic-lib::@1b906d2461f7a22ad640"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tga-lib::@ddc0ea9e0466ead7b428"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "render-lib::@e50e1ac4f031f1d89846"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-dlgs::@6c54dbc13735648e087f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-os::@c8ee9b5d88ae6a66d30a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-text::@71938121518a066ac5c4"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ui-lib::@e0ce1d6ecae3dc67b834"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "updater-lib::@2d57bb59d740bb6d9956"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "undo::@d24f66a4e40552e2e1d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cmark::@d5ce844cbe1bbb5f6849"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "giflib::@bc4d3ca2da1cb9e23e07"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libjpeg-turbo::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "json11::@9d343158384234a2f75c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "archive_static::@c150a1d5c40d7c3719cc"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@7291a5c2c450ae686be0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyexpr::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "qoi::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webp::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "webpdemux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "libwebpmux::@45530b8f45199147b659"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "freetype::@d5d4c537aff52f1ae29b"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "harfbuzz::@aa03104ee3e644f23ad5"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		}
+	],
+	"name" : "app-lib",
+	"nameOnDisk" : "app-lib.lib",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "gen::@18a9f938be5a084dbe7c"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/app",
+		"source" : "src/app"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				63,
+				64,
+				65
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				62,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563,
+				564,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				591,
+				592,
+				593,
+				594,
+				595,
+				596,
+				597,
+				598,
+				599,
+				600,
+				601,
+				602,
+				603,
+				604,
+				605,
+				606,
+				607,
+				608,
+				609,
+				610,
+				611,
+				612,
+				613,
+				614,
+				615,
+				616,
+				617,
+				618,
+				619,
+				620,
+				621,
+				622,
+				623,
+				624,
+				625,
+				626,
+				627,
+				628,
+				629,
+				630,
+				631,
+				632,
+				633,
+				634,
+				635,
+				636,
+				637
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				66,
+				638,
+				639,
+				640,
+				641,
+				642,
+				643,
+				644,
+				645,
+				646,
+				647,
+				648,
+				649,
+				650,
+				651,
+				652,
+				653,
+				654,
+				655,
+				656,
+				657,
+				658,
+				659,
+				660,
+				661,
+				662,
+				663,
+				664,
+				665,
+				666,
+				667,
+				668,
+				669,
+				670,
+				671,
+				672,
+				673,
+				674,
+				675,
+				676,
+				677,
+				678,
+				679,
+				680,
+				681,
+				682,
+				683,
+				684,
+				685,
+				686,
+				687,
+				688,
+				689,
+				690,
+				691,
+				692,
+				693,
+				694,
+				695,
+				696,
+				697,
+				698,
+				699,
+				701,
+				702
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				700,
+				703,
+				704
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/about.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/advanced_mode.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/ask_for_color_profile.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/brush_slot_params.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/canvas_size.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/cel_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/color_curve_point.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/color_mode.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/convolution_matrix.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/css_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/debugger.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/despeckle.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/duplicate_sprite.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/dynamics.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/enter_license.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/export_file.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/export_sprite_sheet.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/file_selector.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/font_popup.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/font_style.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/frame_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/gif_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/goto_frame.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/grid_settings.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/home_view.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/import_sprite_sheet.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/incompat_file.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/jpeg_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/keyboard_shortcuts.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/layer_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/modify_selection.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/new_folder_window.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/new_layer.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/new_layout.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/new_sprite.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/open_sequence.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/outline.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/palette_from_sprite.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/palette_popup.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/palette_size.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/paste_text.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/pixelforge_update.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/replace_color.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/run_command.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/script_access.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/select_shortcut.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/send_crash.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/slice_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/sprite_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/sprite_size.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/svg_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/tag_properties.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/tga_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/tileset_selector.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/tileset_selector_window.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/timeline_conf.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/undo_history.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/user_data.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/webp_options.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/zoo.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/pref.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/pref.xml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/theme.xml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/strings.ini.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/command_ids.ini.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/check-translations.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 40,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/fonts/font_path_win.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/crash/backup_observer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/crash/data_recovery.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/crash/read_document.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/crash/session.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/crash/write_document.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 41,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/data_recovery_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/ase_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/bmp_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/css_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/fli_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/gif_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/ico_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/jpeg_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/pcx_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/png_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/qoi_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/svg_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/tga_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 43,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/webp_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/websocket_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_developer_console.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_script_folder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_run_script.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/debugger.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_command_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_clipboard_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_fs_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_os_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/app_theme_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/brush_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/canvas_widget.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/cel_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/cels_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/color_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/color_space_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/dialog_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/editor_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/engine.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/events_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/frame_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/frames_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/graphics_context.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/grid_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/image_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/image_iterator_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/image_spec_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/images_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/json_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/keys.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/layer_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/layers_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/luacpp.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/palette_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/palettes_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/pixel_color_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/plugin_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/point_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/preferences_object.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/properties_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/range_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/rectangle_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/require.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/script_input_chain.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/security.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/selection_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/site_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/size_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/slice_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/slices_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/sprite_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/sprites_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tabs_widget.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tag_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tags_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tile_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tileset_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tilesets_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/timer_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/tool_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/uuid_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/values.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/version_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/script/window_class.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/shell.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/devconsole_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/active_site_handler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/app.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/app_brushes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/app_menus.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/check_update.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cli/app_options.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cli/cli_open_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cli/cli_processor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cli/default_cli_delegate.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cli/preview_cli_delegate.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/closed_docs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_slice.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_tile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/add_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/assign_color_profile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/background_from_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/clear_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/clear_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/clear_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/clear_rect.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/clear_slices.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/configure_background.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/convert_color_profile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/copy_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/copy_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/copy_rect.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/copy_region.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/crop_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/deselect_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/flatten_layers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/flip_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/flip_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/flip_masked_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/layer_from_background.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/move_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/move_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/patch_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remap_colors.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remap_tilemaps.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remap_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_slice.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_tile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/remove_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/replace_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/replace_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/reselect_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_bounds.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_data.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_opacity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_position.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_cel_zindex.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_frame_duration.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_grid_bounds.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_last_point.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_layer_blend_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_layer_flags.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_layer_name.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_layer_opacity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_layer_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_mask_position.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_pixel_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_pixel_ratio.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_slice_key.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_slice_name.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_sprite_size.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_sprite_tile_management_plugin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tag_anidir.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tag_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tag_name.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tag_range.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tag_repeat.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tile_data.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tile_data_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tile_data_property.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tileset_base_index.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tileset_match_flags.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_tileset_name.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_total_frames.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_transparent_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_user_data.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_user_data_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/set_user_data_property.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/shift_masked_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/trim_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/unlink_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_document.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_slice.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_sprite.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd/with_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd_sequence.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/cmd_transaction.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/color_picker.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/color_spaces.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/color_utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/apply.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_about.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_add_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_advanced_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_background_from_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_cancel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_canvas_size.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_cel_opacity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_cel_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_change_brush.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_change_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_change_pixel_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_clear.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_clear_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_clear_recent_files.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_close_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_color_quantization.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_contiguous_fill.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_copy.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_copy_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_copy_merged.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_crop.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_cut.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_deselect_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_discard_brush.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_duplicate_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_duplicate_slice.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_duplicate_sprite.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_duplicate_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_enter_license.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_exit.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_export_sprite_sheet.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_eyedropper.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_fill_and_stroke.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_fit_screen.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_flatten_layers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_flip.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_frame_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_frame_tag_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_fullscreen_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_fullscreen_preview.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_goto_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_goto_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_goto_tab.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_grid.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_home.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_import_sprite_sheet.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_invert_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_keyboard_shortcuts.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_launch.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_layer_from_background.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_layer_lock.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_layer_opacity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_layer_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_layer_visibility.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_link_cels.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_load_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_load_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_mask_all.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_mask_by_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_mask_content.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_merge_down_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_modify_selection.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_move_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_move_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_brush.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_frame_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_new_sprite_from_selection.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_onionskin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_browser.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_group.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_in_folder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_open_with_app.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_options.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_palette_editor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_palette_size.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_paste.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_paste_text.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_pixel_perfect_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_play_animation.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_refresh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_remove_frame.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_remove_frame_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_remove_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_remove_slice.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_reopen_closed_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_repeat_last_export.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_reselect_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_reverse_frames.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_rotate.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_run_command.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_save_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_save_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_save_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_scroll.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_scroll_center.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_select_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_select_tile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_color_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_ink_type.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_loop_section.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_palette.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_palette_entry_size.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_set_same_ink.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_show.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_slice_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_sprite_properties.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_sprite_size.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_swap_checkerboard_colors.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_switch_colors.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_symmetry_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_tiled_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_timeline.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_toggle_preview.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_toggle_tiles_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_toggle_timeline_thumbnails.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_undo.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_undo_history.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_unlink_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_widget_zoo.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/cmd_zoom.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/command.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/commands.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/convert_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/copy_path.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/export_tileset.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_brightness_contrast.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_color_curve.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_convolution_matrix.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_despeckle.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_hue_saturation.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_invert_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_outline.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/cmd_replace_color.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/color_curve_editor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/convolution_matrix_stock.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/filter_manager_impl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/filter_preview.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/filter_target_buttons.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/filter_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/filters/filter_worker.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/move_colors_command.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/move_thing.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/move_tiles_command.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/new_params.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/quick_command.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/screenshot.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/set_playback_speed.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/show_menu.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/solo_layer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/tileset_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/toggle_other_layers_opacity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/toggle_play_option.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/commands/toggle_workspace_layout.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/console.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/context.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/context_flags.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_api.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_api_dnd_helper.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_diff.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_exporter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_range_ops.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/doc_undo.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/docs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/extensions.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/extra_cel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/file_data.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/file_format.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/file_formats_manager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/file_op_config.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/palette_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file/split_filename.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/file_system.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/filename_formatter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/flatten.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/fonts/font_data.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/fonts/font_info.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/fonts/font_path.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/fonts/fonts.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/gui_xml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/i18n/strings.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/i18n/xml_translator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ini_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/job.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/launcher.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/load_matrix.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/log.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/loop_tag.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/modules.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/modules/gfx.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/modules/gui.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/modules/palettes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/pref/preferences.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/recent_files.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/render/shader_renderer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/render/simple_renderer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/res/palettes_loader_delegate.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/res/resources_loader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/resource_finder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/restore_visible_layers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/shade.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/site.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/snap_to_grid.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/sprite_job.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/task.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/thumbnail_generator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/thumbnails.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/active_tool.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/ink_type.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/intertwine.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/pick_ink.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/point_shape.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/stroke.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/symmetry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/tool_box.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/tool_loop_manager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/tools/velocity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/transaction.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/transformation.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/alpha_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/alpha_slider.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/app_menuitem.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/backup_indicator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/best_fit_criteria_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/browser_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/brush_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/button_set.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_bar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_button.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_shades.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_sliders.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_spectrum.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_tint_shade_tone.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/color_wheel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/configure_timeline_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/context_bar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/dithering_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/doc_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/dock.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/drop_down_button.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/dynamics_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/brush_preview.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/delayed_mouse_move.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/dragging_value_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/drawing_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/editor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/editor_observers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/editor_render.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/editor_states_history.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/editor_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/moving_cel_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/moving_pixels_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/moving_selection_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/moving_slice_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/moving_symmetry_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/navigate_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/pivot_helpers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/pixels_movement.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/play_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/scrolling_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/select_box_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/select_text_box_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/standby_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/state_with_wheel_behavior.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/tool_loop_impl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/transform_handles.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/writing_text_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/editor/zooming_state.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/export_file_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/expr_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/file_list.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/file_list_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/file_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/filename_field.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/font_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/font_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/hex_color_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/home_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/icon_button.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/incompat_file_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/input_chain.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/key.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/keyboard_shortcuts.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/layer_frame_comboboxes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/layout.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/layouts.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/layout_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/main_menu_bar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/main_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/mini_help_button.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/notifications.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/optional_alert.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/palette_popup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/palette_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/palettes_listbox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/popup_window_pin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/pref_widget.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/preview_editor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/recent_listbox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/resources_listbox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/rgbmap_algorithm_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/sampling_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/search_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/select_shortcut.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/selection_mode_field.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/skin/skin_part.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/skin/skin_property.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/skin/skin_slider_property.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/skin/skin_theme.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/slice_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/slider2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/status_bar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/tabs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/tag_window.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/task_widget.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/tile_button.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/tileset_selector.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/timeline/ani_controls.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/timeline/doc_providers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/timeline/timeline.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/toolbar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/user_data_view.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/window_with_hand.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/workspace.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/workspace_panel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/workspace_tabs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/zoom_entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui_context.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/autocrop.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/buffer_region.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/cel_ops.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/clipboard.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/clipboard_native.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/conversion_to_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/conversion_to_surface.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/expand_cel_canvas.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/filetoks.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/layer_boundaries.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/layer_utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/msk_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/new_image_from_mask.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/open_file_job.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/pal_ops.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/pic_file.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/pixel_ratio.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/readable_time.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/render_text.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/resize_image.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/shader_helpers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/slice_utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/tile_flags_utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/tiled_mode.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/tileset_utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/util/wrap_point.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/widget_loader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/xml_document.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/xml_exception.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/win/file_associations.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/win/thumbnails.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/res/http_loader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ui/news_listbox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 49,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/send_crash.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/about.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/advanced_mode.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/ask_for_color_profile.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/brush_slot_params.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/canvas_size.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/cel_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/color_curve_point.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/color_mode.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/convolution_matrix.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/css_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/debugger.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/despeckle.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/duplicate_sprite.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/dynamics.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/enter_license.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/export_file.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/export_sprite_sheet.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/file_selector.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/font_popup.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/font_style.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/frame_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/gif_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/goto_frame.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/grid_settings.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/home_view.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/import_sprite_sheet.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/incompat_file.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/jpeg_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/keyboard_shortcuts.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/layer_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/modify_selection.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/new_folder_window.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/new_layer.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/new_layout.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/new_sprite.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/open_sequence.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/outline.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/palette_from_sprite.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/palette_popup.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/palette_size.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/paste_text.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/pixelforge_update.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/replace_color.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/run_command.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/script_access.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/select_shortcut.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/send_crash.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/slice_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/sprite_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/sprite_size.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/svg_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/tag_properties.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/tga_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/tileset_selector.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/tileset_selector_window.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/timeline_conf.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/undo_history.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/user_data.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/webp_options.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/widgets/zoo.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/pref.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/pref.xml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/extensions/pixelforge-theme/theme.xml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "data/strings/en.ini",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/command_ids.ini.h.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/src/app/check-translations.txt.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

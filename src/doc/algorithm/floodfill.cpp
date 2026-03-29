@@ -2,7 +2,7 @@
 // By Shawn Hargreaves.
 //
 // Changes by David Capello:
-// - Adapted to Aseprite
+// - Adapted to PixelForge
 // - Added non-contiguous mode
 // - Added mask parameter
 //

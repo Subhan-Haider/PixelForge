@@ -1,0 +1,11 @@
+
+set(ENABLE_SHARED "OFF" CACHE BOOL "Initial cache" FORCE)
+set(ENABLE_STATIC "ON" CACHE BOOL "Initial cache" FORCE)
+set(WITH_ARITH_DEC "ON" CACHE BOOL "Initial cache" FORCE)
+set(WITH_ARITH_ENC "ON" CACHE BOOL "Initial cache" FORCE)
+set(WITH_JPEG8 "OFF" CACHE BOOL "Initial cache" FORCE)
+set(WITH_JPEG7 "OFF" CACHE BOOL "Initial cache" FORCE)
+set(WITH_TURBOJPEG "OFF" CACHE BOOL "Initial cache" FORCE)
+set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Initial cache" FORCE)
+set(CMAKE_INSTALL_PREFIX "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo" CACHE PATH "Initial cache" FORCE)
+set(CMAKE_INSTALL_LIBDIR "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/lib" CACHE PATH "Initial cache" FORCE)

@@ -1,0 +1,128 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"laf_add_example"
+		],
+		"files" : 
+		[
+			"laf/examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 8
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "base64::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "listscreens::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "show_platform::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "listfonts::@1295d8487ec92fd2e14e"
+		}
+	],
+	"id" : "laf-examples::@1295d8487ec92fd2e14e",
+	"name" : "laf-examples",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "base64::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "listscreens::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "show_platform::@1295d8487ec92fd2e14e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "listfonts::@1295d8487ec92fd2e14e"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "laf/examples",
+		"source" : "laf/examples"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

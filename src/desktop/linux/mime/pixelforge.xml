@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="image/x-pixelforge">
+         <comment xml:lang="en">PixelForge Pixel Art</comment>
+         <magic priority="50">
+                <match type="little16" value="0xA5E0" offset="4"/>
+         </magic>
+         <glob pattern="*.ase"/>
+         <glob pattern="*.pixelforge"/>
+        <icon name="pixelforge"/>
+  </mime-type>
+</mime-info>

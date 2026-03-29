@@ -1,4 +1,4 @@
-// Aseprite UI Library
+// PixelForge UI Library
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2017  David Capello
 //

@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2001-2017 David Capello
 //
 // This file is released under the terms of the MIT license.
@@ -22,7 +22,7 @@ enum class BlendMode {
   BLUE_TINT = -6,
   DST_OVER = -7,
 
-  // Aseprite (.ase files) blend modes
+  // PixelForge (.ase files) blend modes
   NORMAL = 0,
   MULTIPLY = 1,
   SCREEN = 2,

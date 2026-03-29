@@ -1,4 +1,4 @@
-// Aseprite Document IO Library
+// PixelForge Document IO Library
 // Copyright (c) 2021 Igara Studio S.A.
 // Copyright (c) 2017 David Capello
 //
@@ -7,7 +7,7 @@
 
 #include "dio/decode_file.h"
 
-#include "dio/aseprite_decoder.h"
+#include "dio/pixelforge_decoder.h"
 #include "dio/decoder.h"
 #include "dio/detect_format.h"
 #include "dio/file_interface.h"
@@ -30,7 +30,7 @@ bool decode_file(DecodeDelegate* delegate, FileInterface* f)
   Decoder* decoder = nullptr;
 
   switch (format) {
-    case FileFormat::ASE_ANIMATION: decoder = new AsepriteDecoder; break;
+    case FileFormat::ASE_ANIMATION: decoder = new PixelForgeDecoder; break;
   }
 
   bool result = false;

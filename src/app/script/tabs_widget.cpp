@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (c) 2022-2024  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #include "app/script/tabs_widget.h"
 #include "tabs_widget.h"

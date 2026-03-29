@@ -1,4 +1,4 @@
-// Aseprite UI Library
+// PixelForge UI Library
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
@@ -104,7 +104,7 @@ public:
 
 private:
   // True if we should open top-level menus with Alt+mnemonic (this
-  // flag is not used by Aseprite), top-level menus are opened with
+  // flag is not used by PixelForge), top-level menus are opened with
   // the ShowMenu command now.
   bool m_processTopLevelShortcuts;
   static bool m_expandOnMouseover;

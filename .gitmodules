@@ -1,83 +1,83 @@
 [submodule "third_party/pixman"]
 	path = third_party/pixman
-	url = https://github.com/aseprite/pixman.git
+	url = https://github.com/pixelforge/pixman.git
 [submodule "third_party/simpleini"]
 	path = third_party/simpleini
-	url = https://github.com/aseprite/simpleini.git
+	url = https://github.com/pixelforge/simpleini.git
 [submodule "third_party/libwebp"]
 	path = third_party/libwebp
-	url = https://github.com/aseprite/libwebp.git
+	url = https://github.com/pixelforge/libwebp.git
 [submodule "src/flic"]
 	path = src/flic
-	url = https://github.com/aseprite/flic.git
+	url = https://github.com/pixelforge/flic.git
 [submodule "third_party/freetype2"]
 	path = third_party/freetype2
-	url = https://github.com/aseprite/freetype2.git
+	url = https://github.com/pixelforge/freetype2.git
 	ignore = dirty
 [submodule "third_party/zlib"]
 	path = third_party/zlib
-	url = https://github.com/aseprite/zlib.git
+	url = https://github.com/pixelforge/zlib.git
 	ignore = dirty
 [submodule "third_party/libpng"]
 	path = third_party/libpng
-	url = https://github.com/aseprite/libpng.git
+	url = https://github.com/pixelforge/libpng.git
 [submodule "src/observable"]
 	path = src/observable
-	url = https://github.com/aseprite/observable.git
+	url = https://github.com/pixelforge/observable.git
 [submodule "src/undo"]
 	path = src/undo
-	url = https://github.com/aseprite/undo.git
+	url = https://github.com/pixelforge/undo.git
 [submodule "laf"]
 	path = laf
-	url = https://github.com/aseprite/laf.git
+	url = https://github.com/pixelforge/laf.git
 [submodule "third_party/cmark"]
 	path = third_party/cmark
-	url = https://github.com/aseprite/cmark.git
+	url = https://github.com/pixelforge/cmark.git
 [submodule "third_party/harfbuzz"]
 	path = third_party/harfbuzz
-	url = https://github.com/aseprite/harfbuzz.git
+	url = https://github.com/pixelforge/harfbuzz.git
 [submodule "third_party/libarchive"]
 	path = third_party/libarchive
-	url = https://github.com/aseprite/libarchive.git
+	url = https://github.com/pixelforge/libarchive.git
 [submodule "third_party/json11"]
 	path = third_party/json11
-	url = https://github.com/aseprite/json11.git
+	url = https://github.com/pixelforge/json11.git
 [submodule "third_party/benchmark"]
 	path = third_party/benchmark
-	url = https://github.com/aseprite/benchmark.git
+	url = https://github.com/pixelforge/benchmark.git
 [submodule "third_party/giflib"]
 	path = third_party/giflib
-	url = https://github.com/aseprite/giflib.git
+	url = https://github.com/pixelforge/giflib.git
 [submodule "third_party/fmt"]
 	path = third_party/fmt
-	url = https://github.com/aseprite/fmt.git
+	url = https://github.com/pixelforge/fmt.git
 [submodule "third_party/tinyexpr"]
 	path = third_party/tinyexpr
-	url = https://github.com/aseprite/tinyexpr.git
+	url = https://github.com/pixelforge/tinyexpr.git
 [submodule "third_party/lua"]
 	path = third_party/lua
-	url = https://github.com/aseprite/lua
+	url = https://github.com/pixelforge/lua
 [submodule "src/tga"]
 	path = src/tga
-	url = https://github.com/aseprite/tga.git
+	url = https://github.com/pixelforge/tga.git
 [submodule "third_party/curl"]
 	path = third_party/curl
-	url = https://github.com/aseprite/curl.git
+	url = https://github.com/pixelforge/curl.git
 [submodule "third_party/IXWebSocket"]
 	path = third_party/IXWebSocket
-	url = https://github.com/aseprite/IXWebSocket.git
+	url = https://github.com/pixelforge/IXWebSocket.git
 [submodule "third_party/cityhash"]
 	path = third_party/cityhash
-	url = https://github.com/aseprite/cityhash.git
+	url = https://github.com/pixelforge/cityhash.git
 [submodule "src/psd"]
 	path = src/psd
-	url = https://github.com/aseprite/psd.git
+	url = https://github.com/pixelforge/psd.git
 [submodule "third_party/qoi"]
 	path = third_party/qoi
-	url = https://github.com/aseprite/qoi.git
+	url = https://github.com/pixelforge/qoi.git
 [submodule "third_party/tinyxml2"]
 	path = third_party/tinyxml2
-	url = https://github.com/aseprite/tinyxml2.git
+	url = https://github.com/pixelforge/tinyxml2.git
 [submodule "third_party/TinyEXIF"]
 	path = third_party/TinyEXIF
-	url = https://github.com/aseprite/TinyEXIF.git
+	url = https://github.com/pixelforge/TinyEXIF.git

@@ -74,7 +74,7 @@ end
 
 -- Test crash setting fields (index out of bounds, or setting a field
 -- in an array object, etc.).
--- https://github.com/aseprite/aseprite/issues/4166
+-- https://github.com/pixelforge/pixelforge/issues/4166
 do
   local o = json.decode('{"a":[10,20,30]}')
   assert(#o == 1)

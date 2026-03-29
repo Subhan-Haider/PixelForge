@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (C) 2019-2024  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.
@@ -15,7 +15,7 @@
 
 namespace doc {
 
-// Tileset serialization format. This field didn't exist in Aseprite
+// Tileset serialization format. This field didn't exist in PixelForge
 // v1.3-alpha3 (so read8() fails = 0)
 enum class TilesetSerialFormat : uint8_t {
   // Without version field.

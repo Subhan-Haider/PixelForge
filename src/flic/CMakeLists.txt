@@ -1,4 +1,4 @@
-# Aseprite FLIC Library
+# PixelForge FLIC Library
 # Copyright (c) 2021 Igara Studio S.A.
 # Copyright (c) 2015 David Capello
 

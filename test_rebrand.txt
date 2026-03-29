@@ -1,0 +1,4 @@
+This is PixelForge.
+pixelforge is awesome.
+PIXELFORGE is loud.
+File: pixelforge_test.txt

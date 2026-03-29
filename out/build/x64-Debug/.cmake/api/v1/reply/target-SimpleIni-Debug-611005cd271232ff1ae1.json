@@ -1,0 +1,41 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"third_party/simpleini/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "SimpleIni::@2f1609ad09a93fdc5159",
+	"name" : "SimpleIni",
+	"paths" : 
+	{
+		"build" : "third_party/simpleini",
+		"source" : "third_party/simpleini"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

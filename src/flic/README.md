@@ -1,10 +1,10 @@
-# Aseprite FLIC Library
+# PixelForge FLIC Library
 
-[![build](https://github.com/aseprite/flic/actions/workflows/build.yml/badge.svg)](https://github.com/aseprite/flic/actions/workflows/build.yml)
+[![build](https://github.com/pixelforge/flic/actions/workflows/build.yml/badge.svg)](https://github.com/pixelforge/flic/actions/workflows/build.yml)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Library to read/write [Animator Pro FLI/FLC files](https://en.wikipedia.org/wiki/FLIC_(file_format)).
-Tested with [libfuzzer](https://github.com/aseprite/fuzz).
+Tested with [libfuzzer](https://github.com/pixelforge/fuzz).
 
 ## Read File Example
 

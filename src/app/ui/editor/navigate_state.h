@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2022  Igara Studio S.A.
 // Copyright (C) 2001-2015  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_UI_EDITOR_NAVIGATE_STATE_H_INCLUDED
 #define APP_UI_EDITOR_NAVIGATE_STATE_H_INCLUDED

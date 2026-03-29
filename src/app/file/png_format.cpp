@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2022  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -167,7 +167,7 @@ bool PngFormat::onLoad(FileOp* fop)
 
   // Do don't check if the sRGB color profile is valid, it gives
   // problems with sRGB IEC61966-2.1 color profile from Photoshop.
-  // See this thread: https://community.aseprite.org/t/2656
+  // See this thread: https://community.pixelforge.org/t/2656
   png_set_option(png, PNG_SKIP_sRGB_CHECK_PROFILE, PNG_OPTION_ON);
 
   // Set a function to read user data chunks
@@ -751,7 +751,7 @@ void PngFormat::saveColorSpace(png_structp png_ptr,
 {
   switch (colorSpace->type()) {
     case gfx::ColorSpace::None:
-      // Do just nothing (png file without profile, like old Aseprite versions)
+      // Do just nothing (png file without profile, like old PixelForge versions)
       break;
 
     case gfx::ColorSpace::sRGB:

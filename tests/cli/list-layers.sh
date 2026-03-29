@@ -2,9 +2,9 @@
 # Copyright (C) 2018 Igara Studio S.A.
 
 expect "bg
-fg" "$ASEPRITE -b --list-layers sprites/1empty3.aseprite"
+fg" "$PIXELFORGE -b --list-layers sprites/1empty3.pixelforge"
 
 expect "a
 b
 c
-d" "$ASEPRITE -b --list-layers sprites/abcd.aseprite"
+d" "$PIXELFORGE -b --list-layers sprites/abcd.pixelforge"

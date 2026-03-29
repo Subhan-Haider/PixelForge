@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2022-2023  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_RENDER_SIMPLE_RENDERER_H_INCLUDED
 #define APP_RENDER_SIMPLE_RENDERER_H_INCLUDED
@@ -12,7 +12,7 @@
 
 namespace app {
 
-// Represents the way to render sprites on Aseprite (Old and "New")
+// Represents the way to render sprites on PixelForge (Old and "New")
 // which use the render::Render class to render sprites with the
 // CPU-only.
 class SimpleRenderer : public Renderer {

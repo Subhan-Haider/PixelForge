@@ -1,7 +1,7 @@
 GIMP Palette File Format Extension
 ====================================================
 
-Aseprite can load/save GIMP Palettes (`.gpl` files) extended with
+PixelForge can load/save GIMP Palettes (`.gpl` files) extended with
 alpha information using the following format:
 
 ```
@@ -22,5 +22,5 @@ You must specify `Channels: RGBA` in the header and then each entry
 must contain an extra alpha value. There are no plans to provide a
 different value for `Channels` properties.
 
-Note that this is an Aseprite extension, GIMP does not support
+Note that this is an PixelForge extension, GIMP does not support
 palettes with alpha values.

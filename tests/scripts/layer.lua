@@ -33,11 +33,11 @@ do
   s.useLayerUuids = true
 
   assert(s.useLayerUuids == true)
-  s.filename = "_test_layer_uuid.aseprite"
+  s.filename = "_test_layer_uuid.pixelforge"
   app.command.SaveFile()
   app.command.CloseFile()
 
-  app.command.OpenFile { filename = "_test_layer_uuid.aseprite" }
+  app.command.OpenFile { filename = "_test_layer_uuid.pixelforge" }
   assert(app.sprite.useLayerUuids == true)
   assert(app.sprite.layers[1].uuid == uuid)
 end
@@ -51,11 +51,11 @@ do
   local uuid = l.uuid
   assert(uuid ~= nil)
 
-  s.filename = "_test_layer_uuid_2.aseprite"
+  s.filename = "_test_layer_uuid_2.pixelforge"
   app.command.SaveFile()
   app.command.CloseFile()
 
-  app.command.OpenFile { filename = "_test_layer_uuid_2.aseprite" }
+  app.command.OpenFile { filename = "_test_layer_uuid_2.pixelforge" }
   assert(app.sprite.useLayerUuids == false)
   -- UUIDs are not equal because it was not saved due to useLayerUuids being
   -- disabled at the time of saving the file.

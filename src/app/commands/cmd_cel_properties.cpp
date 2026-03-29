@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -188,7 +188,7 @@ private:
     m_timer.stop();
 
     const int newOpacity = opacityValue();
-    // Clamp z-index to the limits of the .aseprite specs
+    // Clamp z-index to the limits of the .pixelforge specs
     const int newZIndex = std::clamp<int>(zindexValue(),
                                           std::numeric_limits<int16_t>::min(),
                                           std::numeric_limits<int16_t>::max());

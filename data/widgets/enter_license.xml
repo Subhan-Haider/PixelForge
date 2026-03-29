@@ -1,11 +1,11 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (c) 2021  Igara Studio S.A. -->
 <gui i18nwarnings="false">
   <window id="enter_license" text="@.title" expansive="true">
     <box vertical="true">
       <hbox>
         <label text="@.default_message" />
-        <link text="https://www.aseprite.org/download/" url="https://www.aseprite.org/download/" />
+        <link text="https://www.pixelforge.org/download/" url="https://www.pixelforge.org/download/" />
       </hbox>
       <separator text="@.license_key" left="true" horizontal="true" />
       <entry id="license_key" cell_align="horizontal" magnet="true" maxsize="17" />

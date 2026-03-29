@@ -6,7 +6,7 @@
 local red = Color{ r=255, g=0, b=0 }
 local blue = Color{ r=0, g=0, b=255 }
 
--- Reproduces the bug reported in https://community.aseprite.org/t/2894
+-- Reproduces the bug reported in https://community.pixelforge.org/t/2894
 do
   local s = Sprite(32, 32)
   local a = s.layers[1]

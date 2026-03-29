@@ -1,4 +1,4 @@
-// Aseprite Code Generator
+// PixelForge Code Generator
 // Copyright (C) 2014-2015  David Capello
 //
 // This file is released under the terms of the MIT license.

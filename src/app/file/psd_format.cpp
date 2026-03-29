@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2021  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #include "app/file/file.h"
 #include "app/file/file_format.h"

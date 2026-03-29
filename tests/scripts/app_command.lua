@@ -42,7 +42,7 @@ do -- NewSprite
 end
 
 do -- ExportSpriteSheet
-  local s = Sprite{ fromFile="sprites/2f-index-3x3.aseprite" }
+  local s = Sprite{ fromFile="sprites/2f-index-3x3.pixelforge" }
   app.command.ExportSpriteSheet {
     type="horizontal",
     textureFilename="_test_export_spritesheet1.png",
@@ -55,7 +55,7 @@ do -- ExportSpriteSheet
     11,8,11,21,11,11,8,
   })
 
-  local s = Sprite{ fromFile="sprites/4f-index-4x4.aseprite" }
+  local s = Sprite{ fromFile="sprites/4f-index-4x4.pixelforge" }
   app.command.ExportSpriteSheet {
     type=SpriteSheetType.PACKED,
     textureFilename="_test_export_spritesheet2.png",
@@ -100,7 +100,7 @@ do -- ExportSpriteSheet
     0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,
   })
 
-  local s = Sprite{ fromFile="sprites/groups3abc.aseprite" }
+  local s = Sprite{ fromFile="sprites/groups3abc.pixelforge" }
   local c = app.pixelColor.rgba(75, 105, 47)
   app.command.ExportSpriteSheet {
     type=SpriteSheetType.ROWS,
@@ -541,7 +541,7 @@ do -- HueSaturation
 
   -- Test HueSaturation filter in Add mode with mask color
   -- do not result in colors with 'Alpha = 0' and 'RGB != 0'
-  -- https://github.com/aseprite/aseprite/issues/5548
+  -- https://github.com/pixelforge/pixelforge/issues/5548
   i:drawPixel(0, 0, Color(0, 0, 0, 0).rgbaPixel)
   app.command.HueSaturation{ mode="hsv_add",
                              value=3 }

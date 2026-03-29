@@ -1,4 +1,4 @@
-// Aseprite Document IO Library
+// PixelForge Document IO Library
 // Copyright (c) 2023 Igara Studio S.A.
 // Copyright (c) 2017 David Capello
 //

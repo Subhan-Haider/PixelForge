@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2018-2025 Igara Studio S.A.
 // Copyright (c) 2001-2018 David Capello
 //
@@ -184,7 +184,7 @@ void algo_line_continuous_with_fix_for_line_brush(int x0,
 // Circle code based on Alois Zingl work released under the MIT
 // license http://members.chello.at/easyfilter/bresenham.html
 //
-// Adapted for Aseprite by Igara Studio S.A.
+// Adapted for PixelForge by Igara Studio S.A.
 //
 // Draws a circle of the specified radius divided in 4 slices, adjusting each
 // slice inside the specified rectangle.
@@ -387,7 +387,7 @@ static int adjust_ellipse_args(int& x0, int& y0, int& x1, int& y1, int& hPixels,
 // Ellipse code based on Alois Zingl work released under the MIT
 // license http://members.chello.at/easyfilter/bresenham.html
 //
-// Adapted for Aseprite by David Capello
+// Adapted for PixelForge by David Capello
 
 void algo_ellipse(int x0,
                   int y0,
@@ -693,7 +693,7 @@ void fill_rotated_ellipse(int cx, int cy, int a, int b, double angle, void* data
 }
 
 // Algorightm from Allegro (allegro/src/spline.c)
-// Adapted for Aseprite by David Capello.
+// Adapted for PixelForge by David Capello.
 void algo_spline(double x0,
                  double y0,
                  double x1,

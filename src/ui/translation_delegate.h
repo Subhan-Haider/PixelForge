@@ -1,4 +1,4 @@
-// Aseprite UI Library
+// PixelForge UI Library
 // Copyright (C) 2025  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.

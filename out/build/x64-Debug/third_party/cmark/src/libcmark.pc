@@ -1,0 +1,10 @@
+prefix=C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug
+exec_prefix=C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug
+libdir=C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug/lib
+includedir=C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug/include
+
+Name: libcmark
+Description: CommonMark parsing, rendering, and manipulation
+Version: 0.31.0
+Libs: -L${libdir} -lcmark
+Cflags: -I${includedir}

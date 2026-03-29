@@ -1,4 +1,4 @@
-# Aseprite View Library
+# PixelForge View Library
 # Copyright (c) 2023  Igara Studio S.A.
 
 add_library(view-lib

@@ -1,0 +1,466 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/updater-lib.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/updater/CMakeLists.txt",
+			"CMakeLists.txt",
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 332,
+				"parent" : 4
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 37,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 217,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 261,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 238,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 260,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 271,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 281,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 293,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 322,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 345,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 349,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 30,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 46,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -MTd"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4244"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4267"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4355"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-wd4710"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_SCL_SECURE_NO_WARNINGS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LAF_WINDOWS"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "TINYXML2_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "WINVER=0x0A00"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/.."
+				},
+				{
+					"backtrace" : 19,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/laf"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libcurl::@6b6918482087d6a4c893"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		}
+	],
+	"id" : "updater-lib::@2d57bb59d740bb6d9956",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ver-lib::@79bad6ca72e5fec06499"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "net-lib::@fa6dfe1ce2083cdf68d6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@6d8db3035b0f098790a3"
+		}
+	],
+	"name" : "updater-lib",
+	"nameOnDisk" : "updater-lib.lib",
+	"paths" : 
+	{
+		"build" : "src/updater",
+		"source" : "src/updater"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/updater/user_agent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 0,
+			"path" : "src/updater/check_update.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

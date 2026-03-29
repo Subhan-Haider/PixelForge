@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (c) 2023  Igara Studio S.A. -->
 <gui>
   <window id="incompat_file" text="@.title">
@@ -13,7 +13,7 @@
       <hbox>
         <boxfiller />
         <vbox>
-          <link text="@.update_link" url="https://www.aseprite.org/faq/#update" />
+          <link text="@.update_link" url="https://www.pixelforge.org/faq/#update" />
           <button text="@general.close" closewindow="true" id="ok" magnet="true" minwidth="60" />
         </vbox>
         <boxfiller />

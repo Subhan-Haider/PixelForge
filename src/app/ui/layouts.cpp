@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (c) 2022-2024  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -139,7 +139,7 @@ void Layouts::save(const std::string& fn) const
 std::string Layouts::UserLayoutsFilename()
 {
   ResourceFinder rf;
-  rf.includeUserDir("user.aseprite-layouts");
+  rf.includeUserDir("user.pixelforge-layouts");
   return rf.getFirstOrCreateDefault();
 }
 

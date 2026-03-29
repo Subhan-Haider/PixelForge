@@ -22,7 +22,7 @@ jobs:
             benchmark: true
     steps:
     - uses: actions/checkout@v4
-    - uses: aseprite/get-ninja@main
+    - uses: pixelforge/get-ninja@main
     - uses: ilammy/msvc-dev-cmd@v1
       if: runner.os == 'Windows'
     - name: Generating Makefiles

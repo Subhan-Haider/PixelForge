@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2025  Igara Studio S.A. -->
 <gui>
 <window id="run_command" minwidth="256" maxwidth="256" text="@.title" help="run-command">

@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2021-2023  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_INLINE_COMMAND_EXECUTION_H_INCLUDED
 #define APP_INLINE_COMMAND_EXECUTION_H_INCLUDED

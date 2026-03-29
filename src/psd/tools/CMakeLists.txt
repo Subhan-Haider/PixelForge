@@ -1,4 +1,4 @@
-# Aseprite PSD Library
+# PixelForge PSD Library
 # Copyright (C) 2019 Igara Studio S.A.
 
 function(add_psd_tool name)

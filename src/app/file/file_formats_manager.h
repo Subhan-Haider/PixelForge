@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2001-2017  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FILE_FILE_FORMATS_MANAGER_H_INCLUDED
 #define APP_FILE_FILE_FORMATS_MANAGER_H_INCLUDED
@@ -20,7 +20,7 @@ class FileFormat;
 // track of all known file extensions supported by ASE.
 typedef std::vector<FileFormat*> FileFormatsList;
 
-// Manages the list of known formats by ASEPRITE (image file format that can
+// Manages the list of known formats by PIXELFORGE (image file format that can
 // be loaded and/or saved).
 class FileFormatsManager {
 public:

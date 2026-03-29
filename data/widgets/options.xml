@@ -1,4 +1,4 @@
-<!-- Aseprite -->
+<!-- PixelForge -->
 <!-- Copyright (C) 2018-2026  Igara Studio S.A. -->
 <!-- Copyright (C) 2001-2018  David Capello -->
 <gui>
@@ -24,7 +24,7 @@
             <listitem text="@.section_undo" value="section_undo" />
             <listitem text="@.section_theme" value="section_theme" />
             <listitem text="@.section_extensions" value="section_extensions" />
-            <listitem text="@.section_aseprite_format" value="section_aseprite_format" />
+            <listitem text="@.section_pixelforge_format" value="section_pixelforge_format" />
             <listitem text="@.section_experimental" value="section_experimental" />
             <separator text="@.section_windows_specific" horizontal="true" style="separator_in_view" id="section_windows_specific_separator" />
             <listitem text="@.section_tablet" value="section_tablet" />
@@ -68,7 +68,7 @@
               <listitem text="400%" value="4" />
             </combobox>
 
-            <link text="@.language" url="https://www.aseprite.org/languages/" for="language" />
+            <link text="@.language" url="https://www.pixelforge.org/languages/" for="language" />
             <combobox id="language" />
 
             <boxfiller id="font_warning_filler" visible="false" />
@@ -80,8 +80,8 @@
                  tooltip="@.gpu_acceleration_tooltip" />
           <check id="show_menu_bar"
                  text="@.show_menu_bar" />
-          <check id="show_aseprite_file_dialog"
-                 text="@.show_aseprite_file_dialog" />
+          <check id="show_pixelforge_file_dialog"
+                 text="@.show_pixelforge_file_dialog" />
           <check id="show_home"
                  text="@.show_home" />
           <check id="expand_menubar_on_mouseover"
@@ -556,7 +556,7 @@
           </view>
           <hbox>
             <button id="select_theme" text="@.select_theme" minwidth="60" />
-            <link text="@.download_themes" url="https://www.aseprite.org/themes/" />
+            <link text="@.download_themes" url="https://www.pixelforge.org/themes/" />
             <boxfiller />
             <button id="open_theme_folder" text="@.open_theme_folder" minwidth="100" />
           </hbox>
@@ -576,9 +576,9 @@
           </hbox>
         </vbox>
 
-        <!-- Aseprite Format -->
-        <vbox id="section_aseprite_format">
-          <separator text="@.section_aseprite_format" horizontal="true" />
+        <!-- PixelForge Format -->
+        <vbox id="section_pixelforge_format">
+          <separator text="@.section_pixelforge_format" horizontal="true" />
           <grid columns="2">
             <label text="@.cel_content_format" for="cel_format" />
             <combobox id="cel_format">
@@ -602,19 +602,19 @@
             <check id="new_render_engine"
                    text="@.new_render_engine"
                    pref="experimental.new_render_engine" />
-            <link text="(#1671)" for="new_render_engine" url="https://github.com/aseprite/aseprite/issues/1671" />
+            <link text="(#1671)" for="new_render_engine" url="https://github.com/pixelforge/pixelforge/issues/1671" />
           </hbox>
           <hbox>
             <check id="new_blend"
                    text="@.new_blend"
                    pref="experimental.new_blend" />
-            <link text="(#1096)" for="new_blend" url="https://github.com/aseprite/aseprite/issues/1096" />
+            <link text="(#1096)" for="new_blend" url="https://github.com/pixelforge/pixelforge/issues/1096" />
           </hbox>
           <hbox>
             <check id="compose_groups"
                    text="@.compose_groups"
                    pref="experimental.compose_groups" />
-            <link text="(#3225)" for="compose_groups" url="https://github.com/aseprite/aseprite/issues/3225" />
+            <link text="(#3225)" for="compose_groups" url="https://github.com/pixelforge/pixelforge/issues/3225" />
           </hbox>
           <check id="native_clipboard" text="@.native_clipboard"
                  pref="experimental.use_native_clipboard" />
@@ -645,7 +645,7 @@
             <check id="shaders_for_color_selectors"
                    text="@.shaders_for_color_selectors"
                    pref="experimental.use_shaders_for_color_selectors" />
-            <link text="(#960)" for="shaders_for_color_selectors" url="https://github.com/aseprite/aseprite/issues/960" />
+            <link text="(#960)" for="shaders_for_color_selectors" url="https://github.com/pixelforge/pixelforge/issues/960" />
           </hbox>
           <check id="cache_compressed_tilesets"
                  text="@.cache_compressed_tilesets"
@@ -658,7 +658,7 @@
           <radio id="tablet_api_windows_pointer" text="@.tablet_api_windows_pointer" group="1" />
           <hbox>
             <radio id="tablet_api_wintab_system" text="@.tablet_api_wintab_system" group="1" />
-            <link text="@.wintab_more_info" url="https://www.aseprite.org/docs/wintab/" />
+            <link text="@.wintab_more_info" url="https://www.pixelforge.org/docs/wintab/" />
           </hbox>
           <radio id="tablet_api_wintab_direct" text="@.tablet_api_wintab_direct" group="1" />
           <vbox id="windows_pointer_options">
@@ -672,7 +672,7 @@
                      text="@.set_cursor_fix"
                      tooltip="@.set_cursor_fix_tooltip"
                      pref="tablet.set_cursor_fix" />
-              <link text="(#4539)" for="set_cursor_fix" url="https://github.com/aseprite/aseprite/issues/4539" />
+              <link text="(#4539)" for="set_cursor_fix" url="https://github.com/pixelforge/pixelforge/issues/4539" />
             </hbox>
           </vbox>
         </vbox>

@@ -1,4 +1,4 @@
-// Aseprite Document IO Library
+// PixelForge Document IO Library
 // Copyright (c) 2016-2017 David Capello
 //
 // This file is released under the terms of the MIT license.

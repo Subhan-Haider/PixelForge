@@ -1,4 +1,4 @@
-Aseprite uses the following open source projects:
+PixelForge uses the following open source projects:
 
 * [Allegro 4](http://liballeg.org/)
 * [Bresenham algorithm implementations by Alois Zingl](http://members.chello.at/easyfilter/bresenham.html)
@@ -21,7 +21,7 @@ Aseprite uses the following open source projects:
 * [qoi](https://github.com/phoboslab/qoi)
 * [Sentry](https://sentry.io)
 * [skia](https://skia.org)
-* [simpleini](https://github.com/aseprite/simpleini/)
+* [simpleini](https://github.com/pixelforge/simpleini/)
 * [TinyEXIF](https://github.com/cdcseacave/TinyEXIF)
 * [tinyexpr](https://github.com/codeplea/tinyexpr)
 * [tinyxml2](https://github.com/leethomason/tinyxml2)
@@ -1133,7 +1133,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-# [simpleini](https://github.com/aseprite/simpleini/)
+# [simpleini](https://github.com/pixelforge/simpleini/)
 
 ```
 The MIT License (MIT)

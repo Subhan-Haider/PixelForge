@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2016-2026  Igara Studio S.A.
 // Copyright (C) 2001-2015  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 #ifndef APP_TILED_MODE_H_INCLUDED
 #define APP_TILED_MODE_H_INCLUDED
 #pragma once

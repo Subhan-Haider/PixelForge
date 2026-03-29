@@ -8,7 +8,7 @@
 #ifndef DESKTOP_WIN_HELPERS_H_INCLUDED
 #define DESKTOP_WIN_HELPERS_H_INCLUDED
 
-// This file is used from aseprite-thumbnailer and from aseprite itself.
+// This file is used from pixelforge-thumbnailer and from pixelforge itself.
 
 #include "base/string.h"
 #include "base/win/registry.h"
@@ -20,7 +20,7 @@
 // This CLSID is defined by us, and can be used to create class factory for ThumbnailHandler
 // instances.
 #define THUMBNAILHANDLER_CLSID_STRING "{A5E9417E-6E7A-4B2D-85A4-84E114D7A960}"
-#define THUMBNAILHANDLER_NAME_STRING  "Aseprite Thumbnail Handler"
+#define THUMBNAILHANDLER_NAME_STRING  "PixelForge Thumbnail Handler"
 
 // Flags for register_user_preferences() & get_user_preferences() functions
 #define THUMBNAILER_FLAG_ENABLED 1
@@ -41,7 +41,7 @@ static HRESULT register_thumbnailer(const std::string& dllPath, const bool overl
     k.string("", dllPath);
     k.string("ThreadingModel", "Apartment");
 
-    k = hkcu.create("Software\\Classes\\AsepriteFile");
+    k = hkcu.create("Software\\Classes\\PixelForgeFile");
     k.create("ShellEx\\" THUMBNAILHANDLER_SHELL_EXTENSION_CLSID)
       .string("", THUMBNAILHANDLER_CLSID_STRING);
 
@@ -66,7 +66,7 @@ static HRESULT unregister_thumbnailer()
   hkey hkcu = base::hkey::current_user();
   try {
     hkcu.delete_tree(
-      "Software\\Classes\\AsepriteFile\\ShellEx\\" THUMBNAILHANDLER_SHELL_EXTENSION_CLSID);
+      "Software\\Classes\\PixelForgeFile\\ShellEx\\" THUMBNAILHANDLER_SHELL_EXTENSION_CLSID);
   }
   catch (const base::Win32Exception& ex) {
     hr = HRESULT_FROM_WIN32(ex.errorCode());
@@ -87,7 +87,7 @@ static void set_user_preferences(DWORD flags)
 {
   try {
     hkey hkcu = base::hkey::current_user();
-    hkey k = hkcu.create("Software\\Classes\\AsepriteFile");
+    hkey k = hkcu.create("Software\\Classes\\PixelForgeFile");
     if (!k)
       return;
 
@@ -102,7 +102,7 @@ static bool get_user_preferences(DWORD& flags)
 {
   try {
     hkey hkcu = base::hkey::current_user();
-    hkey k = hkcu.open("Software\\Classes\\AsepriteFile", hkey::read);
+    hkey k = hkcu.open("Software\\Classes\\PixelForgeFile", hkey::read);
     if (!k || !k.exists("UserFlags"))
       return false;
 

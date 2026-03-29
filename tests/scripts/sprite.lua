@@ -44,7 +44,7 @@ do
   assert(c.height == 20)
   assert(c.colorMode == ColorMode.INDEXED)
 
-  local d = Sprite{ fromFile="sprites/abcd.aseprite" }
+  local d = Sprite{ fromFile="sprites/abcd.pixelforge" }
   assert(#d.layers == 4)
   assert(d.width == 32)
   assert(d.height == 32)
@@ -120,9 +120,9 @@ do
   assert(s.gridBounds == Rectangle{0, 0, 16, 16})
   s.gridBounds = Rectangle{2, 3, 8, 4}
   assert(s.gridBounds == Rectangle{2, 3, 8, 4})
-  s:saveAs("_test_sprite_gridbounds.aseprite")
+  s:saveAs("_test_sprite_gridbounds.pixelforge")
 
-  local s2 = Sprite{ fromFile="_test_sprite_gridbounds.aseprite" }
+  local s2 = Sprite{ fromFile="_test_sprite_gridbounds.pixelforge" }
   assert(s2.gridBounds == Rectangle{2, 3, 8, 4})
 end
 
@@ -132,9 +132,9 @@ do
   assert(s.pixelRatio == Size{1, 1})
   s.pixelRatio = Size{3, 2}
   assert(s.pixelRatio == Size{3, 2})
-  s:saveAs("_test_sprite_pixelratio.aseprite")
+  s:saveAs("_test_sprite_pixelratio.pixelforge")
 
-  local s2 = Sprite{ fromFile="_test_sprite_pixelratio.aseprite" }
+  local s2 = Sprite{ fromFile="_test_sprite_pixelratio.pixelforge" }
   assert(s2.pixelRatio == Size{3, 2})
 end
 
@@ -156,7 +156,7 @@ do
 end
 
 -- Issues with sprites having pixel with indexes out of palette bounds:
--- Saving png failed (https://github.com/aseprite/aseprite/issues/2842)
+-- Saving png failed (https://github.com/pixelforge/pixelforge/issues/2842)
 do
   local s = Sprite(2, 2, ColorMode.INDEXED)
   assert(#s.palettes == 1)
@@ -180,7 +180,7 @@ do
   print(s2.cels[1].image:getPixel(0, 0))
   assert(s2.cels[1].image:getPixel(0, 0) == 1)
 end
--- Flatten visible layers uses indices outside the palette range as opaque colors instead of transparent color (https://github.com/aseprite/aseprite/issues/2912)
+-- Flatten visible layers uses indices outside the palette range as opaque colors instead of transparent color (https://github.com/pixelforge/pixelforge/issues/2912)
 do
   local s = Sprite(2, 2, ColorMode.INDEXED)
 
@@ -210,7 +210,7 @@ end
 -- Tile management plugin
 
 do
-  local fn = "_test_sprite_tileManagementPlugin.aseprite"
+  local fn = "_test_sprite_tileManagementPlugin.pixelforge"
   local a = Sprite(1, 1)
   assert(a.tileManagementPlugin == nil)
   a.tileManagementPlugin = "test"

@@ -1,4 +1,4 @@
-# Aseprite
+# PixelForge
 # Copyright (C) 2019-2025  Igara Studio S.A.
 # Copyright (C) 2001-2018  David Capello
 
@@ -38,7 +38,7 @@ if(REQUIRE_CURL AND NOT USE_SHARED_CURL AND CURL_STATICLIB)
 endif()
 
 ######################################################################
-# Aseprite Libraries (in preferred order to be built)
+# PixelForge Libraries (in preferred order to be built)
 
 # Disable observable tests
 set(OBSERVABLE_TESTS OFF CACHE BOOL "Compile observable tests")
@@ -96,8 +96,8 @@ add_subdirectory(app)
 # Output bin/data/ directory where we are going to copy data files
 
 set(ORIGINAL_DATA_OUTPUT_DIR ${CMAKE_BINARY_DIR}/bin/data)
-if(ENABLE_ASEPRITE_EXE AND APPLE)
-  set(DATA_OUTPUT_DIR ${CMAKE_BINARY_DIR}/bin/Aseprite.app/Contents/Resources/data)
+if(ENABLE_PIXELFORGE_EXE AND APPLE)
+  set(DATA_OUTPUT_DIR ${CMAKE_BINARY_DIR}/bin/PixelForge.app/Contents/Resources/data)
 else()
   set(DATA_OUTPUT_DIR ${ORIGINAL_DATA_OUTPUT_DIR})
 endif()
@@ -111,7 +111,7 @@ if(ENABLE_I18N_STRINGS)
   if(GIT_FOUND)
     FetchContent_Declare(
       clone_strings
-      GIT_REPOSITORY    https://github.com/aseprite/strings.git
+      GIT_REPOSITORY    https://github.com/pixelforge/strings.git
       GIT_TAG           origin/main
       SOURCE_DIR        ${DATA_OUTPUT_DIR}/strings.git
       CONFIGURE_COMMAND ""
@@ -143,7 +143,7 @@ endforeach()
 if(ENABLE_I18N_STRINGS AND GIT_FOUND)
   # Copy original en.ini to strings.git/en.ini to keep it updated. We
   # have to manually sync the "en.ini" file in the "strings" repo from
-  # the "aseprite" repo.
+  # the "pixelforge" repo.
   add_custom_command(
     OUTPUT ${DATA_OUTPUT_DIR}/strings.git/en.ini
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SOURCE_DATA_DIR}/strings/en.ini ${DATA_OUTPUT_DIR}/strings.git/en.ini
@@ -178,9 +178,9 @@ list(APPEND out_data_files ${DATA_OUTPUT_DIR}/docs/LICENSES.md)
 add_custom_target(copy_data DEPENDS clone_strings ${out_data_files})
 
 ######################################################################
-# Aseprite application
+# PixelForge application
 
-if(ENABLE_ASEPRITE_EXE)
+if(ENABLE_PIXELFORGE_EXE)
   if(WIN32)
     set(main_resources
       main/win/resources_win32.rc
@@ -194,27 +194,27 @@ if(ENABLE_ASEPRITE_EXE)
     set(INSTALL_OPT BUNDLE)
   endif()
 
-  add_executable(aseprite ${BUNDLE_PARAM}
+  add_executable(pixelforge ${BUNDLE_PARAM}
     main/main.cpp
     ${main_resources})
   if(LAF_BACKEND STREQUAL "skia")
     if(WIN32)
-      set_target_properties(aseprite PROPERTIES WIN32_EXECUTABLE true)
+      set_target_properties(pixelforge PROPERTIES WIN32_EXECUTABLE true)
     endif()
   endif()
-  set_target_properties(aseprite PROPERTIES LINK_FLAGS "${LAF_BACKEND_LINK_FLAGS}")
+  set_target_properties(pixelforge PROPERTIES LINK_FLAGS "${LAF_BACKEND_LINK_FLAGS}")
   if(APPLE)
-    set_target_properties(aseprite PROPERTIES
+    set_target_properties(pixelforge PROPERTIES
       MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_LIST_DIR}/main/osx/Info.plist")
 
-    # As the output now is inside the Aseprite.app bundle, we generate
-    # a symlink to replace the old bin/aseprite binary and run the
+    # As the output now is inside the PixelForge.app bundle, we generate
+    # a symlink to replace the old bin/pixelforge binary and run the
     # binary inside the .app bundle.
     add_custom_command(
-      TARGET aseprite POST_BUILD
-      COMMAND ${CMAKE_COMMAND} -E create_symlink "${CMAKE_BINARY_DIR}/bin/Aseprite.app/Contents/MacOS/aseprite" "${CMAKE_BINARY_DIR}/bin/aseprite")
+      TARGET pixelforge POST_BUILD
+      COMMAND ${CMAKE_COMMAND} -E create_symlink "${CMAKE_BINARY_DIR}/bin/PixelForge.app/Contents/MacOS/pixelforge" "${CMAKE_BINARY_DIR}/bin/pixelforge")
 
-    # Create a bin/data link to bin/Aseprite.app/Contents/Resources/data
+    # Create a bin/data link to bin/PixelForge.app/Contents/Resources/data
     # so tests can load the data too (as tests aren't linked inside the
     # app bundle)
     if(IS_DIRECTORY "${ORIGINAL_DATA_OUTPUT_DIR}" AND
@@ -224,19 +224,19 @@ if(ENABLE_ASEPRITE_EXE)
     file(MAKE_DIRECTORY "${DATA_OUTPUT_DIR}")
     file(CREATE_LINK "${DATA_OUTPUT_DIR}" "${ORIGINAL_DATA_OUTPUT_DIR}" SYMBOLIC)
   endif()
-  target_link_libraries(aseprite app-lib)
-  add_dependencies(aseprite copy_data)
+  target_link_libraries(pixelforge app-lib)
+  add_dependencies(pixelforge copy_data)
 
   if(LAF_BACKEND_LINK_FLAGS)
-    set_target_properties(aseprite PROPERTIES LINK_FLAGS
+    set_target_properties(pixelforge PROPERTIES LINK_FLAGS
       ${LAF_BACKEND_LINK_FLAGS})
   endif()
 
-  install(TARGETS aseprite
+  install(TARGETS pixelforge
     ${INSTALL_OPT} DESTINATION bin)
 
   install(DIRECTORY ../data
-    DESTINATION share/aseprite)
+    DESTINATION share/pixelforge)
 endif()
 
 ######################################################################

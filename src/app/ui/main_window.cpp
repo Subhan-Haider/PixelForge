@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -110,10 +110,10 @@ MainWindow::MainWindow()
 // MainWindow. First a minimal instance of MainWindow is created, then
 // all UI components that can trigger the Console to report any
 // unexpected errors/warnings in the initialization. Prior to this,
-// Aseprite could fail in the same constructor, and the Console didn't
+// PixelForge could fail in the same constructor, and the Console didn't
 // have access to the App::instance()->mainWindow() pointer.
 //
-// Refer to https://github.com/aseprite/aseprite/issues/3914
+// Refer to https://github.com/pixelforge/pixelforge/issues/3914
 void MainWindow::initialize()
 {
   m_menuBar = std::make_unique<MainMenuBar>();

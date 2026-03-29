@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2019  Igara Studio S.A.
 // Copyright (C) 2016-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #include "tests/app_test.h"
 
@@ -54,7 +54,7 @@ std::unique_ptr<AppOptions> args(std::initializer_list<const char*> l)
 {
   int argc = l.size() + 1;
   const char** argv = new const char*[argc];
-  argv[0] = "aseprite.exe";
+  argv[0] = "pixelforge.exe";
   auto it = l.begin();
   for (int i = 1; i < argc; ++i, ++it) {
     argv[i] = *it;

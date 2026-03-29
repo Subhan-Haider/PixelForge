@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -494,7 +494,7 @@ FileOp* FileOp::createLoadDocumentOperation(Context* context,
 
   // Does data file exist?
   if (flags & FILE_LOAD_DATA_FILE) {
-    std::string dataFilename = base::replace_extension(filename, "aseprite-data");
+    std::string dataFilename = base::replace_extension(filename, "pixelforge-data");
     if (base::is_file(dataFilename))
       fop->m_dataFilename = dataFilename;
   }
@@ -753,7 +753,7 @@ FileOp* FileOp::createSaveDocumentOperation(const Context* context,
   }
 
   // Does data file exist?
-  std::string dataFilename = base::replace_extension(filename, "aseprite-data");
+  std::string dataFilename = base::replace_extension(filename, "pixelforge-data");
   if (base::is_file(dataFilename))
     fop->m_dataFilename = dataFilename;
 
@@ -911,10 +911,10 @@ void FileOp::operate(IFileOpProgress* progress)
       m_document->setFormatOptions(m_formatOptions);
     }
 
-    // Load special data from .aseprite-data file
+    // Load special data from .pixelforge-data file
     if (m_document && m_document->sprite() && !m_dataFilename.empty()) {
       try {
-        load_aseprite_data_file(m_dataFilename, m_document, m_config.defaultSliceColor);
+        load_pixelforge_data_file(m_dataFilename, m_document, m_config.defaultSliceColor);
       }
       catch (const std::exception& ex) {
         setError("Error loading data file: %s\n", ex.what());
@@ -929,7 +929,7 @@ void FileOp::operate(IFileOpProgress* progress)
     DRM_INVALID
     {
       setError(fmt::format(
-                 "Save operation is not supported in trial version, activate this Aseprite first.\n"
+                 "Save operation is not supported in trial version, activate this PixelForge first.\n"
                  "Go to {} and get a license key to upgrade.",
                  get_app_download_url())
                  .c_str());
@@ -1019,10 +1019,10 @@ void FileOp::operate(IFileOpProgress* progress)
       }
     }
 
-    // Save special data from .aseprite-data file
+    // Save special data from .pixelforge-data file
     if (m_document && m_document->sprite() && !hasError() && !m_dataFilename.empty()) {
       try {
-        save_aseprite_data_file(m_dataFilename, m_document);
+        save_pixelforge_data_file(m_dataFilename, m_document);
       }
       catch (const std::exception& ex) {
         setError("Error loading data file: %s\n", ex.what());
@@ -1193,8 +1193,8 @@ void FileOp::postLoad()
   m_document->markAsSaved();
 
   // In case that the document was loaded without all the information
-  // from the file, i.e. we loaded an .aseprite file created with a
-  // newer Aseprite version and cannot interpret all its information,
+  // from the file, i.e. we loaded an .pixelforge file created with a
+  // newer PixelForge version and cannot interpret all its information,
   // saving this file should show a warning that some original data
   // will be lost if we save/overwrite it.
   if (hasIncompatibilityError()) {

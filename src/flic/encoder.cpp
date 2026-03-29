@@ -1,4 +1,4 @@
-// Aseprite FLIC Library
+// PixelForge FLIC Library
 // Copyright (c) 2015 David Capello
 //
 // This file is released under the terms of the MIT license.

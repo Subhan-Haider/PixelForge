@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -55,6 +55,10 @@ void AboutCommand::onExecute(Context* context)
   window.i18nCredits()->Click.connect([&window] {
     window.closeWindow(nullptr);
     App::instance()->mainWindow()->showBrowser("strings/README.md", "Translators");
+  });
+  window.quick_reference()->Click.connect([&window] {
+    window.closeWindow(nullptr);
+    App::instance()->mainWindow()->showBrowser("QuickReference.md", "Quick Reference");
   });
   window.openWindowInForeground();
 }

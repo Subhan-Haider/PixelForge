@@ -48,7 +48,7 @@ do -- Text copying and access (with .content)
 end
 
 do -- Image copying and access
-  local sprite = Sprite{ fromFile="sprites/abcd.aseprite" }
+  local sprite = Sprite{ fromFile="sprites/abcd.pixelforge" }
 
   app.clipboard.clear()
 
@@ -68,10 +68,10 @@ end
 
 do -- Image copying and access (with .content)
   -- Using another image to avoid the IMAGE_TILEMAP format not being supported.
-  local beforeSprite = Sprite{ fromFile="sprites/abcd.aseprite" }
+  local beforeSprite = Sprite{ fromFile="sprites/abcd.pixelforge" }
   local imageBefore = app.image:clone()
 
-  local sprite = Sprite{ fromFile="sprites/2x2tilemap2x2tile.aseprite" }
+  local sprite = Sprite{ fromFile="sprites/2x2tilemap2x2tile.pixelforge" }
   assert(app.image ~= nil)
 
   if imageBefore ~= nil then

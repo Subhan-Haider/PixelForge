@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2025  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -139,7 +139,7 @@ TEST(KeyboardShortcuts, SpecificContextHasMorePriorityButNotIfItsUserDefined)
 // default configuration says that the Left key does other actions in
 // different contexts.
 //
-// Related issue: https://github.com/aseprite/aseprite/issues/5390
+// Related issue: https://github.com/pixelforge/pixelforge/issues/5390
 TEST(KeyboardShortcuts, UndoWithLeftAndRight)
 {
   ks->clear();

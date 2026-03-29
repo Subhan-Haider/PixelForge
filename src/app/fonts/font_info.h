@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (c) 2024-2025  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FONTS_FONT_INFO_H_INCLUDED
 #define APP_FONTS_FONT_INFO_H_INCLUDED
@@ -29,7 +29,7 @@ class FontData;
 // - System: native laf-os fonts (i.e. Skia fonts loaded from the operating system)
 //
 // This font reference can be serialize to a string to be saved in the
-// aseprite.ini configuration (e.g. latest font used in text tool, or
+// pixelforge.ini configuration (e.g. latest font used in text tool, or
 // custom theme fonts, etc.).
 class FontInfo {
 public:
@@ -71,7 +71,7 @@ public:
   Type type() const { return m_type; }
 
   // Depending on the font type this field indicates a "integrated
-  // font name" (e.g. "Aseprite" or any font from <font>
+  // font name" (e.g. "PixelForge" or any font from <font>
   // definitions/themes), or a TTF filename, or a system font name.
   const std::string& name() const { return m_name; }
 

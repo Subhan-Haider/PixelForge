@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2026  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -288,11 +288,11 @@ static bool load_gui_config(os::WindowSpec& spec, bool& maximized)
   // Compiled without Skia (none backend), without screen.
   if (!screen) {
     std::printf("\n"
-                "  Aseprite cannot initialize GUI because it was compiled with LAF_BACKEND=none\n"
+                "  PixelForge cannot initialize GUI because it was compiled with LAF_BACKEND=none\n"
                 "\n"
                 "  Check the documentation in:\n"
-                "  https://github.com/aseprite/laf/blob/main/README.md\n"
-                "  https://github.com/aseprite/aseprite/blob/main/INSTALL.md\n"
+                "  https://github.com/pixelforge/laf/blob/main/README.md\n"
+                "  https://github.com/pixelforge/pixelforge/blob/main/INSTALL.md\n"
                 "\n");
     return false;
   }
@@ -306,8 +306,8 @@ static bool load_gui_config(os::WindowSpec& spec, bool& maximized)
     spec.position(os::WindowSpec::Position::Frame);
 
     // Limit the content rect position into the available workarea,
-    // e.g. this is needed in case that the user closed Aseprite in a
-    // 2nd monitor that then unplugged and start Aseprite again.
+    // e.g. this is needed in case that the user closed PixelForge in a
+    // 2nd monitor that then unplugged and start PixelForge again.
     bool ok = false;
     os::ScreenList screens;
     os::System::instance()->listScreens(screens);
@@ -330,7 +330,7 @@ static bool load_gui_config(os::WindowSpec& spec, bool& maximized)
   if (frame.isEmpty()) {
     frame = screen->workarea().shrink(64);
 
-    // Try to get Width/Height from previous Aseprite versions
+    // Try to get Width/Height from previous PixelForge versions
     frame.w = get_config_int("GfxMode", "Width", frame.w);
     frame.h = get_config_int("GfxMode", "Height", frame.h);
   }
@@ -525,7 +525,7 @@ bool CustomizedGuiManager::onProcessMessage(Message* msg)
             std::string extension = base::string_to_lower(base::get_file_extension(fn));
 
             // Install the extension
-            if (extension == "aseprite-extension") {
+            if (extension == "pixelforge-extension") {
               Command* cmd = Commands::instance()->byId(CommandId::Options());
               Params params;
               params.set("installExtension", fn.c_str());

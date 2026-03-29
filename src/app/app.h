@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2024  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_APP_H_INCLUDED
 #define APP_APP_H_INCLUDED
@@ -73,13 +73,13 @@ public:
 
   Context* context();
 
-  // Returns true if Aseprite is running with GUI available.
+  // Returns true if PixelForge is running with GUI available.
   bool isGui() const { return m_isGui; }
 
   // Returns true if the application is running in portable mode.
   bool isPortable();
 
-  // Runs the Aseprite application. In GUI mode it's the top-level
+  // Runs the PixelForge application. In GUI mode it's the top-level
   // window, in console/scripting it just runs the specified
   // scripts.
   int initialize(const AppOptions& options);

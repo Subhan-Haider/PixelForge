@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -21,8 +21,8 @@
 #include "base/fs.h"
 #include "base/mem_utils.h"
 #include "base/uuid.h"
-#include "dio/aseprite_common.h"
-#include "dio/aseprite_decoder.h"
+#include "dio/pixelforge_common.h"
+#include "dio/pixelforge_decoder.h"
 #include "dio/decode_delegate.h"
 #include "dio/file_interface.h"
 #include "doc/doc.h"
@@ -129,28 +129,28 @@ public:
 } // anonymous namespace
 
 static void ase_file_prepare_header(FILE* f,
-                                    dio::AsepriteHeader* header,
+                                    dio::PixelForgeHeader* header,
                                     const Sprite* sprite,
                                     frame_t firstFrame,
                                     frame_t totalFrames,
                                     bool composeGroups);
-static void ase_file_write_header(FILE* f, dio::AsepriteHeader* header);
-static void ase_file_write_header_filesize(FILE* f, dio::AsepriteHeader* header);
+static void ase_file_write_header(FILE* f, dio::PixelForgeHeader* header);
+static void ase_file_write_header_filesize(FILE* f, dio::PixelForgeHeader* header);
 
-static void ase_file_prepare_frame_header(FILE* f, dio::AsepriteFrameHeader* frame_header);
-static void ase_file_write_frame_header(FILE* f, dio::AsepriteFrameHeader* frame_header);
+static void ase_file_prepare_frame_header(FILE* f, dio::PixelForgeFrameHeader* frame_header);
+static void ase_file_write_frame_header(FILE* f, dio::PixelForgeFrameHeader* frame_header);
 
 static void ase_file_write_layers(FILE* f,
                                   FileOp* fop,
-                                  const dio::AsepriteHeader* header,
-                                  dio::AsepriteFrameHeader* frame_header,
-                                  const dio::AsepriteExternalFiles& ext_files,
+                                  const dio::PixelForgeHeader* header,
+                                  dio::PixelForgeFrameHeader* frame_header,
+                                  const dio::PixelForgeExternalFiles& ext_files,
                                   const Layer* layer,
                                   int child_level);
 static layer_t ase_file_write_cels(FILE* f,
                                    FileOp* fop,
-                                   dio::AsepriteFrameHeader* frame_header,
-                                   const dio::AsepriteExternalFiles& ext_files,
+                                   dio::PixelForgeFrameHeader* frame_header,
+                                   const dio::PixelForgeExternalFiles& ext_files,
                                    const Sprite* sprite,
                                    const Layer* layer,
                                    layer_t layer_index,
@@ -160,82 +160,82 @@ static void ase_file_write_padding(FILE* f, int bytes);
 static void ase_file_write_string(FILE* f, const std::string& string);
 
 static void ase_file_write_start_chunk(FILE* f,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        int type,
-                                       dio::AsepriteChunk* chunk);
-static void ase_file_write_close_chunk(FILE* f, dio::AsepriteChunk* chunk);
+                                       dio::PixelForgeChunk* chunk);
+static void ase_file_write_close_chunk(FILE* f, dio::PixelForgeChunk* chunk);
 
 static void ase_file_write_color2_chunk(FILE* f,
-                                        dio::AsepriteFrameHeader* frame_header,
+                                        dio::PixelForgeFrameHeader* frame_header,
                                         const Palette* pal);
 static void ase_file_write_palette_chunk(FILE* f,
-                                         dio::AsepriteFrameHeader* frame_header,
+                                         dio::PixelForgeFrameHeader* frame_header,
                                          const Palette* pal,
                                          int from,
                                          int to);
 static void ase_file_write_layer_chunk(FILE* f,
-                                       const dio::AsepriteHeader* header,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       const dio::PixelForgeHeader* header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        const Layer* layer,
                                        int child_level);
 static void ase_file_write_cel_chunk(FILE* f,
                                      FileOp* fop,
-                                     dio::AsepriteFrameHeader* frame_header,
+                                     dio::PixelForgeFrameHeader* frame_header,
                                      const Cel* cel,
                                      const LayerImage* layer,
                                      const layer_t layer_index,
                                      const Sprite* sprite,
                                      const frame_t firstFrame);
 static void ase_file_write_cel_extra_chunk(FILE* f,
-                                           dio::AsepriteFrameHeader* frame_header,
+                                           dio::PixelForgeFrameHeader* frame_header,
                                            const Cel* cel);
 static void ase_file_write_color_profile(FILE* f,
-                                         dio::AsepriteFrameHeader* frame_header,
+                                         dio::PixelForgeFrameHeader* frame_header,
                                          const doc::Sprite* sprite);
 #if 0
-static void ase_file_write_mask_chunk(FILE* f, dio::AsepriteFrameHeader* frame_header, Mask* mask);
+static void ase_file_write_mask_chunk(FILE* f, dio::PixelForgeFrameHeader* frame_header, Mask* mask);
 #endif
 static void ase_file_write_tags_chunk(FILE* f,
-                                      dio::AsepriteFrameHeader* frame_header,
+                                      dio::PixelForgeFrameHeader* frame_header,
                                       const Tags* tags,
                                       const frame_t fromFrame,
                                       const frame_t toFrame);
 static void ase_file_write_slice_chunks(FILE* f,
                                         FileOp* fop,
-                                        dio::AsepriteFrameHeader* frame_header,
-                                        const dio::AsepriteExternalFiles& ext_files,
+                                        dio::PixelForgeFrameHeader* frame_header,
+                                        const dio::PixelForgeExternalFiles& ext_files,
                                         const Slices& slices,
                                         const frame_t fromFrame,
                                         const frame_t toFrame);
 static void ase_file_write_slice_chunk(FILE* f,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        Slice* slice,
                                        const frame_t fromFrame,
                                        const frame_t toFrame);
 static void ase_file_write_user_data_chunk(FILE* f,
                                            FileOp* fop,
-                                           dio::AsepriteFrameHeader* frame_header,
-                                           const dio::AsepriteExternalFiles& ext_files,
+                                           dio::PixelForgeFrameHeader* frame_header,
+                                           const dio::PixelForgeExternalFiles& ext_files,
                                            const UserData* userData);
 static void ase_file_write_external_files_chunk(FILE* f,
                                                 FileOp* fop,
-                                                dio::AsepriteFrameHeader* frame_header,
-                                                dio::AsepriteExternalFiles& ext_files,
+                                                dio::PixelForgeFrameHeader* frame_header,
+                                                dio::PixelForgeExternalFiles& ext_files,
                                                 const Sprite* sprite);
 static void ase_file_write_tileset_chunks(FILE* f,
                                           FileOp* fop,
-                                          dio::AsepriteFrameHeader* frame_header,
-                                          const dio::AsepriteExternalFiles& ext_files,
+                                          dio::PixelForgeFrameHeader* frame_header,
+                                          const dio::PixelForgeExternalFiles& ext_files,
                                           const Tilesets* tilesets);
 static void ase_file_write_tileset_chunk(FILE* f,
                                          FileOp* fop,
-                                         dio::AsepriteFrameHeader* frame_header,
-                                         const dio::AsepriteExternalFiles& ext_files,
+                                         dio::PixelForgeFrameHeader* frame_header,
+                                         const dio::PixelForgeExternalFiles& ext_files,
                                          const Tileset* tileset,
                                          const tileset_index si);
 static void ase_file_write_properties_maps(FILE* f,
                                            FileOp* fop,
-                                           const dio::AsepriteExternalFiles& ext_files,
+                                           const dio::PixelForgeExternalFiles& ext_files,
                                            size_t nmaps,
                                            const doc::UserData::PropertiesMaps& propertiesMaps);
 static bool ase_has_groups(LayerGroup* group);
@@ -243,7 +243,7 @@ static void ase_ungroup_all(LayerGroup* group);
 
 class ChunkWriter {
 public:
-  ChunkWriter(FILE* f, dio::AsepriteFrameHeader* frame_header, int type) : m_file(f)
+  ChunkWriter(FILE* f, dio::PixelForgeFrameHeader* frame_header, int type) : m_file(f)
   {
     ase_file_write_start_chunk(m_file, frame_header, type, &m_chunk);
   }
@@ -252,14 +252,14 @@ public:
 
 private:
   FILE* m_file;
-  dio::AsepriteChunk m_chunk;
+  dio::PixelForgeChunk m_chunk;
 };
 
 class AseFormat : public FileFormat {
 public:
-  class AsepriteOptions : public FormatOptions {
+  class PixelForgeOptions : public FormatOptions {
   public:
-    AsepriteOptions() : celType(ASE_FILE_COMPRESSED_CEL) {}
+    PixelForgeOptions() : celType(ASE_FILE_COMPRESSED_CEL) {}
 
     int celType;
   };
@@ -270,7 +270,7 @@ private:
   void onGetExtensions(base::paths& exts) const override
   {
     exts.push_back("ase");
-    exts.push_back("aseprite");
+    exts.push_back("pixelforge");
   }
 
   dio::FileFormat onGetDioFormat() const override { return dio::FileFormat::ASE_ANIMATION; }
@@ -303,7 +303,7 @@ bool AseFormat::onLoad(FileOp* fop)
   dio::StdioFileInterface fileInterface(handle.get());
 
   DecodeDelegate delegate(fop);
-  dio::AsepriteDecoder decoder;
+  dio::PixelForgeDecoder decoder;
   decoder.initialize(&delegate, &fileInterface);
   if (!decoder.decode())
     return false;
@@ -331,7 +331,7 @@ bool AseFormat::onLoad(FileOp* fop)
 
   // Setup the file-data.
   if (!fop->formatOptions()) {
-    auto aseOptions = std::make_shared<AsepriteOptions>();
+    auto aseOptions = std::make_shared<PixelForgeOptions>();
     aseOptions->celType = decoder.celType();
     fop->setLoadedFormatOptions(aseOptions);
   }
@@ -377,7 +377,7 @@ bool AseFormat::onSave(FileOp* fop)
   FILE* f = handle.get();
 
   // Write the header
-  dio::AsepriteHeader header;
+  dio::PixelForgeHeader header;
   ase_file_prepare_header(f,
                           &header,
                           sprite,
@@ -396,10 +396,10 @@ bool AseFormat::onSave(FileOp* fop)
 
   // Write frames
   int outputFrame = 0;
-  dio::AsepriteExternalFiles ext_files;
+  dio::PixelForgeExternalFiles ext_files;
   for (frame_t frame : fop->roi().framesSequence()) {
     // Prepare the frame header
-    dio::AsepriteFrameHeader frame_header;
+    dio::PixelForgeFrameHeader frame_header;
     ase_file_prepare_frame_header(f, &frame_header);
 
     // Frame duration
@@ -503,12 +503,12 @@ bool AseFormat::onSave(FileOp* fop)
 
 FormatOptionsPtr AseFormat::onAskUserForFormatOptions(FileOp* fop)
 {
-  auto opts = fop->formatOptionsOfDocument<AsepriteOptions>();
+  auto opts = fop->formatOptionsOfDocument<PixelForgeOptions>();
   if (fop->context() && fop->context()->isUIAvailable()) {
     try {
       auto& pref = Preferences::instance();
-      if (pref.isSet(pref.asepriteFormat.celFormat)) {
-        switch (pref.asepriteFormat.celFormat()) {
+      if (pref.isSet(pref.pixelforgeFormat.celFormat)) {
+        switch (pref.pixelforgeFormat.celFormat()) {
           case app::gen::CelContentFormat::COMPRESSED:
             opts->celType = ASE_FILE_COMPRESSED_CEL;
             break;
@@ -518,14 +518,14 @@ FormatOptionsPtr AseFormat::onAskUserForFormatOptions(FileOp* fop)
     }
     catch (std::exception& e) {
       Console::showException(e);
-      return std::shared_ptr<AsepriteOptions>(nullptr);
+      return std::shared_ptr<PixelForgeOptions>(nullptr);
     }
   }
   return opts;
 }
 
 static void ase_file_prepare_header(FILE* f,
-                                    dio::AsepriteHeader* header,
+                                    dio::PixelForgeHeader* header,
                                     const Sprite* sprite,
                                     const frame_t firstFrame,
                                     const frame_t totalFrames,
@@ -561,7 +561,7 @@ static void ase_file_prepare_header(FILE* f,
   header->grid_height = sprite->gridBounds().h;
 }
 
-static void ase_file_write_header(FILE* f, dio::AsepriteHeader* header)
+static void ase_file_write_header(FILE* f, dio::PixelForgeHeader* header)
 {
   fseek(f, header->pos, SEEK_SET);
 
@@ -590,7 +590,7 @@ static void ase_file_write_header(FILE* f, dio::AsepriteHeader* header)
   fseek(f, header->pos + 128, SEEK_SET);
 }
 
-static void ase_file_write_header_filesize(FILE* f, dio::AsepriteHeader* header)
+static void ase_file_write_header_filesize(FILE* f, dio::PixelForgeHeader* header)
 {
   header->size = ftell(f) - header->pos;
 
@@ -600,7 +600,7 @@ static void ase_file_write_header_filesize(FILE* f, dio::AsepriteHeader* header)
   fseek(f, header->pos + header->size, SEEK_SET);
 }
 
-static void ase_file_prepare_frame_header(FILE* f, dio::AsepriteFrameHeader* frame_header)
+static void ase_file_prepare_frame_header(FILE* f, dio::PixelForgeFrameHeader* frame_header)
 {
   int pos = ftell(f);
 
@@ -612,7 +612,7 @@ static void ase_file_prepare_frame_header(FILE* f, dio::AsepriteFrameHeader* fra
   fseek(f, pos + 16, SEEK_SET);
 }
 
-static void ase_file_write_frame_header(FILE* f, dio::AsepriteFrameHeader* frame_header)
+static void ase_file_write_frame_header(FILE* f, dio::PixelForgeFrameHeader* frame_header)
 {
   int pos = frame_header->size;
   int end = ftell(f);
@@ -633,9 +633,9 @@ static void ase_file_write_frame_header(FILE* f, dio::AsepriteFrameHeader* frame
 
 static void ase_file_write_layers(FILE* f,
                                   FileOp* fop,
-                                  const dio::AsepriteHeader* header,
-                                  dio::AsepriteFrameHeader* frame_header,
-                                  const dio::AsepriteExternalFiles& ext_files,
+                                  const dio::PixelForgeHeader* header,
+                                  dio::PixelForgeFrameHeader* frame_header,
+                                  const dio::PixelForgeExternalFiles& ext_files,
                                   const Layer* layer,
                                   int child_index)
 {
@@ -651,8 +651,8 @@ static void ase_file_write_layers(FILE* f,
 
 static layer_t ase_file_write_cels(FILE* f,
                                    FileOp* fop,
-                                   dio::AsepriteFrameHeader* frame_header,
-                                   const dio::AsepriteExternalFiles& ext_files,
+                                   dio::PixelForgeFrameHeader* frame_header,
+                                   const dio::PixelForgeExternalFiles& ext_files,
                                    const Sprite* sprite,
                                    const Layer* layer,
                                    layer_t layer_index,
@@ -719,9 +719,9 @@ static void ase_file_write_size(FILE* f, const gfx::Size& size)
 }
 
 static void ase_file_write_start_chunk(FILE* f,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        int type,
-                                       dio::AsepriteChunk* chunk)
+                                       dio::PixelForgeChunk* chunk)
 {
   frame_header->chunks++;
 
@@ -732,7 +732,7 @@ static void ase_file_write_start_chunk(FILE* f,
   fputw(0, f);
 }
 
-static void ase_file_write_close_chunk(FILE* f, dio::AsepriteChunk* chunk)
+static void ase_file_write_close_chunk(FILE* f, dio::PixelForgeChunk* chunk)
 {
   int chunk_end = ftell(f);
   int chunk_size = chunk_end - chunk->start;
@@ -744,7 +744,7 @@ static void ase_file_write_close_chunk(FILE* f, dio::AsepriteChunk* chunk)
 }
 
 static void ase_file_write_color2_chunk(FILE* f,
-                                        dio::AsepriteFrameHeader* frame_header,
+                                        dio::PixelForgeFrameHeader* frame_header,
                                         const Palette* pal)
 {
   ChunkWriter chunk(f, frame_header, ASE_FILE_CHUNK_FLI_COLOR2);
@@ -765,7 +765,7 @@ static void ase_file_write_color2_chunk(FILE* f,
 }
 
 static void ase_file_write_palette_chunk(FILE* f,
-                                         dio::AsepriteFrameHeader* frame_header,
+                                         dio::PixelForgeFrameHeader* frame_header,
                                          const Palette* pal,
                                          int from,
                                          int to)
@@ -796,8 +796,8 @@ static void ase_file_write_uuid(FILE* f, const base::Uuid& uuid)
 }
 
 static void ase_file_write_layer_chunk(FILE* f,
-                                       const dio::AsepriteHeader* header,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       const dio::PixelForgeHeader* header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        const Layer* layer,
                                        const int child_level)
 {
@@ -1049,14 +1049,14 @@ static void write_compressed_image(FILE* f,
 
 static void ase_file_write_cel_chunk(FILE* f,
                                      FileOp* fop,
-                                     dio::AsepriteFrameHeader* frame_header,
+                                     dio::PixelForgeFrameHeader* frame_header,
                                      const Cel* cel,
                                      const LayerImage* layer,
                                      const layer_t layer_index,
                                      const Sprite* sprite,
                                      const frame_t firstFrame)
 {
-  const auto aseOptions = std::static_pointer_cast<AseFormat::AsepriteOptions>(
+  const auto aseOptions = std::static_pointer_cast<AseFormat::PixelForgeOptions>(
     fop->formatOptions());
 
   ChunkWriter chunk(f, frame_header, ASE_FILE_CHUNK_CEL);
@@ -1155,7 +1155,7 @@ static void ase_file_write_cel_chunk(FILE* f,
 }
 
 static void ase_file_write_cel_extra_chunk(FILE* f,
-                                           dio::AsepriteFrameHeader* frame_header,
+                                           dio::PixelForgeFrameHeader* frame_header,
                                            const Cel* cel)
 {
   ChunkWriter chunk(f, frame_header, ASE_FILE_CHUNK_CEL_EXTRA);
@@ -1173,7 +1173,7 @@ static void ase_file_write_cel_extra_chunk(FILE* f,
 }
 
 static void ase_file_write_color_profile(FILE* f,
-                                         dio::AsepriteFrameHeader* frame_header,
+                                         dio::PixelForgeFrameHeader* frame_header,
                                          const doc::Sprite* sprite)
 {
   const gfx::ColorSpaceRef& cs = sprite->colorSpace();
@@ -1211,7 +1211,7 @@ static void ase_file_write_color_profile(FILE* f,
 }
 
 #if 0
-static void ase_file_write_mask_chunk(FILE* f, dio::AsepriteFrameHeader* frame_header, Mask* mask)
+static void ase_file_write_mask_chunk(FILE* f, dio::PixelForgeFrameHeader* frame_header, Mask* mask)
 {
   ChunkWriter chunk(f, frame_header, ASE_FILE_CHUNK_MASK);
 
@@ -1240,7 +1240,7 @@ static void ase_file_write_mask_chunk(FILE* f, dio::AsepriteFrameHeader* frame_h
 #endif
 
 static void ase_file_write_tags_chunk(FILE* f,
-                                      dio::AsepriteFrameHeader* frame_header,
+                                      dio::PixelForgeFrameHeader* frame_header,
                                       const Tags* tags,
                                       const frame_t fromFrame,
                                       const frame_t toFrame)
@@ -1285,8 +1285,8 @@ static void ase_file_write_tags_chunk(FILE* f,
 
 static void ase_file_write_user_data_chunk(FILE* f,
                                            FileOp* fop,
-                                           dio::AsepriteFrameHeader* frame_header,
-                                           const dio::AsepriteExternalFiles& ext_files,
+                                           dio::PixelForgeFrameHeader* frame_header,
+                                           const dio::PixelForgeExternalFiles& ext_files,
                                            const UserData* userData)
 {
   ChunkWriter chunk(f, frame_header, ASE_FILE_CHUNK_USER_DATA);
@@ -1318,8 +1318,8 @@ static void ase_file_write_user_data_chunk(FILE* f,
 
 static void ase_file_write_slice_chunks(FILE* f,
                                         FileOp* fop,
-                                        dio::AsepriteFrameHeader* frame_header,
-                                        const dio::AsepriteExternalFiles& ext_files,
+                                        dio::PixelForgeFrameHeader* frame_header,
+                                        const dio::PixelForgeExternalFiles& ext_files,
                                         const Slices& slices,
                                         const frame_t fromFrame,
                                         const frame_t toFrame)
@@ -1337,7 +1337,7 @@ static void ase_file_write_slice_chunks(FILE* f,
 }
 
 static void ase_file_write_slice_chunk(FILE* f,
-                                       dio::AsepriteFrameHeader* frame_header,
+                                       dio::PixelForgeFrameHeader* frame_header,
                                        Slice* slice,
                                        const frame_t fromFrame,
                                        const frame_t toFrame)
@@ -1407,12 +1407,12 @@ static void ase_file_write_slice_chunk(FILE* f,
 
 static void ase_file_write_external_files_chunk(FILE* f,
                                                 FileOp* fop,
-                                                dio::AsepriteFrameHeader* frame_header,
-                                                dio::AsepriteExternalFiles& ext_files,
+                                                dio::PixelForgeFrameHeader* frame_header,
+                                                dio::PixelForgeExternalFiles& ext_files,
                                                 const Sprite* sprite)
 {
   auto putExtentionIds = [](const UserData::PropertiesMaps& propertiesMaps,
-                            dio::AsepriteExternalFiles& ext_files) {
+                            dio::PixelForgeExternalFiles& ext_files) {
     for (auto propertiesMap : propertiesMaps) {
       if (!propertiesMap.first.empty())
         ext_files.insert(ASE_EXTERNAL_FILE_EXTENSION, propertiesMap.first);
@@ -1492,8 +1492,8 @@ static void ase_file_write_external_files_chunk(FILE* f,
 
 static void ase_file_write_tileset_chunks(FILE* f,
                                           FileOp* fop,
-                                          dio::AsepriteFrameHeader* frame_header,
-                                          const dio::AsepriteExternalFiles& ext_files,
+                                          dio::PixelForgeFrameHeader* frame_header,
+                                          const dio::PixelForgeExternalFiles& ext_files,
                                           const Tilesets* tilesets)
 {
   tileset_index si = 0;
@@ -1515,8 +1515,8 @@ static void ase_file_write_tileset_chunks(FILE* f,
 
 static void ase_file_write_tileset_chunk(FILE* f,
                                          FileOp* fop,
-                                         dio::AsepriteFrameHeader* frame_header,
-                                         const dio::AsepriteExternalFiles& ext_files,
+                                         dio::PixelForgeFrameHeader* frame_header,
+                                         const dio::PixelForgeExternalFiles& ext_files,
                                          const Tileset* tileset,
                                          const tileset_index si)
 {
@@ -1696,7 +1696,7 @@ static void ase_file_write_property_value(FILE* f, const UserData::Variant& valu
 
 static void ase_file_write_properties_maps(FILE* f,
                                            FileOp* fop,
-                                           const dio::AsepriteExternalFiles& ext_files,
+                                           const dio::PixelForgeExternalFiles& ext_files,
                                            size_t nmaps,
                                            const doc::UserData::PropertiesMaps& propertiesMaps)
 {

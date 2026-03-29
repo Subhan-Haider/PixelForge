@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2017  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_CMD_SET_SLICE_NAME_H_INCLUDED
 #define APP_CMD_SET_SLICE_NAME_H_INCLUDED

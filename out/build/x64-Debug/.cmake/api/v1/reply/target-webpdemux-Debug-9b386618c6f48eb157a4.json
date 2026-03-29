@@ -1,0 +1,385 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/webpdemux.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_dependencies",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"third_party/libwebp/CMakeLists.txt",
+			"third_party/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 310,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 673,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 49,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 311,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 332,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 217,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 261,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 238,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 260,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 271,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 281,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 293,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 322,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 345,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 349,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 312,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "webp::@45530b8f45199147b659"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -MTd"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/."
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libwebp"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libwebp"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libwebp/src"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "png_static::@0308c0688bad80929a46"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "webp::@45530b8f45199147b659"
+		}
+	],
+	"id" : "webpdemux::@45530b8f45199147b659",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/install/x64-Debug"
+		}
+	},
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "webp::@45530b8f45199147b659"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "webp::@45530b8f45199147b659"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "webp::@45530b8f45199147b659"
+		}
+	],
+	"name" : "webpdemux",
+	"nameOnDisk" : "webpdemux.lib",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "png_static::@0308c0688bad80929a46"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/libwebp",
+		"source" : "third_party/libwebp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/libwebp/src/demux/anim_decode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/libwebp/src/demux/demux.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

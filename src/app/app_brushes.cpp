@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2024  Igara Studio S.A.
 // Copyright (C) 2001-2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -521,7 +521,7 @@ void AppBrushes::save(const std::string& filename) const
 std::string AppBrushes::userBrushesFilename()
 {
   ResourceFinder rf;
-  rf.includeUserDir("user.aseprite-brushes");
+  rf.includeUserDir("user.pixelforge-brushes");
   return rf.getFirstOrCreateDefault();
 }
 

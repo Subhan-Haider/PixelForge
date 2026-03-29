@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018  David Capello
 // Copyright (C) 2015  Gabriel Rauter
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FILE_WEBP_OPTIONS_H_INCLUDED
 #define APP_FILE_WEBP_OPTIONS_H_INCLUDED

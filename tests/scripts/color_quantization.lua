@@ -167,7 +167,7 @@ do
 end
 
 ----------------------------------------------------------------------
--- Tests for issue aseprite/aseprite#3207
+-- Tests for issue pixelforge/pixelforge#3207
 -- Conversion RGB to INDEXED color mode, in transparent layers, always
 -- picks index 0 as transparent color, even if the mask color is present
 -- in the palette.

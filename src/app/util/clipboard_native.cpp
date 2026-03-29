@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2016-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -86,7 +86,7 @@ void Clipboard::clearNativeContent()
 void Clipboard::registerNativeFormats()
 {
   clip::set_error_handler(custom_error_handler);
-  custom_image_format = clip::register_format("org.aseprite.Image");
+  custom_image_format = clip::register_format("org.pixelforge.Image");
 }
 
 bool Clipboard::hasNativeBitmap() const

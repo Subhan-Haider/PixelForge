@@ -6,9 +6,9 @@
     <array>
         <dict>
             <key>UTTypeIdentifier</key>
-            <string>org.aseprite.Aseprite.sprite</string>
+            <string>org.pixelforge.PixelForge.sprite</string>
             <key>UTTypeDescription</key>
-            <string>Aseprite Sprite</string>
+            <string>PixelForge Sprite</string>
             <key>UTTypeConformsTo</key>
             <array>
                 <string>public.image</string>
@@ -17,11 +17,11 @@
             <dict>
                 <key>public.filename-extension</key>
                 <array>
-                    <string>aseprite</string>
+                    <string>pixelforge</string>
                     <string>ase</string>
                 </array>
                 <key>public.mime-type</key>
-                <string>image/aseprite</string>
+                <string>image/pixelforge</string>
             </dict>
         </dict>
     </array>
@@ -30,12 +30,12 @@
         <dict>
             <key>CFBundleTypeExtensions</key>
             <array>
-                <string>aseprite</string>
+                <string>pixelforge</string>
             </array>
             <key>CFBundleTypeIconFile</key>
             <string>Document.icns</string>
             <key>CFBundleTypeName</key>
-            <string>Aseprite Sprite</string>
+            <string>PixelForge Sprite</string>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>LSHandlerRank</key>
@@ -59,19 +59,19 @@
             <key>CFBundleTypeIconFile</key>
             <string>Document.icns</string>
             <key>CFBundleTypeName</key>
-            <string>Aseprite Sprite</string>
+            <string>PixelForge Sprite</string>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
         </dict>
         <dict>
             <key>CFBundleTypeExtensions</key>
             <array>
-                <string>aseprite-extension</string>
+                <string>pixelforge-extension</string>
             </array>
             <key>CFBundleTypeIconFile</key>
             <string>Extension.icns</string>
             <key>CFBundleTypeName</key>
-            <string>Aseprite Extension</string>
+            <string>PixelForge Extension</string>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>LSHandlerRank</key>
@@ -79,13 +79,13 @@
         </dict>
     </array>
     <key>CFBundleDisplayName</key>
-    <string>Aseprite</string>
+    <string>PixelForge</string>
     <key>CFBundleExecutable</key>
-    <string>aseprite</string>
+    <string>pixelforge</string>
     <key>CFBundleIdentifier</key>
-    <string>org.aseprite.Aseprite</string>
+    <string>org.pixelforge.PixelForge</string>
     <key>CFBundleName</key>
-    <string>Aseprite</string>
+    <string>PixelForge</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleInfoDictionaryVersion</key>
@@ -95,7 +95,7 @@
     <key>CFBundleVersion</key>
     <string>1.3.18</string>
     <key>CFBundleIconFile</key>
-    <string>Aseprite.icns</string>
+    <string>PixelForge.icns</string>
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.graphics-design</string>
     <key>NSHumanReadableCopyright</key>

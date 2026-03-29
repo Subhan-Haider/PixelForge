@@ -1,5 +1,5 @@
-# Aseprite Document Library
+# PixelForge Document Library
 
 > Distributed under [MIT license](LICENSE.txt)
 
-Library to represent the structure of a sprite on Aseprite.
+Library to represent the structure of a sprite on PixelForge.

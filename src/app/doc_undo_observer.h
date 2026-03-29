@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2021-2022  Igara Studio S.A.
 // Copyright (C) 2015-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_DOCUMENT_UNDO_OBSERVER_H_INCLUDED
 #define APP_DOCUMENT_UNDO_OBSERVER_H_INCLUDED

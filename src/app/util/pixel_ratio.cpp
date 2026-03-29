@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"

@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2022-2024 Igara Studio S.A.
 // Copyright (c) 2016-2018 David Capello
 //

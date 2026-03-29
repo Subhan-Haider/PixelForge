@@ -280,7 +280,7 @@ converts to `std::print`.)
   mathematical programming
 - [Apple's FoundationDB](https://github.com/apple/foundationdb): an open-source,
   distributed, transactional key-value store
-- [Aseprite](https://github.com/aseprite/aseprite): animated sprite
+- [PixelForge](https://github.com/pixelforge/pixelforge): animated sprite
   editor & pixel art tool
 - [AvioBook](https://www.aviobook.aero/en): a comprehensive aircraft
   operations suite

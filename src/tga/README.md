@@ -1,10 +1,10 @@
-# Aseprite TGA Library
+# PixelForge TGA Library
 
-[![build](https://github.com/aseprite/tga/actions/workflows/build.yml/badge.svg)](https://github.com/aseprite/tga/actions/workflows/build.yml)
+[![build](https://github.com/pixelforge/tga/actions/workflows/build.yml/badge.svg)](https://github.com/pixelforge/tga/actions/workflows/build.yml)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Library to read/write [Truevision TGA/TARGA files](https://en.wikipedia.org/wiki/Truevision_TGA).
-Tested with [libfuzzer](https://github.com/aseprite/fuzz).
+Tested with [libfuzzer](https://github.com/pixelforge/fuzz).
 
 Example:
 

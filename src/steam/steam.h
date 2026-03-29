@@ -1,4 +1,4 @@
-// Aseprite Steam Wrapper
+// PixelForge Steam Wrapper
 // Copyright (c) 2020-2024 Igara Studio S.A.
 // Copyright (c) 2016 David Capello
 //

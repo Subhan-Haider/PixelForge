@@ -1,4 +1,4 @@
-# Aseprite PSD Library
+# PixelForge PSD Library
 # Copyright (C) 2019-2025 Igara Studio S.A.
 
 cmake_minimum_required(VERSION 3.15)

@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2017  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FONTS_FONT_DATA_H_INCLUDED
 #define APP_FONTS_FONT_DATA_H_INCLUDED
@@ -18,7 +18,7 @@
 namespace app {
 
 // Represents a defined font in a <font> element from "data/fonts/fonts.xml" file
-// and theme fonts (<font> elements from "data/extensions/aseprite-theme/theme.xml").
+// and theme fonts (<font> elements from "data/extensions/pixelforge-theme/theme.xml").
 class FontData {
 public:
   FontData(text::FontType type);

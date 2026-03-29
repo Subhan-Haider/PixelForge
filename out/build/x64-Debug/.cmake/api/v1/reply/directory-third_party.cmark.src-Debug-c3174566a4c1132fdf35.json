@@ -1,0 +1,125 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/cmark/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/cmark.lib"
+			],
+			"targetId" : "cmark::@d5ce844cbe1bbb5f6849",
+			"targetIndex" : 36,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"out/build/x64-Debug/third_party/cmark/src/libcmark.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/cmark/src/cmark.h",
+				"out/build/x64-Debug/third_party/cmark/src/cmark_export.h",
+				"out/build/x64-Debug/third_party/cmark/src/cmark_version.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cmark",
+			"paths" : 
+			[
+				"out/build/x64-Debug/third_party/cmark/src/generated/cmark-config.cmake",
+				"out/build/x64-Debug/third_party/cmark/src/generated/cmark-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cmark",
+			"exportName" : "cmark-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cmark::@d5ce844cbe1bbb5f6849",
+					"index" : 36
+				}
+			],
+			"paths" : 
+			[
+				"third_party/cmark/src/CMakeFiles/Export/fccc7afb0bf4c34e18a1be84d1a11cfd/cmark-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/cmark/src",
+		"source" : "third_party/cmark/src"
+	}
+}

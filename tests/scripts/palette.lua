@@ -39,7 +39,7 @@ end
 
 -- Load/save
 do
-  local p = Palette{ fromFile="sprites/abcd.aseprite" }
+  local p = Palette{ fromFile="sprites/abcd.pixelforge" }
   assert(#p == 5)
   assert(p:getColor(0) == Color(0, 0, 0))
   assert(p:getColor(1) == Color(25, 0, 255))

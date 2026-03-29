@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -47,11 +47,11 @@ void OpenScriptFolderCommand::onExecute(Context* context)
     base::make_directory(path);
     // Create README.txt file
     std::ofstream os(FSTREAM_PATH(base::join_path(path, "README.txt")));
-    os << "Put your scripts here and restart Aseprite to see them in File > Scripts\n"
+    os << "Put your scripts here and restart PixelForge to see them in File > Scripts\n"
        << "\n"
        << "Scripts are .lua files, you can find more information here:\n"
        << "\n"
-       << "  https://github.com/aseprite/api\n"
+       << "  https://github.com/pixelforge/api\n"
        << "\n";
   }
   app::launcher::open_folder(path);

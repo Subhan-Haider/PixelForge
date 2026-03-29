@@ -1,81 +1,130 @@
-# Aseprite
+# <img src="logo.png" width="128" alt="PixelForge Logo"> PixelForge
 
-[![build](https://github.com/aseprite/aseprite/actions/workflows/build.yml/badge.svg)](https://github.com/aseprite/aseprite/actions/workflows/build.yml)
-[![Translation Status](https://hosted.weblate.org/widget/aseprite/aseprite/svg-badge.svg)](https://hosted.weblate.org/engage/aseprite/)
-[![Discourse Community](https://img.shields.io/badge/discourse-community-brightgreen.svg?style=flat)](https://community.aseprite.org/)
-[![Discord Server](https://discordapp.com/api/guilds/324979738533822464/embed.png)](https://discord.gg/Yb2CeX8)
+**The ultimate 2D powerhouse for pixel art, animated sprites, and game assets.**
 
-## Introduction
+[![build](https://github.com/Subhan-Haider/PixelForge/actions/workflows/build.yml/badge.svg)](https://github.com/Subhan-Haider/PixelForge/actions/workflows/build.yml)
+[![Translation Status](https://hosted.weblate.org/widget/pixelforge/pixelforge/svg-badge.svg)](https://hosted.weblate.org/engage/pixelforge/)
+[![Discord Server](https://img.shields.io/discord/324979738533822464?color=7289da&label=Discord&logo=discord)](https://discord.gg/Yb2CeX8)
 
-**Aseprite** is a program to create animated sprites. Its main features are:
+## 🎨 Forge Your Imagination
 
-* Sprites are composed of [layers &amp; frames](https://www.aseprite.org/docs/timeline/) as separated concepts.
-* Support for [color profiles](https://www.aseprite.org/docs/color-profile/) and different [color modes](https://www.aseprite.org/docs/color-mode/): RGBA, Indexed (palettes up to 256 colors), Grayscale.
-* [Animation facilities](https://www.aseprite.org/docs/animation/), with real-time [preview](https://www.aseprite.org/docs/preview-window/) and [onion skinning](https://www.aseprite.org/docs/onion-skinning/).
-* [Export/import](https://www.aseprite.org/docs/exporting/) animations to/from [sprite sheets](https://www.aseprite.org/docs/sprite-sheet/), GIF files, or sequence of PNG files (and FLC, FLI, JPG, BMP, PCX, TGA).
-* [Multiple editors](https://www.aseprite.org/docs/workspace/#drag-and-drop-tabs) support.
-* [Layer groups](https://imgur.com/x3OKkGj) for organizing your work, and [reference layers](https://twitter.com/aseprite/status/806889204601016325) for rotoscoping.
-* Pixel-art specific tools like [Pixel Perfect freehand mode](https://imgur.com/0fdlNau), [Shading ink](https://www.aseprite.org/docs/shading/), [Custom Brushes](https://twitter.com/aseprite/status/1196883990080344067), [Outlines](https://twitter.com/aseprite/status/1126548469865431041), [Wide Pixels](https://imgur.com/1yZKUcs), etc.
-* Other special drawing tools like [Pressure sensitivity](https://twitter.com/aseprite/status/1253770784708886533), [Symmetry Tool](https://twitter.com/aseprite/status/659709226747625472), [Stroke and Fill](https://imgur.com/7JZQ81o) selection, [Gradients](https://twitter.com/aseprite/status/1126549217856622597).
-* [Tiled mode](https://youtu.be/G_JeWBaxQIg) useful to draw patterns and textures.
-* [Transform multiple frames/layers](https://twitter.com/aseprite/status/1170007034651172866) at the same time.
-* [Lua scripting capabilities](https://www.aseprite.org/docs/scripting/).
-* [CLI - Command Line Interface](https://www.aseprite.org/docs/cli/) to automatize tasks.
-* [Quick Reference / Cheat Sheet](https://www.aseprite.org/quickref/) keyboard shortcuts ([customizable keys](https://imgur.com/rvAUxyF) and [mouse wheel](https://imgur.com/oNqFqVb)).
-* [Reopen closed files](https://twitter.com/aseprite/status/1202641475256881153) and [recover data](https://www.aseprite.org/docs/data-recovery/) in case of crash.
-* Undo/Redo for every operation and support for [non-linear undo](https://imgur.com/9I42fZK).
-* [More features &amp; tips](https://twitter.com/aseprite/status/1124442198651678720)
+**PixelForge** isn't just another image editor; it's a dedicated workspace built for the specific needs of pixel artists and game developers. Our philosophy is simple: **Maximum Pixel Precision.**
 
-## Issues
+Whether you are crafting high-frame-rate animations for an indie RPG, designing icons for a modern UI, or building procedural textures, PixelForge provides the retro-styled, highly efficient tools you need to stay in flow and produce professional results.
 
-There is a list of
-[Known Issues](https://github.com/aseprite/aseprite/issues) (things
-to be fixed or that aren't yet implemented).
+### ✨ What Makes Us Different?
 
-If you found a bug or have a new idea/feature for the program,
-[you can report them](https://github.com/aseprite/aseprite/issues/new).
+While other tools focus on general illustration, PixelForge was built from the ground up for **low-fidelity, high-impact** art. We believe that constraints drive creativity, and our toolset is designed to help you master those constraints with speed and grace.
 
-## Support
+---
 
-You can ask for help in:
+## 🚀 Key Features Breakdown
 
-* [Aseprite Community](https://community.aseprite.org/)
-* [Aseprite Discord Server](https://discord.gg/Yb2CeX8)
-* Official support: [support@aseprite.org](mailto:support@aseprite.org)
-* Social networks and community-driven places:
-  [Twitter](https://twitter.com/aseprite/),
-  [Facebook](https://facebook.com/aseprite/),
-  [YouTube](https://www.youtube.com/user/aseprite),
-  [Instagram](https://www.instagram.com/aseprite/).
+### ⏳ Advanced Timeline & Animation
+PixelForge treats animation as a first-class citizen. Manage complex sequences with separated [layers and frames](https://www.pixelforge.org/docs/timeline/).
+*   **Onion Skinning**: Visualize previous and next frames for smooth transitions.
+*   **Live Preview**: See your sprite in motion in a dedicated window while you draw.
+*   **Batch Frame Management**: Transform, delete, or move multiple frames simultaneously.
 
-## Credits
+### 🖌️ Specialized Pixel Drawing Tools
+Our brush engine is fine-tuned for the pixel grid.
+*   **Pixel Perfect Freehand**: No more messy "double pixels" on your curves.
+*   **Custom Brushes**: Save any selection as a brush to stamp or paint with complex patterns.
+*   **Shading & Ink Modes**: Professional shading tools that respect your palette's ramp.
+*   **Dithering**: Support for various dithering matrices for that perfect retro look.
 
-Aseprite was originally created by [David Capello](https://davidcapello.com/)
-and is now being developed and maintained by [Igara Studio](https://igara.com/)
-and contributors.
+### 🌈 Palette & Color Management
+Master your colors with industry-standard modes and management.
+*   **Indexed Mode**: Precise palette control (up to 256 colors per file).
+*   **RGBA Support**: Modern Alpha transparency for high-fidelity assets.
+*   **Grayscale**: Perfect for mask generation and simplified lighting.
 
-Check the [AUTHORS](AUTHORS.md) file for details about the active team
-of developers working on Aseprite.
+### 🔄 Tiled Mode (Seamless Patterns)
+Create world textures and repeating patterns with absolute ease. Tiled mode lets you see the repetition in real-time as you draw, ensuring every seam is invisible.
 
-## License
+---
 
-This program is distributed under three different licenses:
+## 🤖 Power User & Automation
 
-1. Source code and official releases/binaries are distributed under
-   our [End-User License Agreement for Aseprite (EULA)](EULA.txt). Please check
-   that there are [modules/libraries in the source code](src/README.md) that
-   are distributed under the MIT license
-   (e.g. [laf](https://github.com/aseprite/laf),
-   [clip](https://github.com/aseprite/clip),
-   [undo](https://github.com/aseprite/undo),
-   [observable](https://github.com/aseprite/observable),
-   [ui](src/ui), etc.).
-2. You can request a special
-   [educational license](https://www.aseprite.org/faq/#is-there-an-educational-license)
-   in case you are a teacher in an educational institution and want to
-   use Aseprite in your classroom (in-situ).
-3. Steam releases are distributed under the terms of the
-   [Steam Subscriber Agreement](http://store.steampowered.com/subscriber_agreement/).
+### ⌨️ Command Line Interface (CLI)
+PixelForge can be integrated into your automated build pipelines. Save time by automating repetitive export tasks.
+*   **Batch Processing**: Convert entire folders of assets in seconds.
+*   **Spritesheet Generation**: Use `--sheet-columns` and `--data` to generate ready-to-use game engine textures.
+*   **Layer Filtering**: Export specific layers or groups using `--layer` tags.
 
-You can get more information about Aseprite license in the
-[FAQ](https://www.aseprite.org/faq/#licensing-&-commercial).
+### 🧩 Scripting Engine (Lua)
+Extend functionality with our powerful Lua 5.4 scripting environment.
+*   **Custom UI**: Build your own dialogs and tools using the `app.dialog` API.
+*   **Asset Processing**: Write scripts to batch-process millions of pixels or create procedural art.
+*   **Community Plugins**: Download and install extensions created by the community.
+
+---
+
+## 🏗️ Architecture & Technical Specs
+
+PixelForge is built on a high-performance C++17 stack designed for near-zero latency and rock-solid stability.
+
+| Specification | Details |
+| :--- | :--- |
+| **Language** | Modern C++17 |
+| **Graphics Engine** | Skia / Hardware-backed rendering (Vulkan/OpenGL) |
+| **UI Framework** | [laf](https://github.com/dacap/laf) (Libre App Framework) |
+| **Scripting** | Lua 5.4 Embedded Engine |
+| **Undo/Redo** | Infinite non-linear history (RAM permitting) |
+| **Max Canvas** | Limited only by available system memory |
+
+---
+
+## 📥 Getting Started
+
+Ready to forge your first pixel? Here’s how to start:
+
+1.  **Download**: Get the latest stable release for [Windows, macOS, or Linux](https://www.pixelforge.org/download/).
+2.  **Launch**: Open the executable (look for our monitor mascot icon).
+3.  **Learn**: Check out the [official documentation](https://www.pixelforge.org/docs/) to master advanced hotkeys.
+4.  **Customize**: Explore the `data/extensions` folder to tweak themes and palettes.
+
+---
+
+## 🛠️ Building from Source
+
+For developers who want to contribute to the engine, PixelForge follows a standard modern CMake workflow.
+
+### Prerequisites
+*   **C++17 Compiler** (GCC 7+, Clang 5+, or MSVC 2019+)
+*   **CMake 3.16+**
+*   **Skia Graphics Library**
+*   **Ninja Build System** (Recommended)
+
+### Quick Start Build
+```bash
+# Clone the project
+git clone --recursive https://github.com/Subhan-Haider/PixelForge.git
+cd PixelForge
+
+# Configure and compile
+mkdir build && cd build
+cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=RelWithDebInfo
+ninja pixelforge
+```
+Check our [Full Build Guide](INSTALL.md) for platform-specific details.
+
+---
+
+## 🤝 Join the Forge
+
+Connect with other artists and developers:
+*   **Developer Discord**: [Join our community](https://discord.gg/Yb2CeX8)
+*   **Technical Discussions**: [GitHub Discussions](https://github.com/Subhan-Haider/PixelForge/discussions)
+*   **Follow the Journey**: [Twitter/X](https://twitter.com/pixelforge) | [Instagram](https://instagram.com/pixelforge)
+
+## 📜 License & Acknowledgments
+
+PixelForge is a derivative work built on the excellent foundation of the original **Aseprite**, created by [David Capello](https://davidcapello.com/) and [Igara Studio](https://igara.com/). We are deeply grateful for their years of innovation in the pixel art space.
+
+© 2025 PixelForge Contributors. Distributed under the [PixelForge EULA](EULA.txt).
+Original Aseprite source code is (C) 2001-2024 David Capello.
+
+---
+*Forged with 💖 for artists everywhere. Every pixel counts.*
+

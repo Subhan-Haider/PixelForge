@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2025  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -20,12 +20,12 @@ namespace app { namespace win {
 
 using hkey = base::hkey;
 
-const char* kAsepriteThumbnailerDllName = "aseprite-thumbnailer.dll";
+const char* kPixelForgeThumbnailerDllName = "pixelforge-thumbnailer.dll";
 
 std::string get_thumbnailer_dll()
 {
   std::string dll_path = base::join_path(base::get_file_path(base::get_app_path()),
-                                         kAsepriteThumbnailerDllName);
+                                         kPixelForgeThumbnailerDllName);
   if (!base::is_file(dll_path))
     return {}; // DLL doesn't exist
   return dll_path;
@@ -38,17 +38,17 @@ ThumbnailsOption get_thumbnail_options(const std::string& extension_name)
   try {
     hkey hkcr = hkey::classes_root();
     hkey k = hkcr.open(std::string(".") + extension_name, hkey::read);
-    if (!k || k.string("") != "AsepriteFile")
+    if (!k || k.string("") != "PixelForgeFile")
       return opts;
 
-    k = hkcr.open("AsepriteFile", hkey::read);
+    k = hkcr.open("PixelForgeFile", hkey::read);
     if (!k)
       return opts;
     opts.overlay = (!k.exists("TypeOverlay"));
 
     hkey hkcu = hkey::current_user();
     k = hkcu.open(
-      "Software\\Classes\\AsepriteFile\\ShellEx\\" THUMBNAILHANDLER_SHELL_EXTENSION_CLSID,
+      "Software\\Classes\\PixelForgeFile\\ShellEx\\" THUMBNAILHANDLER_SHELL_EXTENSION_CLSID,
       hkey::read);
     if (!k)
       return opts;

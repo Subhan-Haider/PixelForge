@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (c) 2022-2023  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_SCRIPT_CANVAS_H_INCLUDED
 #define APP_SCRIPT_CANVAS_H_INCLUDED

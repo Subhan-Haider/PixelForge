@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -1726,7 +1726,7 @@ Rect Editor::getVisibleSpriteBounds()
     return getViewportBounds().createIntersection(gfx::Rect(canvasSize()));
 
   // This cannot happen, the sprite must be != nullptr. In old
-  // Aseprite versions we were using one Editor to show multiple
+  // PixelForge versions we were using one Editor to show multiple
   // sprites (switching the sprite inside the editor). Now we have one
   // (or more) editor(s) for each sprite.
   ASSERT(false);

@@ -1,8 +1,8 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2025  Igara Studio S.A.
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_FONTS_FONTS_H_INCLUDED
 #define APP_FONTS_FONTS_H_INCLUDED
@@ -21,7 +21,7 @@ using FontDataMap = std::map<std::string, std::unique_ptr<FontData>>;
 class FontInfo;
 
 // Available defined fonts in "data/fonts/fonts.xml" file and theme
-// fonts (<font> elements from "data/extensions/aseprite-theme/theme.xml").
+// fonts (<font> elements from "data/extensions/pixelforge-theme/theme.xml").
 class Fonts {
 public:
   static Fonts* instance();

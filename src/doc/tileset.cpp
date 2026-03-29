@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2019-2025  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.
@@ -405,7 +405,7 @@ void Tileset::rehash()
   m_hash.clear();
 
   // Reset the compressed data (just in case we have cached the data
-  // from a loaded .aseprite file or when saving the file).
+  // from a loaded .pixelforge file or when saving the file).
   discardCompressedData();
 }
 

@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2021  Igara Studio S.A.
 // Copyright (C) 2001-2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_TOOLS_TRACE_POLICY_H_INCLUDED
 #define APP_TOOLS_TRACE_POLICY_H_INCLUDED

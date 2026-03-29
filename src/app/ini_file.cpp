@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2018-2024  Igara Studio S.A.
 // Copyright (C) 2001-2016  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -40,15 +40,15 @@ static std::vector<cfg::CfgFile*> g_configs;
 ConfigModule::ConfigModule()
 {
   ResourceFinder rf;
-  rf.includeUserDir("aseprite.ini");
+  rf.includeUserDir("pixelforge.ini");
 
-  // getFirstOrCreateDefault() will create the Aseprite directory
-  // inside the OS configuration folder (~/.config/aseprite/, etc.).
+  // getFirstOrCreateDefault() will create the PixelForge directory
+  // inside the OS configuration folder (~/.config/pixelforge/, etc.).
   std::string fn = rf.getFirstOrCreateDefault();
 
 #ifdef __APPLE__
 
-  // On OS X we migrate from ~/.config/aseprite/* -> "~/Library/Application Support/Aseprite/*"
+  // On OS X we migrate from ~/.config/pixelforge/* -> "~/Library/Application Support/PixelForge/*"
   if (!base::is_file(fn)) {
     try {
       std::string new_dir = base::get_file_path(fn);
@@ -56,7 +56,7 @@ ConfigModule::ConfigModule()
       // Now we try to move all old configuration files into the new
       // directory.
       ResourceFinder old_rf;
-      old_rf.includeHomeDir(".config/aseprite/aseprite.ini");
+      old_rf.includeHomeDir(".config/pixelforge/pixelforge.ini");
       std::string old_config_fn = old_rf.defaultFilename();
       if (base::is_file(old_config_fn)) {
         std::string old_dir = base::get_file_path(old_config_fn);
@@ -82,10 +82,10 @@ ConfigModule::ConfigModule()
 #elif !defined(_WIN32)
 
   // On Linux we migrate the old configuration file name
-  // (~/.asepriterc -> ~/.config/aseprite/aseprite.ini)
+  // (~/.pixelforgerc -> ~/.config/pixelforge/pixelforge.ini)
   {
     ResourceFinder old_rf;
-    old_rf.includeHomeDir(".asepriterc");
+    old_rf.includeHomeDir(".pixelforgerc");
     std::string old_fn = old_rf.defaultFilename();
     if (base::is_file(old_fn))
       base::move_file(old_fn, fn);

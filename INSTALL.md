@@ -17,7 +17,7 @@
 
 # Platforms
 
-You should be able to compile Aseprite successfully on the following
+You should be able to compile PixelForge successfully on the following
 platforms (older and newer versions might work):
 
 * Windows 11 + [Visual Studio Community 2022 + Windows 11 SDK](https://imgur.com/a/7zs51IT)
@@ -27,20 +27,20 @@ platforms (older and newer versions might work):
 
 # Get the source code
 
-You can get the source code downloading a `Aseprite-v1.x-Source.zip`
-file from the latest Aseprite release (*in that case please follow the
+You can get the source code downloading a `PixelForge-v1.x-Source.zip`
+file from the latest PixelForge release (*in that case please follow the
 compilation instructions inside the `.zip` file*):
 
-https://github.com/aseprite/aseprite/releases
+https://github.com/Subhan-Haider/PixelForge/releases
 
 Or you can clone the repository and all its submodules using the
 following command:
 
-    git clone --recursive https://github.com/aseprite/aseprite.git
+    git clone --recursive https://github.com/Subhan-Haider/PixelForge.git
 
 To update an existing clone you can use the following commands:
 
-    cd aseprite
+    cd PixelForge
     git pull
     git submodule update --init --recursive
 
@@ -49,15 +49,15 @@ clone the repository on Windows.
 
 # Dependencies
 
-To compile Aseprite you will need:
+To compile PixelForge you will need:
 
 * The latest version of [CMake](https://cmake.org)
 * [Ninja](https://ninja-build.org) build system
-* And a compiled version of the `aseprite-m124` branch of
-  the [Skia library](https://github.com/aseprite/skia#readme).
-  There are [pre-built packages available](https://github.com/aseprite/skia/releases).
+* And a compiled version of the `pixelforge-m124` branch of
+  the [Skia library](https://github.com/pixelforge/skia#readme).
+  There are [pre-built packages available](https://github.com/pixelforge/skia/releases).
   You can get some extra information in
-  the [*laf* dependencies](https://github.com/aseprite/laf#dependencies) page.
+  the [*laf* dependencies](https://github.com/pixelforge/laf#dependencies) page.
 
 ## Windows dependencies
 
@@ -95,30 +95,30 @@ On SUSE:
 # Automatic Building
 
 We offer a new [build script](build.sh) that automates and help you to
-compile Aseprite following instructions on screen. This will be the
-preferred method for new users and developers to compile Aseprite.
+compile PixelForge following instructions on screen. This will be the
+preferred method for new users and developers to compile PixelForge.
 
-After you get [get Aseprite code](#get-the-source-code) and install
+After you get [get PixelForge code](#get-the-source-code) and install
 [its dependencies](#dependencies), you can run [build.cmd](build.cmd)
 file on Windows double-clicking it, or [build.sh](build.sh) on macOS or
-Linux running it from the terminal from the same Aseprite folder.
+Linux running it from the terminal from the same PixelForge folder.
 
 # Manual Building
 
-1. [Get Aseprite code](#get-the-source-code), put it in a folder like
-   `C:\aseprite`, and create a `build` directory inside to leave all
+1. [Get PixelForge code](#get-the-source-code), put it in a folder like
+   `C:\pixelforge`, and create a `build` directory inside to leave all
    the files that are result of the compilation process (`.exe`,
    `.lib`, `.obj`, `.a`, `.o`, etc).
 
-        cd C:\aseprite
+        cd C:\pixelforge
         mkdir build
 
-   In this way, if you want to start with a fresh copy of Aseprite
+   In this way, if you want to start with a fresh copy of PixelForge
    source code, you can remove the `build` directory and start again.
 
 2. Enter in the new directory and execute `cmake`:
 
-        cd C:\aseprite\build
+        cd C:\pixelforge\build
         cmake -G Ninja -DLAF_BACKEND=skia ..
 
    Here `cmake` needs different options depending on your
@@ -131,11 +131,11 @@ Linux running it from the terminal from the same Aseprite folder.
 3. After you have executed and configured `cmake`, you have to compile
    the project:
 
-        cd C:\aseprite\build
-        ninja aseprite
+        cd C:\pixelforge\build
+        ninja pixelforge
 
 4. When `ninja` finishes the compilation, you can find the executable
-   inside `C:\aseprite\build\bin\aseprite.exe`.
+   inside `C:\pixelforge\build\bin\pixelforge.exe`.
 
 ## Windows details
 
@@ -152,11 +152,11 @@ instead.
 
 And then
 
-    cd aseprite
+    cd PixelForge
     mkdir build
     cd build
     cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLAF_BACKEND=skia -DSKIA_DIR=C:\deps\skia -DSKIA_LIBRARY_DIR=C:\deps\skia\out\Release-x64 -DSKIA_LIBRARY=C:\deps\skia\out\Release-x64\skia.lib -G Ninja ..
-    ninja aseprite
+    ninja pixelforge
 
 In this case, `C:\deps\skia` is the directory where Skia was compiled
 or uncompressed.
@@ -176,13 +176,13 @@ the first time in case that you don't know or don't want to modify the
 
     cmake -DCMAKE_IGNORE_PATH=C:\MinGW\bin ...
 
-More information in [issue #2449](https://github.com/aseprite/aseprite/issues/2449)
+More information in [issue #2449](https://github.com/pixelforge/pixelforge/issues/2449)
 
 ## macOS details
 
 Run `cmake` with the following parameters and then `ninja`:
 
-    cd aseprite
+    cd PixelForge
     mkdir build
     cd build
     cmake \
@@ -196,7 +196,7 @@ Run `cmake` with the following parameters and then `ninja`:
       -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-x64/libskia.a \
       -G Ninja \
       ..
-    ninja aseprite
+    ninja pixelforge
 
 In this case, `$HOME/deps/skia` is the directory where Skia was
 compiled or downloaded.  Make sure that `CMAKE_OSX_SYSROOT` is
@@ -207,10 +207,10 @@ but it could be different in your Mac.
 ### Apple Silicon
 
 If you running macOS on an ARM64/AArch64/Apple Silicon Mac (e.g. M1),
-you can compile a native ARM64 version of Aseprite following similar
+you can compile a native ARM64 version of PixelForge following similar
 steps as above but when we call `cmake`, we have some differences:
 
-    cd aseprite
+    cd PixelForge
     mkdir build
     cd build
     cmake \
@@ -225,21 +225,21 @@ steps as above but when we call `cmake`, we have some differences:
       -DPNG_ARM_NEON:STRING=on \
       -G Ninja \
       ..
-    ninja aseprite
+    ninja pixelforge
 
 ### Issues with Retina displays
 
 If you have a Retina display, check the following issue:
 
-  https://github.com/aseprite/aseprite/issues/589
+  https://github.com/pixelforge/pixelforge/issues/589
 
 ## Linux details
 
-You can compile Aseprite with gcc or clang. In case that you are using
-the [pre-compiled Skia version](https://github.com/aseprite/skia/releases/),
-you must use libstdc++ to compile Aseprite:
+You can compile PixelForge with gcc or clang. In case that you are using
+the [pre-compiled Skia version](https://github.com/pixelforge/skia/releases/),
+you must use libstdc++ to compile PixelForge:
 
-    cd aseprite
+    cd PixelForge
     mkdir build
     cd build
     export CC=clang
@@ -254,7 +254,7 @@ you must use libstdc++ to compile Aseprite:
       -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-x64/libskia.a \
       -G Ninja \
       ..
-    ninja aseprite
+    ninja pixelforge
 
 In this case, `$HOME/deps/skia` is the directory where Skia was
 compiled or uncompressed.

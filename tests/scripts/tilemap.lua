@@ -3,7 +3,7 @@
 -- This file is released under the terms of the MIT license.
 -- Read LICENSE.txt for more information.
 
--- This version of Aseprite doesn't support tilemaps
+-- This version of PixelForge doesn't support tilemaps
 if TilesetMode == nil then return end
 
 dofile('./test_utils.lua')
@@ -1389,10 +1389,10 @@ do
 
   -- Save, load, and test if the tilemap were saved correctly with the
   -- given flags
-  spr:saveAs('_test_tile_flags.aseprite')
+  spr:saveAs('_test_tile_flags.pixelforge')
   spr:close()
 
-  local spr2 = app.open('_test_tile_flags.aseprite')
+  local spr2 = app.open('_test_tile_flags.pixelforge')
   local map2 = spr2.layers[1].cels[1].image
   expect_img(map2, { 1,   (1|x),   0,     0,
                      1|y, (1|x|y), 0,     0,

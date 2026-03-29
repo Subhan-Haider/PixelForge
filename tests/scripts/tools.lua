@@ -54,7 +54,7 @@ app.useTool{
   points={ Point(3, 2) }}
 -- This must fail because cel is pointing to an invalid cel now.
 -- TODO: In a future this could change if this issue:
---         https://github.com/aseprite/aseprite/issues/1833
+--         https://github.com/pixelforge/pixelforge/issues/1833
 --       is implemented.
 assert(not pcall(function() print(cel.bounds) end))
 
@@ -702,7 +702,7 @@ end
 
 ----------------------------------------------------------------------
 -- draw with tiled mode + image brush
--- test for: https://community.aseprite.org/t/tile-mode-glitch/1183
+-- test for: https://community.pixelforge.org/t/tile-mode-glitch/1183
 ----------------------------------------------------------------------
 
 function drawing_with_tiled_mode_and_image_brush()
@@ -810,7 +810,7 @@ do
 
   -- Test bug where one click doesn't draw with the contour tool with
   -- pixel perfect algorith.
-  -- Report: https://community.aseprite.org/t/13149
+  -- Report: https://community.pixelforge.org/t/13149
   expect_img(app.activeImage,
              { 1, 1, 1,
                1, 1, 1,
@@ -835,7 +835,7 @@ end
 ----------------------------------------------------------------------
 
 do
-  -- https://github.com/aseprite/aseprite/issues/3564
+  -- https://github.com/pixelforge/pixelforge/issues/3564
   -- 8-Connected Fill Escapes Grid With "Stop At Grid" Checked
   -- Magic Wand Test - Stop At Grid + pixel connectivity '8-connected':
   local spr2 = Sprite(9, 9, ColorMode.INDEXED)

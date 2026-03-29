@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2023  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_DOC_ACCESS_H_INCLUDED
 #define APP_DOC_ACCESS_H_INCLUDED
@@ -195,7 +195,7 @@ public:
     ASSERT(m_doc != nullptr);
 
     // Don't create a backup for destroyed documents (e.g. documents
-    // are destroyed when they are used internally by Aseprite or by
+    // are destroyed when they are used internally by PixelForge or by
     // a script and then closed with Sprite:close())
     if (m_doc->needsBackup())
       m_doc->setInhibitBackup(true);

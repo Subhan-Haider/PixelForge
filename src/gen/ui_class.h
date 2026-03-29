@@ -1,4 +1,4 @@
-// Aseprite Code Generator
+// PixelForge Code Generator
 // Copyright (c) 2024 Igara Studio S.A.
 // Copyright (c) 2014-2016 David Capello
 //

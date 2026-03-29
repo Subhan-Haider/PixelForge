@@ -1,4 +1,4 @@
-// Aseprite Render Library
+// PixelForge Render Library
 // Copyright (c) 2017 David Capello
 //
 // This file is released under the terms of the MIT license.

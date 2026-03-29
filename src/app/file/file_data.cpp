@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2024  Igara Studio S.A.
 // Copyright (C) 2001-2017  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -237,7 +237,7 @@ void update_xml_slice(const doc::Slice* slice, XMLElement* xmlSlice)
 
 } // anonymous namespace
 
-void load_aseprite_data_file(const std::string& dataFilename,
+void load_pixelforge_data_file(const std::string& dataFilename,
                              doc::Document* doc,
                              app::Color& defaultSliceColor)
 {
@@ -383,7 +383,7 @@ void load_aseprite_data_file(const std::string& dataFilename,
 }
 
 #ifdef ENABLE_SAVE
-void save_aseprite_data_file(const std::string& dataFilename, const doc::Document* doc)
+void save_pixelforge_data_file(const std::string& dataFilename, const doc::Document* doc)
 {
   XMLDocumentRef xmlDoc = open_xml(dataFilename);
   XMLHandle handle(xmlDoc.get());
@@ -431,7 +431,7 @@ void save_aseprite_data_file(const std::string& dataFilename, const doc::Documen
       [](const Slice* slice) -> std::string { return slice->name(); },
       update_xml_slice);
 
-    // Save .aseprite-data file
+    // Save .pixelforge-data file
     save_xml(xmlDoc.get(), dataFilename);
   }
 }

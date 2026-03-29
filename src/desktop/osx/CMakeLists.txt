@@ -3,15 +3,15 @@
 
 find_library(QUICKLOOK_THUMBNAILING_LIBRARY QuickLookThumbnailing)
 
-add_executable(AsepriteThumbnailer MACOSX_BUNDLE
+add_executable(PixelForgeThumbnailer MACOSX_BUNDLE
   thumbnail.mm)
 
-target_link_libraries(AsepriteThumbnailer
+target_link_libraries(PixelForgeThumbnailer
   dio-lib
   render-lib
   ${QUICKLOOK_THUMBNAILING_LIBRARY})
 
-set_target_properties(AsepriteThumbnailer PROPERTIES
+set_target_properties(PixelForgeThumbnailer PROPERTIES
   BUNDLE_EXTENSION appex
   LINK_FLAGS "-Wl,-e,_NSExtensionMain"
   MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_LIST_DIR}/Info.plist")

@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -596,8 +596,8 @@ void ChangePixelFormatCommand::onExecute(Context* ctx)
     //      event, and that event is an UI event.
     //      We should refactor the whole app to separate doc changes <-> UI changes,
     //      but that is for the future:
-    //      https://github.com/aseprite/aseprite/issues/509
-    //      https://github.com/aseprite/aseprite/issues/378
+    //      https://github.com/pixelforge/pixelforge/issues/509
+    //      https://github.com/pixelforge/pixelforge/issues/378
     if (flatten) {
       Tx tx(Tx::LockDoc, ctx, doc);
       const bool newBlend = Preferences::instance().experimental.newBlend();

@@ -140,7 +140,7 @@ CGImageRef get_thumbnail(CFURLRef url, CGSize maxSize)
     h = image->height();
   }
   catch (const std::exception& e) {
-    NSLog(@"AsepriteThumbnailer error: %s", e.what());
+    NSLog(@"PixelForgeThumbnailer error: %s", e.what());
     return nullptr;
   }
 

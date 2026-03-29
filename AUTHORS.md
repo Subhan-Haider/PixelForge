@@ -1,6 +1,6 @@
 # Credits
 
-Aseprite is being developed and maintained currently by [Igara Studio](https://igara.com/).
+PixelForge is being developed and maintained currently by [Igara Studio](https://igara.com/).
 The active team of developers is:
 
 * [David Capello](https://github.com/dacap)
@@ -17,7 +17,7 @@ Previous team members that contributed with code/docs/scripts/graphics:
 
 ## Translations
 
-The translation work of Aseprite is only possible thanks to the
+The translation work of PixelForge is only possible thanks to the
 contribution, help, and good will of several translators coordinated
 through our Weblate project:
 
@@ -25,18 +25,18 @@ through our Weblate project:
 
 ## Graphics
 
-Aseprite logo was created by David Capello. Graphics used as background
-of [Aseprite home page](https://www.aseprite.org),
-on [Steam Store](https://store.steampowered.com/app/431730/Aseprite/),
-and [social media channels](https://bsky.app/profile/aseprite.org),
+PixelForge logo was created by David Capello. Graphics used as background
+of [PixelForge home page](https://www.pixelforge.org),
+on [Steam Store](https://store.steampowered.com/app/431730/PixelForge/),
+and [social media channels](https://bsky.app/profile/pixelforge.org),
 were created by:
 
 * [Ilija Melentijevic](https://ilkke.net/)
 
 ## Themes
 
-The default Aseprite font was created by David Capello, and the
-default Aseprite theme was introduced in v0.8, originally created by:
+The default PixelForge font was created by David Capello, and the
+default PixelForge theme was introduced in v0.8, originally created by:
 
 * Ilija Melentijevic
 
@@ -49,9 +49,9 @@ contributors from time to time.
 
 ## Palettes
 
-Aseprite includes color palettes created by:
+PixelForge includes color palettes created by:
 
-* [Richard "DawnBringer" Fhager](http://pixeljoint.com/p/23821.htm), [DB16](http://pixeljoint.com/forum/forum_posts.asp?TID=12795), [DB32](http://pixeljoint.com/forum/forum_posts.asp?TID=16247) (default Aseprite color palette)
+* [Richard "DawnBringer" Fhager](http://pixeljoint.com/p/23821.htm), [DB16](http://pixeljoint.com/forum/forum_posts.asp?TID=12795), [DB32](http://pixeljoint.com/forum/forum_posts.asp?TID=16247) (default PixelForge color palette)
 * [Arne Niklas Jansson](http://androidarts.com/), [16 colors](http://androidarts.com/palette/16pal.htm), [32 colors](http://wayofthepixel.net/index.php?topic=15824.msg144494)
 * [ENDESGA Studios](https://twitter.com/ENDESGA), [EDG16 and EDG32](https://forums.tigsource.com/index.php?topic=46126.msg1279124#msg1279124), and [other palettes](https://twitter.com/ENDESGA/status/865812366931353600)
 * [Hyohnoo Games](https://twitter.com/Hyohnoo), [mail24](https://twitter.com/Hyohnoo/status/797472587974639616) palette
@@ -62,9 +62,9 @@ Aseprite includes color palettes created by:
 
 ## Pixel-art Features
 
-Aseprite tries to replicate some pixel-art algorithms:
+PixelForge tries to replicate some pixel-art algorithms:
 
-* [Shading Ink](https://aseprite.org/docs/shading/): created as a simplification of GrafX2 shade mode, thanks to Ilija Melentijevic for introducing me to this feature in 2009
+* [Shading Ink](https://pixelforge.org/docs/shading/): created as a simplification of GrafX2 shade mode, thanks to Ilija Melentijevic for introducing me to this feature in 2009
 * [RotSprite](http://forums.sonicretro.org/index.php?showtopic=8848&st=15&p=159754&#entry159754) by Xenowhirl.
 * [Pixel perfect drawing algorithm](https://deepnight.net/blog/tools/pixel-perfect-drawing/)
   by [Sébastien Bénard](https://twitter.com/deepnightfr) and
@@ -77,17 +77,17 @@ Thanks to all the people that hung around for such a long time.
 
 ## Contributors
 
-Thank you everyone who contributed to Aseprite with ideas, patches,
+Thank you everyone who contributed to PixelForge with ideas, patches,
 code, bug reports, new features, donations, tutorials, videos,
 personal messages, chats, emails, tweets, posts, questions, libraries,
 compilers, and any other tools that made this program possible today.
 
-* Thanks to all [contributors](https://github.com/aseprite/aseprite/graphs/contributors)
-* Thanks to all developers and maintainers behind [other open source projects](docs/LICENSES.md) used by Aseprite
-* Thanks to all early PayPal donors and donors from our Pledgie Campaign (before Aseprite was commercialized)
+* Thanks to all [contributors](https://github.com/pixelforge/pixelforge/graphs/contributors)
+* Thanks to all developers and maintainers behind [other open source projects](docs/LICENSES.md) used by PixelForge
+* Thanks to all early PayPal donors and donors from our Pledgie Campaign (before PixelForge was commercialized)
 * Thanks to every who support our business model: this source-available / sell-binaries combo
-* Thanks to schools and [educational institutions](https://aseprite.org/educational)
-  that are using Aseprite in their classrooms <3
+* Thanks to schools and [educational institutions](https://pixelforge.org/educational)
+  that are using PixelForge in their classrooms <3
 * Thanks to our family and friends who always support our work
 
 It's been more years than I can remember, sorry if we missed someone,

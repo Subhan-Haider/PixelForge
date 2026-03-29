@@ -225,7 +225,7 @@ end
 
 -- Load/Save
 do
-  local a = Image{ fromFile="sprites/1empty3.aseprite" }
+  local a = Image{ fromFile="sprites/1empty3.pixelforge" }
   assert(a.width == 32)
   assert(a.height == 32)
   a:saveAs("_test_oneframe.png")
@@ -242,8 +242,8 @@ end
 
 -- Save indexed image and load and check that the palette is the same
 do
-  local spr = Sprite{ fromFile="sprites/abcd.aseprite" }
-  local img = Image{ fromFile="sprites/abcd.aseprite" }
+  local spr = Sprite{ fromFile="sprites/abcd.pixelforge" }
+  local img = Image{ fromFile="sprites/abcd.pixelforge" }
   spr.cels[1].image:saveAs("_test_palette_a.png")
   img:saveAs("_test_palette_b.png") -- This file will contain a black palette
   img:saveAs{ filename="_test_palette_c.png", palette=spr.palettes[1] }
@@ -283,7 +283,7 @@ end
 
 -- Save image from a tilemap's cel
 do
-  local spr = Sprite{ fromFile="sprites/2x2tilemap2x2tile.aseprite" }
+  local spr = Sprite{ fromFile="sprites/2x2tilemap2x2tile.pixelforge" }
   local tilemapImg = spr.layers[1].cels[1].image
   local tileset = spr.layers[1].tileset
   local tileSize = tileset.grid.tileSize

@@ -1,4 +1,4 @@
-# Aseprite
+# PixelForge
 # Copyright (C) 2018-2025  Igara Studio S.A.
 # Copyright (C) 2001-2018  David Capello
 
@@ -19,25 +19,25 @@ endif()
 set(CMAKE_USER_MAKE_RULES_OVERRIDE ${CMAKE_CURRENT_SOURCE_DIR}/laf/cmake/c_flag_overrides.cmake)
 set(CMAKE_USER_MAKE_RULES_OVERRIDE_CXX ${CMAKE_CURRENT_SOURCE_DIR}/laf/cmake/cxx_flag_overrides.cmake)
 
-# Aseprite project
-project(aseprite C CXX)
+# PixelForge project
+project(pixelforge C CXX)
 
 # Check repository status
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/laf/CMakeLists.txt" OR
    NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/laf/clip/CMakeLists.txt")
   message(FATAL_ERROR
-    "Your Aseprite repository looks incomplete. Please read the following "
+    "Your PixelForge repository looks incomplete. Please read the following "
     "instructions carefully:"
     "\n"
-    "1) If you have downloaded Aseprite source using the "
+    "1) If you have downloaded PixelForge source using the "
     "\"Code > Download ZIP\" button from GitHub, you will not be able to "
-    "compile Aseprite. You need to get the code with other methods (continue "
+    "compile PixelForge. You need to get the code with other methods (continue "
     "reading)."
     "\n"
     "2) You can correctly clone the GitHub repository with the "
     "\"--recursive\" argument:"
     "\n"
-    "  git clone --recursive https://github.com/aseprite/aseprite.git"
+    "  git clone --recursive https://github.com/pixelforge/pixelforge.git"
     "\n"
     "3) If you have already cloned the repository and see this message, "
     "you still need to initialize submodules running the following command:"
@@ -45,13 +45,13 @@ if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/laf/CMakeLists.txt" OR
     "  git submodule update --init --recursive"
     "\n"
     "4) Or if you want to download the full source code in a .zip file, "
-    "go to the releases page and get the latest \"Aseprite-v1.x-Source.zip\":"
+    "go to the releases page and get the latest \"PixelForge-v1.x-Source.zip\":"
     "\n"
-    "  https://github.com/aseprite/aseprite/releases"
+    "  https://github.com/pixelforge/pixelforge/releases"
     "\n"
     "More information in the building instructions:"
     "\n"
-    "  https://github.com/aseprite/aseprite/blob/main/INSTALL.md#get-the-source-code")
+    "  https://github.com/pixelforge/pixelforge/blob/main/INSTALL.md#get-the-source-code")
 endif()
 
 # This is required for KDE/Qt destop integration, which sets
@@ -74,7 +74,7 @@ option(USE_SHARED_TINYXML "Use your installed copy of tinyxml" off)
 option(USE_SHARED_PIXMAN  "Use your installed copy of pixman" off)
 option(USE_SHARED_FREETYPE "Use shared FreeType library" off)
 option(USE_SHARED_HARFBUZZ "Use shared HarfBuzz library" off)
-option(ENABLE_ASEPRITE_EXE "Compile main Aseprite executable" on)
+option(ENABLE_PIXELFORGE_EXE "Compile main PixelForge executable" on)
 option(ENABLE_MEMLEAK      "Enable memory-leaks detector (only for developers)" off)
 option(ENABLE_NEWS         "Enable the news in Home tab" on)
 option(ENABLE_UPDATER      "Enable automatic check for updates" on)
@@ -86,7 +86,7 @@ option(ENABLE_TRIAL_MODE   "Compile the trial version" off)
 option(ENABLE_DRM          "Compile the DRM-enabled version (e.g. for automatic updates)" off)
 option(ENABLE_STEAM        "Compile with Steam library" off)
 option(ENABLE_DEVMODE      "Compile vesion for developers" off)
-option(ENABLE_I18N_STRINGS "Clone i18n strings repo (https://github.com/aseprite/strings) to bin/data/strings.git" off)
+option(ENABLE_I18N_STRINGS "Clone i18n strings repo (https://github.com/pixelforge/strings) to bin/data/strings.git" off)
 option(FULLSCREEN_PLATFORM "Enable fullscreen by default" off)
 option(ENABLE_CLANG_TIDY   "Enable static analysis" off)
 option(ENABLE_CCACHE       "Use CCache to improve recompilation speed (optional)" on)
@@ -130,7 +130,7 @@ if(NOT LAF_BACKEND)
 endif()
 
 if(ENABLE_DRM AND NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/drm/CMakeLists.txt)
-  message(FATAL_ERROR "Your Aseprite repository is incomplete, clone the drm repository")
+  message(FATAL_ERROR "Your PixelForge repository is incomplete, clone the drm repository")
 endif()
 
 ######################################################################
@@ -384,11 +384,11 @@ if(ENABLE_WEBP)
 endif()
 
 # Print paths to used libraries
-message(STATUS "aseprite giflib: ${GIF_LIBRARY}")
-message(STATUS "aseprite libwebp: ${WEBP_LIBRARIES}")
-message(STATUS "aseprite libjpeg-turbo: ${LIBJPEG_TURBO_LIBRARY}")
+message(STATUS "pixelforge giflib: ${GIF_LIBRARY}")
+message(STATUS "pixelforge libwebp: ${WEBP_LIBRARIES}")
+message(STATUS "pixelforge libjpeg-turbo: ${LIBJPEG_TURBO_LIBRARY}")
 
-# LAF libraries + Aseprite are compiled with config.h
+# LAF libraries + PixelForge are compiled with config.h
 target_include_directories(laf-base PUBLIC src)
 target_compile_definitions(laf-base PUBLIC HAVE_CONFIG_H)
 
@@ -411,7 +411,7 @@ if(ENABLE_CLANG_TIDY)
 
   if(CLANG_TIDY_EXE)
     set_target_properties(app-lib PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
-    set_target_properties(aseprite PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
+    set_target_properties(pixelforge PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
     set_target_properties(cfg-lib PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
     set_target_properties(clip PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
     set_target_properties(dio-lib PROPERTIES CXX_CLANG_TIDY "${DO_CLANG_TIDY}")

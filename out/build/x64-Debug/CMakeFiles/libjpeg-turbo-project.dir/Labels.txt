@@ -1,0 +1,13 @@
+# Target labels
+ libjpeg-turbo-project
+# Source files and their labels
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/CMakeFiles/libjpeg-turbo-project-complete.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-build.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-configure.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-download.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-install.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-mkdir.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-patch.rule
+C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/libjpeg-turbo/src/libjpeg-turbo-project-stamp/libjpeg-turbo-project-update.rule

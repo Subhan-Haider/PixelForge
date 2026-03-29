@@ -1,4 +1,4 @@
-// Aseprite Document Library
+// PixelForge Document Library
 // Copyright (c) 2019-2025  Igara Studio S.A.
 //
 // This file is released under the terms of the MIT license.
@@ -66,7 +66,7 @@ public:
   tile_flags matchFlags() const { return m_matchFlags; }
   void setMatchFlags(const tile_flags tf) { m_matchFlags = tf; }
 
-  // Cached compressed tileset read/writen directly from .aseprite
+  // Cached compressed tileset read/writen directly from .pixelforge
   // files.
   void discardCompressedData();
   void setCompressedData(const base::buffer& buffer) const;
@@ -158,7 +158,7 @@ private:
   } m_external;
 
   // This is a cached version of the compressed tileset data
-  // directly read from an .aseprite file. It's used to save the
+  // directly read from an .pixelforge file. It's used to save the
   // tileset as-is (without re-compressing). When we modify the
   // tileset (at least one tile), the compressed data is discarded,
   // and the recompressiong must be done.

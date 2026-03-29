@@ -73,10 +73,10 @@ for _,cm in ipairs{ ColorMode.RGB,
                tool="filled_ellipse", points={{0,0},{31,31}} }
   app.useTool{ color=c2, brush=Brush(1),
                tool="filled_ellipse", points={{4,4},{27,27}} }
-  spr.filename = "_test_a.aseprite"
+  spr.filename = "_test_a.pixelforge"
 
   app.command.SaveFile()
-  assert(spr.filename == "_test_a.aseprite")
+  assert(spr.filename == "_test_a.pixelforge")
 
   app.command.SaveFileAs{ filename="_test_b.png" }
   assert(spr.filename == "_test_b.png")

@@ -18,7 +18,7 @@ jobs:
           - os: windows-latest
             platform: windows
             cpu: x64
-          - os: macos-13
+          - os: macos-latest
             platform: macos
             cpu: x64
           - os: ubuntu-latest
@@ -26,11 +26,21 @@ jobs:
             cpu: x64
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Repair and Sync Submodules
+        run: |
+          git submodule foreach --recursive git clean -fdx
+          git submodule sync --recursive
+          git submodule update --init --recursive --force
+          # Ensure critical missing files are restored if ignored
+          if [ ! -f third_party/libarchive/build/cmake/config.h.in ]; then
+            git checkout -- third_party/libarchive/build/cmake/config.h.in || true
+          fi
 
       - name: Set up MSVC
         if: matrix.platform == 'windows'
@@ -42,11 +52,17 @@ jobs:
       - name: Install NASM
         uses: ilammy/setup-nasm@v1
 
+      - name: Install dependencies (Windows)
+        if: matrix.platform == 'windows'
+        run: |
+          choco install openssl -y --no-progress
+
       - name: Install dependencies (Linux)
         if: matrix.platform == 'linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libx11-dev libxcursor-dev libxi-dev libxrandr-dev libgl1-mesa-dev libfontconfig1-dev
+          sudo apt-get install -y \
+            libx11-dev libxcursor-dev libxi-dev libgl1-mesa-dev libfontconfig1-dev
 
       - name: Install dependencies (macOS)
         if: matrix.platform == 'macos'
@@ -93,49 +109,53 @@ jobs:
             ${{ matrix.platform == 'macos' && '-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_ARCHITECTURES=x86_64' || '' }}
 
       - name: Build
-        run: cmake --build build --target aseprite
+        run: cmake --build build --target pixelforge
 
       - name: Package (Windows)
         if: matrix.platform == 'windows'
         shell: bash
         run: |
           mkdir -p release
-          cp build/bin/aseprite.exe release/
+          cp build/bin/pixelforge.exe release/
           cp -r data release/
           # Copy OpenSSL DLLs (critical for network/sync)
-          cp /c/Program\ Files/OpenSSL/bin/libcrypto-3-x64.dll release/ || true
-          cp /c/Program\ Files/OpenSSL/bin/libssl-3-x64.dll release/ || true
+          cp /c/Program\ Files/OpenSSL-Win64/bin/libcrypto-3-x64.dll release/ || true
+          cp /c/Program\ Files/OpenSSL-Win64/bin/libssl-3-x64.dll release/ || true
+          # Backup search if Choco put it elsewhere
+          if [ ! -f release/libcrypto-3-x64.dll ]; then
+            find /c/Program\ Files -name "libcrypto-3-x64.dll" -exec cp {} release/ \; || true
+          fi
           # Copy any other DLLs found in build/bin
           find build/bin -name "*.dll" -exec cp {} release/ \;
-          7z a aseprite-windows.zip ./release/*
+          7z a pixelforge-windows.zip ./release/*
 
       - name: Package (Linux)
         if: matrix.platform == 'linux'
         shell: bash
         run: |
           mkdir -p release
-          cp build/bin/aseprite release/
+          cp build/bin/pixelforge release/
           cp -r data release/
-          tar -czvf aseprite-linux.tar.gz -C release .
+          tar -czvf pixelforge-linux.tar.gz -C release .
 
       - name: Package (macOS)
         if: matrix.platform == 'macos'
         shell: bash
         run: |
-          # On macOS, it creates Aseprite.app in build/bin
+          # On macOS, it creates PixelForge.app in build/bin
           mkdir -p release
-          cp -r build/bin/Aseprite.app release/
+          cp -r build/bin/PixelForge.app release/
           # Zip the .app bundle
-          zip -r aseprite-macos.zip release/Aseprite.app
+          zip -r pixelforge-macos.zip release/PixelForge.app
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: aseprite-${{ matrix.platform }}
+          name: pixelforge-${{ matrix.platform }}
           path: |
-            aseprite-windows.zip
-            aseprite-linux.tar.gz
-            aseprite-macos.zip
+            pixelforge-windows.zip
+            pixelforge-linux.tar.gz
+            pixelforge-macos.zip
 
   release:
     needs: build
@@ -151,9 +171,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            aseprite-windows/aseprite-windows.zip
-            aseprite-linux/aseprite-linux.tar.gz
-            aseprite-macos/aseprite-macos.zip
+            pixelforge-windows/pixelforge-windows.zip
+            pixelforge-linux/pixelforge-linux.tar.gz
+            pixelforge-macos/pixelforge-macos.zip
           draft: false
           prerelease: false
           generate_release_notes: true

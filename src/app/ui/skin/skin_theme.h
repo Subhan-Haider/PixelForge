@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2020-2025  Igara Studio S.A.
 // Copyright (C) 2001-2017  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifndef APP_UI_SKIN_SKIN_THEME_H_INCLUDED
 #define APP_UI_SKIN_SKIN_THEME_H_INCLUDED
@@ -45,7 +45,7 @@ private:
   bool m_mnemonics;
 };
 
-// This is the GUI theme used by Aseprite (which use images from
+// This is the GUI theme used by PixelForge (which use images from
 // data/skins directory).
 class SkinTheme final : public ui::Theme,
                         public app::gen::ThemeFile<SkinTheme> {

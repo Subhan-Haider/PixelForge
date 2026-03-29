@@ -1,0 +1,465 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/view-lib.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"src/view/CMakeLists.txt",
+			"CMakeLists.txt",
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 332,
+				"parent" : 3
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 37,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 217,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 261,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 238,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 260,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 271,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 281,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 293,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 322,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 345,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 349,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 30,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 46,
+				"parent" : 5
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /D_DEBUG /MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -MTd"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4244"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4267"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4355"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-wd4710"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-D_SCL_SECURE_NO_WARNINGS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "CMARK_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "DEBUGMODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_PIXMAN"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_WINDOWS"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LAF_WITH_REGION"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "PNG_NO_MMX_CODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "WINVER=0x0A00"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/zlib"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/zlib"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/libpng"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/third_party/libpng"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/tinyxml2"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/TinyEXIF"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman/pixman"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/giflib"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/curl/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/simpleini"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/.."
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/observable"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/doc/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/laf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/out/build/x64-Debug/laf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/pixman-cmake/../pixman/pixman"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/src/fixmath/.."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/setup/OneDrive/Pictures/aaaaaaaaaaaaa/third_party/cityhash/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "zlibstatic::@88168bcd04ba00925e4e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "pixman::@59f7bf2a05ee5b992ee8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "cityhash::@bd438de7ab8f2037598b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-gfx::@da7ca4dc1d1afaf39caf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fixmath-lib::@d955aeda01e9889e1408"
+		}
+	],
+	"id" : "view-lib::@e4ce8d5fc47ecc8ea676",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "doc-lib::@d08a6f4978ecdc019a2c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "laf-base::@a6da8978413063cfc994"
+		}
+	],
+	"name" : "view-lib",
+	"nameOnDisk" : "view-lib.lib",
+	"paths" : 
+	{
+		"build" : "src/view",
+		"source" : "src/view"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/view/cels.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/view/layers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/view/range.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/view/utils.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

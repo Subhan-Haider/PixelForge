@@ -1,0 +1,106 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/TinyEXIF/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 144,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 163,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 176,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 180,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/TinyEXIFd.lib"
+			],
+			"targetId" : "TinyEXIFstatic::@b371e6d723bc135dc8b8",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/TinyEXIF/TinyEXIF.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/pixelforge",
+			"paths" : 
+			[
+				"out/build/x64-Debug/pixelforgeConfig.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/pixelforge",
+			"exportName" : "pixelforgeTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "TinyEXIFstatic::@b371e6d723bc135dc8b8",
+					"index" : 28
+				}
+			],
+			"paths" : 
+			[
+				"third_party/TinyEXIF/CMakeFiles/Export/c8f765eee40b396c446f0c0e9004bba1/pixelforgeTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/TinyEXIF",
+		"source" : "third_party/TinyEXIF"
+	}
+}

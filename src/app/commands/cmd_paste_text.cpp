@@ -1,9 +1,9 @@
-// Aseprite
+// PixelForge
 // Copyright (C) 2019-2025  Igara Studio S.A.
 // Copyright (C) 2001-2018  David Capello
 //
 // This program is distributed under the terms of
-// the End-User License Agreement for Aseprite.
+// the End-User License Agreement for PixelForge.
 
 #ifdef HAVE_CONFIG_H
   #include "config.h"
@@ -43,7 +43,7 @@ struct PasteTextParams : public NewParams {
   Param<bool> ui{ this, true, "ui" };
   Param<app::Color> color{ this, app::Color::fromMask(), "color" };
   Param<std::string> text{ this, "", "text" };
-  Param<std::string> fontName{ this, "Aseprite", "fontName" };
+  Param<std::string> fontName{ this, "PixelForge", "fontName" };
   Param<double> fontSize{ this, 6, "fontSize" };
   Param<int> x{ this, 0, "x" };
   Param<int> y{ this, 0, "y" };

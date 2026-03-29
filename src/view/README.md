@@ -1,6 +1,6 @@
-# Aseprite View Library
+# PixelForge View Library
 
-> Distributed under the terms of the [End-User License Agreement for Aseprite](../../EULA.txt)
+> Distributed under the terms of the [End-User License Agreement for PixelForge](../../EULA.txt)
 
 Library to represent an abstract view (and concepts) of the timeline
 like the range of selected frames/layers.

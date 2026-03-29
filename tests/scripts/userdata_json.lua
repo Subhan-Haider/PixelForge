@@ -7,7 +7,7 @@ dofile('./test_utils.lua')
 local function export_json(sprite, filename)
   local out_json = "_test_userdata_json.json"
   local out_png  = "_test_userdata_json.png"
-  local out_ase  = "_test_userdata_json.aseprite"
+  local out_ase  = "_test_userdata_json.pixelforge"
 
   print("Exporting to:")
   print("  out_json: " .. out_json)
@@ -56,7 +56,7 @@ do
   spr.slices[1].properties.user_defined_data = "sample data"
   spr.slices[1].properties("my_plugin").extension_defined_data = false
 
-  local meta = export_json(spr, "_test_userdata_json.aseprite").meta
+  local meta = export_json(spr, "_test_userdata_json.pixelforge").meta
 
   -- Sprite properties
   if meta.properties then
