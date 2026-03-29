@@ -56,7 +56,7 @@ void AboutCommand::onExecute(Context* context)
     window.closeWindow(nullptr);
     App::instance()->mainWindow()->showBrowser("strings/README.md", "Translators");
   });
-  window.quick_reference()->Click.connect([&window] {
+  window.quickReference()->Click.connect([&window] {
     window.closeWindow(nullptr);
     App::instance()->mainWindow()->showBrowser("QuickReference.md", "Quick Reference");
   });
