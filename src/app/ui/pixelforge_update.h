@@ -15,7 +15,7 @@
 
 namespace app {
 
-class PixelForgeUpdate : public app::gen::PixelForgeUpdate {
+class PixelForgeUpdate : public app::gen::PixelforgeUpdate {
 public:
   PixelForgeUpdate(std::string version);
 

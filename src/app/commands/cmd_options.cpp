@@ -364,10 +364,10 @@ public:
     nativeCursor()->Click.connect([this] { onNativeCursorChange(); });
 
     // Dialogs
-    showPixelForgeFileDialog()->Click.connect(
-      [this] { nativeFileDialog()->setSelected(!showPixelForgeFileDialog()->isSelected()); });
+    showPixelforgeFileDialog()->Click.connect(
+      [this] { nativeFileDialog()->setSelected(!showPixelforgeFileDialog()->isSelected()); });
     nativeFileDialog()->Click.connect(
-      [this] { showPixelForgeFileDialog()->setSelected(!nativeFileDialog()->isSelected()); });
+      [this] { showPixelforgeFileDialog()->setSelected(!nativeFileDialog()->isSelected()); });
 
     // Grid
     gridW()->Leave.connect([this] {
@@ -747,7 +747,7 @@ public:
 
     // "Show PixelForge file dialog" option is the inverse of the old
     // experimental "use native file dialog" option
-    showPixelForgeFileDialog()->setSelected(!m_pref.experimental.useNativeFileDialog());
+    showPixelforgeFileDialog()->setSelected(!m_pref.experimental.useNativeFileDialog());
 
 #if LAF_WINDOWS // Show Tablet section on Windows
     {
