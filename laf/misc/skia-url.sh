@@ -49,4 +49,4 @@ else
     skia_file=Skia-Linux-$skia_build-$cpu.zip
 fi
 
-echo https://github.com/pixelforge/skia/releases/download/$skia_tag/$skia_file
+echo https://github.com/aseprite/skia/releases/download/$skia_tag/$skia_file
