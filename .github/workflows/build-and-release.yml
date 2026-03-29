@@ -33,6 +33,7 @@ jobs:
           fetch-depth: 0
 
       - name: Repair and Sync Submodules
+        shell: bash
         run: |
           git submodule foreach --recursive git clean -fdx
           git submodule sync --recursive
