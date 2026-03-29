@@ -30,6 +30,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0
+
+      - name: Set up MSVC
+        if: matrix.platform == 'windows'
+        uses: ilammy/msvc-dev-cmd@v1
 
       - name: Set up CMake and Ninja
         uses: lukka/get-cmake@latest
@@ -69,8 +74,10 @@ jobs:
           # On Windows, we need to locate where Skia library is specifically
           if [ "${{ matrix.platform }}" == "windows" ]; then
             SKIA_LIB_FILE="skia.lib"
+            COMPILER_FLAGS="-DCMAKE_C_COMPILER=cl -DCMAKE_CXX_COMPILER=cl"
           else
             SKIA_LIB_FILE="libskia.a"
+            COMPILER_FLAGS=""
           fi
           
           cmake -B build -S . -G Ninja \
@@ -79,6 +86,7 @@ jobs:
             -DSKIA_DIR=$(pwd)/skia \
             -DSKIA_LIBRARY_DIR=$(pwd)/skia/out/Release-${{ matrix.cpu }} \
             -DSKIA_LIBRARY=$(pwd)/skia/out/Release-${{ matrix.cpu }}/$SKIA_LIB_FILE \
+            $COMPILER_FLAGS \
             ${{ matrix.platform == 'macos' && '-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0' || '' }}
 
       - name: Build
