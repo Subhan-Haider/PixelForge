@@ -1,10 +1,8 @@
-# <img src="logo.png" width="128" alt="PixelForge Logo"> PixelForge
+# <img src="https://github.com/user-attachments/assets/8c570d04-ffde-44b4-a9d2-9fa0bd82b5dc" width="50" alt="PixelForge Logo"> PixelForge
 
 **The ultimate 2D powerhouse for pixel art, animated sprites, and game assets.**
+<img width="1024" height="1024" alt="new desing" src="https://github.com/user-attachments/assets/8c570d04-ffde-44b4-a9d2-9fa0bd82b5dc" />
 
-[![build](https://github.com/Subhan-Haider/PixelForge/actions/workflows/build.yml/badge.svg)](https://github.com/Subhan-Haider/PixelForge/actions/workflows/build.yml)
-[![Translation Status](https://hosted.weblate.org/widget/pixelforge/pixelforge/svg-badge.svg)](https://hosted.weblate.org/engage/pixelforge/)
-[![Discord Server](https://img.shields.io/discord/324979738533822464?color=7289da&label=Discord&logo=discord)](https://discord.gg/Yb2CeX8)
 
 ## 🎨 Forge Your Imagination
 
@@ -21,7 +19,7 @@ While other tools focus on general illustration, PixelForge was built from the g
 ## 🚀 Key Features Breakdown
 
 ### ⏳ Advanced Timeline & Animation
-PixelForge treats animation as a first-class citizen. Manage complex sequences with separated [layers and frames](https://www.pixelforge.org/docs/timeline/).
+PixelForge treats animation as a first-class citizen. Manage complex sequences with separated [layers and frames]().
 *   **Onion Skinning**: Visualize previous and next frames for smooth transitions.
 *   **Live Preview**: See your sprite in motion in a dedicated window while you draw.
 *   **Batch Frame Management**: Transform, delete, or move multiple frames simultaneously.
@@ -68,7 +66,7 @@ PixelForge is built on a high-performance C++17 stack designed for near-zero lat
 | :--- | :--- |
 | **Language** | Modern C++17 |
 | **Graphics Engine** | Skia / Hardware-backed rendering (Vulkan/OpenGL) |
-| **UI Framework** | [laf](https://github.com/dacap/laf) (Libre App Framework) |
+| **UI Framework** | [laf]() (Libre App Framework) |
 | **Scripting** | Lua 5.4 Embedded Engine |
 | **Undo/Redo** | Infinite non-linear history (RAM permitting) |
 | **Max Canvas** | Limited only by available system memory |
@@ -79,9 +77,9 @@ PixelForge is built on a high-performance C++17 stack designed for near-zero lat
 
 Ready to forge your first pixel? Here’s how to start:
 
-1.  **Download**: Get the latest stable release for [Windows, macOS, or Linux](https://www.pixelforge.org/download/).
+1.  **Download**: Get the latest stable release for [Windows, macOS, or Linux]().
 2.  **Launch**: Open the executable (look for our monitor mascot icon).
-3.  **Learn**: Check out the [official documentation](https://www.pixelforge.org/docs/) to master advanced hotkeys.
+3.  **Learn**: Check out the [official documentation]() to master advanced hotkeys.
 4.  **Customize**: Explore the `data/extensions` folder to tweak themes and palettes.
 
 ---
@@ -111,20 +109,5 @@ Check our [Full Build Guide](INSTALL.md) for platform-specific details.
 
 ---
 
-## 🤝 Join the Forge
-
-Connect with other artists and developers:
-*   **Developer Discord**: [Join our community](https://discord.gg/Yb2CeX8)
-*   **Technical Discussions**: [GitHub Discussions](https://github.com/Subhan-Haider/PixelForge/discussions)
-*   **Follow the Journey**: [Twitter/X](https://twitter.com/pixelforge) | [Instagram](https://instagram.com/pixelforge)
-
-## 📜 License & Acknowledgments
-
-PixelForge is a derivative work built on the excellent foundation of the original **Aseprite**, created by [David Capello](https://davidcapello.com/) and [Igara Studio](https://igara.com/). We are deeply grateful for their years of innovation in the pixel art space.
-
-© 2025 PixelForge Contributors. Distributed under the [PixelForge EULA](EULA.txt).
-Original Aseprite source code is (C) 2001-2024 David Capello.
-
----
 *Forged with 💖 for artists everywhere. Every pixel counts.*
 
