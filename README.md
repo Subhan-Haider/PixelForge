@@ -77,9 +77,9 @@ PixelForge is built on a high-performance C++17 stack designed for near-zero lat
 
 Ready to forge your first pixel? Here’s how to start:
 
-1.  **Download**: Get the latest stable release for [Windows, macOS, or Linux]().
+1.  **Download**: Get the latest stable release for [Windows, macOS, or Linux](https://github.com/Subhan-Haider/PixelForge/releases).
 2.  **Launch**: Open the executable (look for our monitor mascot icon).
-3.  **Learn**: Check out the [official documentation]() to master advanced hotkeys.
+3.  **Learn**: Check out the [official documentation](https://github.com/Subhan-Haider/PixelForge/releases) to master advanced hotkeys.
 4.  **Customize**: Explore the `data/extensions` folder to tweak themes and palettes.
 
 ---
